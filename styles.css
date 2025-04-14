@@ -5,6 +5,8 @@
 }
 header {
   background-image: url("/header_background.png");
+  background-size: cover;
+  background-position: center;
 }
 
 body {
