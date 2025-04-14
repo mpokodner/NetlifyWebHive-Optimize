@@ -3,29 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebHive Optimize</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <header style="background-image: url('header\ background.png')"></header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="logo.png" alt="Logo" class="beehive" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Main Navigation">
+          <div class="logo">
+            <img src="logo.png" alt="Company Logo" class="logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button
+            class="hamburger"
+            aria-label="Toggle Menu"
+            onclick="toggleMenu()"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
     </header>
-    <h1>WebHive Optimize</h1>
+    <main>
+      <h1>WebHive Optimize</h1>
+    </main>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
