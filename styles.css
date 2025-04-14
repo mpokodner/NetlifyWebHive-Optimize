@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  background-image: url("header background.png");
+}
 
 body {
   font-family: Arial, sans-serif;
