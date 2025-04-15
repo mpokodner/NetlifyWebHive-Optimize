@@ -34,8 +34,6 @@ a:hover {
 
 /* Header Styles */
 header {
-  background-color: #f8f9fa;
-  padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -201,11 +199,12 @@ footer {
 
 .footer-section .links ul.a {
   display: block;
+  margin-bottom: 8px;
 }
 .site-header {
   background-image: url("/header_background.png");
   width: 100%;
-  height: 5vh;
+  height: 8vh;
 }
 .logo img {
   width: 50px;
