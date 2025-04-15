@@ -8,8 +8,11 @@ body {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  line-height: 2;
+  font-size: 1.2em;
+  font-family: tahoma;
 }
 
 a:hover {
@@ -205,6 +208,6 @@ footer {
   height: 5vh;
 }
 .logo img {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
 }
