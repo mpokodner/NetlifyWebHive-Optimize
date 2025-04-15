@@ -44,11 +44,13 @@ body {
 }
 
 .nav-links a {
-  color: #f2f2f2;
+  color: #514028;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-  font-family: cerebri sans;
+  font-family: tahoma;
+  font-size: 20px;
+  line-height: 1.5;
 }
 .hamburger {
   display: none;
@@ -79,5 +81,23 @@ body {
 
   .hamburger {
     display: flex;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 2; /* Above the overlay */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .site-header {
+    height: 60px; /* Smaller on mobile */
   }
 }
