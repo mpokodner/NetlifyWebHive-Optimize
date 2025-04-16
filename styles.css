@@ -90,6 +90,10 @@ nav ul li a {
 .hero-image {
   flex: 1;
   text-align: center;
+  padding-left: 20px;
+  border-radius: 8px;
+  align-items: center;
+  max-width: 95%;
 }
 
 .hero-image img {
