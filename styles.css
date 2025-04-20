@@ -106,11 +106,14 @@ ul li a {
 
 /* Hero Section Styles */
 #hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   max-height: calc(100dvh-32px);
   text-align: center;
   padding: 20px;
-  background-color: #f4f4f4; /* Light background color */
+  background-color: white;
 }
 
 h1 {
