@@ -294,16 +294,21 @@ a {
   text-decoration: none;
   color: #541028;
 }
-a.active:hover {
+a.active {
   color: #5f5d49;
   transition: ease-in-out 4s;
   cursor: pointer;
 }
+a:hover {
+  color: #f2f2f2;
+  transition: ease-in-out 4s;
+  cursor: pointer;
+}
+
 .project-btn {
   padding: 5px 10px;
   font-size: 18px;
   border-radius: 4px;
-  text-decoration: none;
 }
 
 /* Footer */
@@ -317,14 +322,6 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-}
-
-.footer-links a {
-  margin: 0 10px;
-  color: white;
-  font-size: 20px;
-  transition: all 0.3s ease;
-  font-style: none;
 }
 
 .footer-links a:hover {
