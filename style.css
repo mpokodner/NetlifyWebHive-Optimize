@@ -227,23 +227,6 @@ header {
   background-color: #f2f2f2;
 }
 
-.filter-btn {
-  background-color: transparent;
-  border: none;
-  padding: 8px 15px;
-  margin: 0 5px;
-  cursor: pointer;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #514028;
-  transition: all 0.3s ease;
-}
-
-.filter-btn.active {
-  background-color: #b79347;
-  color: #f2f2f2;
-}
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -291,10 +274,10 @@ header {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #5f5d49;
 }
-a:hover {
+.project-btn:hover {
   color: #915d3e;
   transition: ease-in-out 4s;
   cursor: pointer;
@@ -304,6 +287,8 @@ a:hover {
   padding: 5px 10px;
   font-size: 18px;
   border-radius: 4px;
+  color: #5f5d49;
+  text-decoration: underline;
 }
 
 /* Footer */
