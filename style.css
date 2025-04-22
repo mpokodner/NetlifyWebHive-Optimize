@@ -43,7 +43,7 @@ header {
 
 /* Hero Section */
 .hero {
-  padding-top: 100px; /* Space for the fixed header */
+  padding-top: 0; /* Space for the fixed header */
   width: 100%;
   height: auto;
 }
