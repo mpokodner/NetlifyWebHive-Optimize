@@ -211,26 +211,20 @@ header {
 }
 
 .stat-number {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   color: #b79347;
   margin-bottom: 5px;
 }
 
 .stat-text {
-  font-size: 14px;
+  font-size: 18px;
   color: #514028;
 }
 
 /* Projects Section */
 .projects {
   background-color: #f2f2f2;
-}
-
-.project-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
 }
 
 .filter-btn {
@@ -296,10 +290,20 @@ header {
   margin-top: 15px;
 }
 
+a {
+  text-decoration: none;
+  color: #541028;
+}
+a.active:hover {
+  color: #5f5d49;
+  transition: ease-in-out 4s;
+  cursor: pointer;
+}
 .project-btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 18px;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 /* Footer */
