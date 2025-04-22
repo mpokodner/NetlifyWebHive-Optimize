@@ -105,6 +105,10 @@ header {
 .logo {
   font-size: 20px;
   font-weight: 700;
+  margin: auto;
+  padding: 4px;
+  width: 10px;
+  height: 10px;
   color: #b79347;
 }
 
