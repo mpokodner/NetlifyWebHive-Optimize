@@ -73,22 +73,23 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px 10%;
 }
 
 .hero h1 {
   font-size: 42px; /* Reduced from 56px */
   color: #f2f2f2; /* Changed to light color for visibility on overlay */
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .hero h2 {
   font-size: 24px; /* Reduced from 36px */
   color: #e0d7c7; /* Light color for visibility on overlay */
   max-width: 800px;
-  text-align: center;
+  text-align: left;
 }
 
 /* About Me Section */
