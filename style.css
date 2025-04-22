@@ -23,7 +23,7 @@ header {
   background-color: #b79347;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
-  position: fixed; /* Changed from sticky to fixed */
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 100;
@@ -31,7 +31,7 @@ header {
 
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-left: 20px;
 }
@@ -43,10 +43,9 @@ header {
 
 /* Hero Section */
 .hero {
-  padding-top: 80px; /* Space for the fixed header */
+  padding-top: 100px; /* Space for the fixed header */
   width: 100%;
   height: auto;
-  position: relative;
 }
 
 .hero-content {
@@ -64,8 +63,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   padding: 20px 10%;
   background-image: url("hero2.jpeg");
 }
