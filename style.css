@@ -96,33 +96,15 @@ header {
   z-index: 100;
 }
 
-.navbar {
+header.sticky {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-img.logo {
-  width: 8px;
-  height: 8px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin-left: 30px;
-}
-
-.nav-links a {
-  color: #647b72;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #915d3e;
+.logo img {
+  width: 100px; /* Adjust the width to your desired size */
+  height: auto; /* This keeps the aspect ratio of the logo */
 }
 
 /* Hero Section */
@@ -136,6 +118,9 @@ img.logo {
 
 .hero-content {
   flex: 1;
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line to stack items vertically */
+  align-items: center; /* Center the items horizontally */
 }
 
 .big-image {
@@ -146,6 +131,7 @@ img.logo {
   background-position: 50% 50%;
   background-image: url("hero.jpeg");
 }
+
 .overlay {
   position: absolute;
   height: 100%;
@@ -155,21 +141,17 @@ img.logo {
   justify-content: center;
   align-items: center;
 }
+
 .hero h1 {
-  font-size: 42px;
+  font-size: 56px; /* Increase the size */
   color: #514028;
-  margin-bottom: 5px;
+  margin-bottom: 10px; /* Adjusted for spacing */
 }
 
 .hero h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 36px; /* Increase the size */
+  margin-bottom: 20px; /* Adjusted for spacing */
   color: #b79347;
-}
-
-.hero p {
-  margin-bottom: 20px;
-  color: #514028;
 }
 
 /* About Me Section */
