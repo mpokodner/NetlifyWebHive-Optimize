@@ -66,6 +66,31 @@ body {
   height: 40px;
 }
 
+.hero-section {
+  height: 50vh;
+  background-image: url("hero2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #b79347;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.hero-section {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.btn-branding {
+  background: var(--dark);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
 .site-title {
   color: white;
   font-weight: bold;
