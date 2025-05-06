@@ -11,18 +11,14 @@
   --light: #f6f3e8;
   --dark: #252b20;
   --neutral: #e1d9c9;
-
   --dark: #343a40;
-  --default-font-family:'DM Sans', sans-serif 
-  --default-font-weight: 200;
-  --heading-font-family: 'Fjalla One'; 
+  --default-font-family: "DM Sans", sans-serif, 200;
+  --heading-font-family: "Fjalla One";
 }
 
 /* Global Styles */
 body {
   font-family: var(--default-font-family);
-  font-weight: var(--default-font-weight);
-  line-height: 1.6;
   background-color: var(--light);
   color: var(--complimentary);
 }
@@ -31,10 +27,12 @@ body {
 .project-btn {
   background-color: var(--gold);
   color: var(--light);
+  font-family: var(--default-font-family);
 }
 .project-btn {
   background-color: var(--gold);
   color: var(--light);
+  font-family: var(--default-font-family);
 }
 
 /* Footer */
@@ -44,36 +42,42 @@ footer {
   margin: 60px 0;
   width: 100%;
   position: fixed;
+  font-family: var(--default-font-family);
 }
 footer.contact-box {
   background: var(--light);
   padding: 30px 120px;
   border-radius: 10px;
+  font-family: var(--default-font-family);
 }
 footer.h4 {
   margin: 0;
-  font-family:var(--heading-font-family);
+  font-family: var(--heading-font-family);
 }
 footer.email-link {
   text-decoration: none;
   color: var(--neutral);
-  font-size: 24pc;
+  font-size: 24px;
+  font-family: var(--default-font-family);
 }
 footer.email-link:hover {
   color: var(--dark);
+  font-family: var(--default-font-family);
 }
 footer.social-links a:hover {
   color: white;
   background-color: var(--complimentary);
+  font-family: var(--default-font-family);
 }
 
 .btn-branding {
   background: var(--light);
   border-radius: 4px;
-  color: var((var(--complimentary)));
+  color: var(--complimentary);
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  font-family: var(--default-font-family);
 }
 .btn-branding-outline {
   background-color: var(--neutral);
@@ -83,11 +87,13 @@ footer.social-links a:hover {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  font-family: var(--default-font-family);
 }
 /* Header */
 .site-header {
   background-color: var(--gold);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: var(--default-font-family);
 }
 
 .logo {
@@ -98,6 +104,7 @@ footer.social-links a:hover {
   color: var(--light);
   font-weight: bold;
   font-size: 1.25rem;
+  font-family: var(--default-font-family);
 }
 
 nav.ul {
@@ -109,15 +116,18 @@ nav.li {
   list-style: none;
   line-height: 42px;
   margin-left: 15px;
+  font-family: var(--default-font-family);
 }
 .nav-link {
   text-decoration: none;
   color: white;
   transition: all 100ms ease-in-out;
+  font-family: var(--default-font-family);
 }
 .nav-link:hover,
 nav.li.active a {
   color: var(--complimentary);
+  font-family: var(--default-font-family);
 }
 navbar-nav {
   padding: 20px 0;
@@ -137,17 +147,18 @@ navbar-nav {
 
 .hero h1 {
   font-size: 2.5rem;
-  font-family:var(--heading-font-family);
+  font-family: var(--heading-font-family);
 }
 
 .hero h2 {
   font-weight: 300;
-   font-family:var(--heading-font-family);
+  font-family: var(--heading-font-family);
 }
 
 /* About Section */
 .about {
   padding: 60px 0;
+  font-family: var(--default-font-family);
 }
 
 .about-container {
@@ -155,6 +166,7 @@ navbar-nav {
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
+  font-family: var(--default-font-family);
 }
 
 .about-image img {
@@ -165,21 +177,25 @@ navbar-nav {
 
 .about-content {
   flex: 1;
+  font-family: var(--default-font-family);
 }
 
 .personal-info .info-item {
   margin-bottom: 10px;
+  font-family: var(--default-font-family);
 }
 
 /* Skills */
 .skills {
   padding: 60px 0;
   background-color: var(--light);
+  font-family: var(--default-font-family);
 }
 
 .skills-grid {
   display: grid;
   gap: 30px;
+  font-family: var(--default-font-family);
 }
 
 .skill-box {
@@ -190,6 +206,7 @@ navbar-nav {
 
 .skill-item {
   margin: 8px 0;
+  font-family: var(--default-font-family);
 }
 
 /* Projects */
@@ -209,10 +226,12 @@ navbar-nav {
   overflow: hidden;
   transition: transform 0.2s;
   color: var(--complimentary);
+  font-family: var(--default-font-family);
 }
 
 .project-item:hover {
   transform: translateY(-5px);
+  font-family: var(--default-font-family);
 }
 
 .project-image img {
@@ -222,21 +241,26 @@ navbar-nav {
 
 .project-info {
   padding: 15px;
+  font-family: var(--default-font-family);
 }
 
 /* Responsive Design */
 @media (max-width: 900px) {
   nav.d-flex {
     padding: 20px 0;
+    font-family: var(--default-font-family);
   }
   h1 {
     font-size: 44px;
     line-height: 1.5;
+    font-family: var(--heading-font-family);
   }
   h2 {
     font-size: 44px;
+    font-family: var(--heading-font-family);
   }
   h4 {
     font-size: 26px;
+    font-family: var(--heading-font-family);
   }
 }
