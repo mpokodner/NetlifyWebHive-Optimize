@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* CSS Variables */
@@ -27,7 +26,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: var(--dark);
+  background-color: var(--gold);
   color: var(--white);
 }
 
@@ -67,7 +66,7 @@ body {
 }
 
 .hero-section {
-  height: 50vh;
+  height: 75vh;
   background-image: url("hero2.jpeg");
   background-size: cover;
   background-position: center;
@@ -75,7 +74,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   color: #b79347;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
@@ -109,10 +107,11 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url("hero-bg.jpg") center/cover no-repeat;
-  padding: 100px 20px;
-  text-align: center;
-  color: white;
+  background: url("hero2.jpeg");
+  padding: 20px;
+  color: #b79347;
+  line-height: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 .big-image {
   background-image: url("hero2.jpeg");
@@ -139,8 +138,8 @@ body {
 }
 
 .about-image img {
-  max-width: 100%;
-  height: auto;
+  max-width: 45px;
+  height: 3rem;
   border-radius: 10px;
 }
 
@@ -160,7 +159,6 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
@@ -181,7 +179,6 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
