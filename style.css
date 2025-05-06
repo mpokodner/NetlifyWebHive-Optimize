@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* CSS Variables */
@@ -9,156 +10,114 @@
   --gold: #bf9532;
   --complimentary: #713419;
   --light: #f6f3e8;
-  --dark: #252b20;
-  --neutral: #e1d9c9;
   --dark: #343a40;
-  --default-font-family: "DM Sans", sans-serif, 200;
-  --heading-font-family: "Fjalla One";
+  --neutral: #e1d9c9;
+  --default-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Fjalla One", sans-serif;
 }
 
 /* Global Styles */
 body {
   font-family: var(--default-font-family);
   background-color: var(--light);
-  color: var(--complimentary);
-}
-
-/* Header */
-.project-btn {
-  background-color: var(--gold);
-  color: var(--light);
-  font-family: var(--default-font-family);
-}
-.project-btn {
-  background-color: var(--gold);
-  color: var(--light);
-  font-family: var(--default-font-family);
-}
-
-/* Footer */
-footer {
-  background-color: var(--gold);
-  color: var(--light);
-  margin: 60px 0;
-  width: 100%;
-  position: fixed;
-  font-family: var(--default-font-family);
-}
-footer.contact-box {
-  background: var(--light);
-  padding: 30px 120px;
-  border-radius: 10px;
-  font-family: var(--default-font-family);
-}
-footer.h4 {
-  margin: 0;
-  font-family: var(--heading-font-family);
-}
-footer.email-link {
-  text-decoration: none;
-  color: var(--neutral);
-  font-size: 24px;
-  font-family: var(--default-font-family);
-}
-footer.email-link:hover {
   color: var(--dark);
-  font-family: var(--default-font-family);
+  line-height: 1.6;
 }
-footer.social-links a:hover {
+h1,
+h4 {
+  font-family: var(--heading-font-family);
   color: white;
-  background-color: var(--complimentary);
-  font-family: var(--default-font-family);
+}
+h2,
+h3,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  color: var(--complimentary);
 }
 
-.btn-branding {
-  background: var(--light);
-  border-radius: 4px;
-  color: var(--complimentary);
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  font-family: var(--default-font-family);
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
-.btn-branding-outline {
-  background-color: var(--neutral);
-  color: var(--complimentary);
-  border: 1px solid var(--complimentary);
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  font-family: var(--default-font-family);
+
+a:hover {
+  color: var(--gold);
 }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Header */
 .site-header {
   background-color: var(--gold);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: var(--default-font-family);
+  padding: 10px 0;
 }
 
-.logo {
+.site-header .logo {
   height: 40px;
 }
 
-.site-title {
+.site-header .site-title {
   color: var(--light);
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav li {
   font-family: var(--default-font-family);
 }
 
-nav.ul {
-  padding: 0;
-  margin: 0;
-}
-nav.li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-  font-family: var(--default-font-family);
-}
 .nav-link {
-  text-decoration: none;
-  color: white;
-  transition: all 100ms ease-in-out;
-  font-family: var(--default-font-family);
+  color: var(--light);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
-.nav-link:hover,
-nav.li.active a {
-  color: var(--complimentary);
-  font-family: var(--default-font-family);
-}
-navbar-nav {
-  padding: 20px 0;
+
+.nav-link:hover {
+  background-color: var(--complimentary);
 }
 
 /* Hero Section */
 .hero {
-  background: url("hero2.jpeg");
-  padding: 20px;
-  color: var(--gold);
-  line-height: 20px;
+  background: url("hero2.jpeg") no-repeat center center/cover;
+  padding: 60px 20px;
+  color: var(--light);
+  text-align: center;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-}
-.big-image {
-  background-image: url("hero2.jpeg");
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  font-family: var(--heading-font-family);
+  font-size: 3rem;
 }
 
 .hero h2 {
+  font-size: 1.5rem;
   font-weight: 300;
-  font-family: var(--heading-font-family);
 }
 
 /* About Section */
 .about {
   padding: 60px 0;
-  font-family: var(--default-font-family);
+  background-color: var(--light);
 }
 
 .about-container {
@@ -166,101 +125,128 @@ navbar-nav {
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
-  font-family: var(--default-font-family);
 }
 
 .about-image img {
-  max-width: 45px;
-  height: 3rem;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 .about-content {
   flex: 1;
-  font-family: var(--default-font-family);
 }
 
 .personal-info .info-item {
   margin-bottom: 10px;
-  font-family: var(--default-font-family);
 }
 
-/* Skills */
-.skills {
-  padding: 60px 0;
-  background-color: var(--light);
-  font-family: var(--default-font-family);
-}
-
-.skills-grid {
-  display: grid;
-  gap: 30px;
-  font-family: var(--default-font-family);
-}
-
-.skill-box {
-  background-color: var(--neutral);
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.skill-item {
-  margin: 8px 0;
-  font-family: var(--default-font-family);
-}
-
-/* Projects */
-.projects {
+/* Blog Section */
+.blog {
   padding: 60px 0;
 }
 
-.projects-grid {
+.blog-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-.project-item {
+.blog-post {
   background-color: var(--neutral);
-  border: 1px solid var(--complimentary);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s;
-  color: var(--complimentary);
-  font-family: var(--default-font-family);
 }
 
-.project-item:hover {
+.blog-post:hover {
   transform: translateY(-5px);
-  font-family: var(--default-font-family);
 }
 
-.project-image img {
+.blog-post img {
   width: 100%;
   height: auto;
 }
 
-.project-info {
+.blog-post .content {
   padding: 15px;
-  font-family: var(--default-font-family);
+}
+
+.blog-post h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+/* Footer */
+footer {
+  background-color: var(--gold);
+  color: var(--light);
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .social-links a {
+  color: var(--light);
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: var(--complimentary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--gold);
+  color: var(--light);
+}
+
+.btn-primary:hover {
+  background-color: var(--complimentary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--complimentary);
+  border: 2px solid var(--complimentary);
+}
+
+.btn-outline:hover {
+  background-color: var(--complimentary);
+  color: var(--light);
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
-  nav.d-flex {
-    padding: 20px 0;
-    font-family: var(--default-font-family);
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
   }
-  h1 {
-    font-size: 44px;
-    line-height: 1.5;
-    font-family: var(--heading-font-family);
+
+  .hero h2 {
+    font-size: 1.25rem;
   }
-  h2 {
-    font-size: 44px;
-    font-family: var(--heading-font-family);
+
+  .about-container {
+    flex-direction: column;
   }
-  h4 {
-    font-size: 26px;
-    font-family: var(--heading-font-family);
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
