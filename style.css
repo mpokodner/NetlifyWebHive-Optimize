@@ -7,11 +7,11 @@
 
 /* CSS Variables */
 :root {
-  --gold: #bf9532;
-  --complimentary: #713419;
-  --light: #f6f3e8;
-  --dark: #343a40;
-  --neutral: #e1d9c9;
+  --gold: #b79347;
+  --complimentary: #ad5321;
+  --light: #f2f2f2;
+  --dark: #084150;
+  --white: #ffffff;
   --default-font-family: "Poppins", sans-serif;
   --heading-font-family: "Fjalla One", sans-serif;
 }
@@ -27,6 +27,8 @@ h1,
 h4 {
   font-family: var(--heading-font-family);
   color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
 }
 h2,
 h3,
