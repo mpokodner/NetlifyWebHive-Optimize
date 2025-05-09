@@ -24,13 +24,12 @@ body {
   line-height: 1.6;
 }
 h1,
-h4 {
+h2 h4 {
   font-family: var(--heading-font-family);
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 4px black;
 }
-h2,
 h3,
 h5,
 h6 {
