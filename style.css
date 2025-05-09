@@ -19,7 +19,7 @@
 /* Global Styles */
 body {
   font-family: var(--default-font-family);
-  background-color: var(--light);
+  background-color: var(--white);
   color: var(--dark);
   line-height: 1.6;
 }
@@ -34,7 +34,9 @@ h3,
 h5,
 h6 {
   font-family: var(--heading-font-family);
-  color: var(--complimentary);
+  color: var(--gold);
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
 }
 
 a {
