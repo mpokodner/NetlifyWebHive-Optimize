@@ -127,6 +127,27 @@ nav ul li {
   border: 2px solid var(--white);
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
+/*About Section-*/
+.hero ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding-left: 50px;
+  background-color: white;
+  top: 10px;
+  bottom: 10px;
+  border-radius: 8px;
+  border: var(--dark);
+}
+.hero ul li {
+  display: inline;
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: var(--default-font-family);
+}
 
 /*Experience and Skills Section*/
 .skills-experience {
