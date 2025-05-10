@@ -218,28 +218,30 @@ nav ul li {
   overflow: hidden;
   transition: transform 0.2s;
 }
-
-.blog-post:hover {
-  transform: translateY(-5px);
-}
-
-.blog-post img {
-  width: 100%;
-  height: auto;
-}
-
-.blog-post .content {
-  padding: 15px;
-}
-
-.blog-post h3 {
+.blog-post h5 {
   font-size: 1.25rem;
   margin-bottom: 10px;
+  color: var(--complimentary);
+  font-family: "Fjalla One";
 }
 
-.blog-post p {
-  font-size: 0.9rem;
+.card-body .card-title {
+  font-family: "Fjalla One";
+  color: var(--complimentary);
+  font-size: 1.6rem;
+}
+.gold-btn {
+  background-color: white;
   color: var(--dark);
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.gold-btn:hover {
+  background-color: var(--gold);
+  color: white;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 .project-btn:hover {
   background-color: var(--white);
