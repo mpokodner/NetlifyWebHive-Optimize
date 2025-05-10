@@ -87,6 +87,26 @@ nav ul li {
 @media (max-width: 768px) {
   .navbar-toggler {
     display: block;
+    color: white;
+  }
+  .navbar-toggler:hover {
+    color: var(--gold);
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark);
+    padding: 10px;
+  }
+  nav ul.open li {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 
@@ -245,18 +265,30 @@ nav ul li {
   border: 2px solid black;
   text-decoration: none;
 }
-.fa-github,
+.fa-github {
+  font-size: 30px;
+  color: black;
+}
 .fa-linkedin-in {
   font-size: 30px;
   color: black;
 }
-
+.fa-github:hover {
+  font-size: 30px;
+  color: white;
+}
+.fa-linkedin-in:hover {
+  font-size: 30px;
+  color: white;
+}
+.social-links a {
+  background-color: white;
+}
 .social-links a:hover {
   background-color: black;
-  color: white;
-  transition: background-color 0.3s, color 0.3s;
 }
-footer .contact-me-button:hover {
+
+footer .btn.btn-branding:hover {
   background-color: var(--gold);
   color: var(--white);
   font-weight: bold;
