@@ -12,6 +12,7 @@
   --white: #ffffff;
   --default-font-family: "Poppins", sans-serif;
   --heading-font-family: "Fjalla One";
+  --complimentary: #ad5321;
 }
 
 /* Body */
@@ -136,8 +137,6 @@ nav ul li {
   margin: 0;
   padding-left: 50px;
   background-color: white;
-  top: 10px;
-  bottom: 10px;
   border-radius: 8px;
   border: var(--dark);
 }
