@@ -7,7 +7,6 @@
 /* CSS Variables */
 :root {
   --gold: #b79347;
-  --complimentary: #ad5321;
   --light: #f2f2f2;
   --dark: #084150;
   --white: #ffffff;
@@ -19,7 +18,6 @@
 body {
   font-family: var(--default-font-family);
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -31,11 +29,12 @@ a:hover {
 }
 
 .site-title {
-  color: var(--gold);
-  font-size: 1.5rem;
+  color: var(--white);
+  font-size: 1.2rem;
   font-weight: bold;
 }
-/*Header*/
+
+/* Header */
 header {
   border: 2px solid #000;
 }
@@ -60,20 +59,42 @@ nav ul {
 nav ul li {
   display: inline;
 }
-
 .nav-link {
-  font-family: var(--default-font-family);
-  color: var(--light);
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--white);
+  background-color: var(--dark);
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--gold);
+  color: var(--white);
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: var(--default-font-family);
+  color: white;
+  background-color: var(--dark);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .nav-link:hover {
   background-color: var(--gold);
   color: var(--white);
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hero Section */
@@ -219,27 +240,36 @@ nav ul li {
 }
 
 .social-links a {
+  font-size: 24px;
   background-color: white;
-  width: 40px;
-  height: 40px;
+  color: black;
+  width: 60px;
+  height: 60px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   border: 2px solid black;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
 }
-i {
+.fa-github,
+.fa-linkedin-in {
+  font-size: 30px;
   color: black;
-  font-size: 1.5rem;
 }
 
 .social-links a:hover {
   background-color: black;
   color: white;
+  transition: background-color 0.3s, color 0.3s;
 }
-
+footer .contact-me-button:hover {
+  background-color: var(--gold);
+  color: var(--white);
+  font-weight: bold;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
@@ -263,5 +293,10 @@ i {
   .skills-experience .cards {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
   }
 }
