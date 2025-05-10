@@ -44,6 +44,7 @@ nav {
   align-items: center;
   padding: 10px 20px;
   background-color: var(--dark);
+  font-weight: bold;
 }
 
 nav ul {
@@ -70,7 +71,6 @@ nav ul li {
   background-color: var(--gold);
   color: var(--white);
   font-weight: bold;
-  text-shadow: 1px 1px 2px black;
 }
 
 /* Hero Section */
