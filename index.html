@@ -60,15 +60,15 @@
       <div
         class="container py-3"
       >
-      <nav class="navbar navbar-expand-lg">
-        <a href="/" class="d-flex align-items-center text-decoration-none">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand d-flex align-items-center" href="#"></a>
           <img
             src="logo.png"
+            width="40"
+            height="40"
             alt="WebHive Optimize Logo"
-            style="height: 40px"
-            class="me-2"
-          />
-          <span class="text-white fw-bold">WebHive Optimize</span>
+            class="me-2">
+          <span class="site-title">WebHive Optimize</span>
         </a>
         <button
           class="navbar-toggler"
@@ -81,10 +81,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a href="/" class="nav-link text-white">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a href="/about" class="nav-link text-white">About</a>
@@ -98,41 +98,14 @@
     </header>
 
     <!-- Hero Section -->
-    <div
-      class="p-5 text-center bg-image rounded-3"
-      style="
-        background-image: url('hero2.jpeg');
-        height: 400px;
-        position: relative;
-      "
-    >
-      <div
-        class="mask"
-        style="
-          background-color: rgba(0, 0, 0, 0.6);
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-        "
-      >
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3">WebHive Optimize</h1>
-            <h4 class="mb-3">Beyond coding and web design</h4>
-            <a
-              data-mdb-ripple-init
-              class="btn btn-outline-light btn-lg"
-              href="/about.html"
-              role="button"
-            >
-              Read More
-            </a>
-          </div>
+     <section class="hero">
+      <div class="overlay"></div>
+        <div class="hero-content">
+          <h1>WebHive Optimize</h1>
+            <p class="lead">Beyond Coding and Web Design</p>
+              <a href="#" class="btn btn-clear">Learn More</a>
         </div>
-      </div>
-    </div>
+     </section>
 
     <!-- Portfolio Section -->
     <section class="container text-center my-5">
