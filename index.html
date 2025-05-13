@@ -114,23 +114,29 @@
       </nav>
     </header>
     <!-- Hero Section -->
-    <div class="hero position-relative d-flex">
+    <section class="hero position-relative overflow-hidden">
+      <!-- Optimized image with lazy loading for better page speed -->
       <img
         src="herowood2.jpg"
-        class="img-fluid w-100 h-50"
-        alt="Hero Background"
+        class="hero-img w-100 h-100 object-fit-cover"
+        alt="Wood background representing craftsmanship"
+        loading="lazy"
       />
-      <div class="overlay position-absolute bg-dark opacity-50"></div>
-      <div
-        class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white"
-      >
-        <h1 class="mb-3 text-white p-2 fw-bold">Build Your Hive. Grow Your Brand</h1>
-        <h4 class="mb-3 text-white p-1">Custom websites powered by smart design, SEO, branding, and automation—connecting you with who matters most.</h4>
-        <a class="btn btn-outline-light btn-lg" href="/about" role="button">
-          Learn More</a
-        >
+      
+      <!-- Overlay with proper positioning -->
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+      
+      <!-- Content container with improved responsive handling -->
+      <div class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
+        <div class="container">
+          <h1 class="mb-4 text-white fw-bold hero-title">Build Your Hive. Grow Your Brand</h1>
+          <p class="lead mb-4 text-white hero-text">Custom websites powered by smart design, SEO, branding, and automation—connecting you with who matters most.</p>
+          <a class="btn btn-outline-light hero-button" href="/about" role="button" aria-label="Learn more about our services">
+            Learn More
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
     <!-- Portfolio Section -->
     <div class="container text-center my-5">
       <h2 class="section-title mb-4">Personal Projects</h2>
