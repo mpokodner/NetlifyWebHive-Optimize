@@ -375,6 +375,7 @@ nav ul li {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -410,6 +411,8 @@ nav ul li {
 .view-project-btn:hover {
   background: var(--gold);
   color: var(--white);
+  border: 1px solid var(--dark);
+  text-decoration: none;
 }
 
 .hive-project-category {
