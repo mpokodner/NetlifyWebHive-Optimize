@@ -406,6 +406,7 @@ nav ul li {
 
 .hive-image-column:hover .view-project-btn {
   transform: translateY(0);
+  text-decoration: none;
 }
 
 .view-project-btn:hover {
