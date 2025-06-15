@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://webhiveoptimize.com/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://webhiveoptimize.com/index.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://webhiveoptimize.com/about.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://webhiveoptimize.com/thehive.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://webhiveoptimize.com/blog.html</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://webhiveoptimize.com/</loc>
+        <lastmod>2025-06-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://webhiveoptimize.com/about</loc>
+        <lastmod>2025-06-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://webhiveoptimize.com/thehive</loc>
+        <lastmod>2025-06-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://webhiveoptimize.com/blog</loc>
+        <lastmod>2025-06-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Add more URLs for all other relevant pages on your website -->
+    <!-- Example: If you have a specific project page -->
+    <!-- <url>
+        <loc>https://webhiveoptimize.com/seo-project-case-study</loc>
+        <lastmod>2025-06-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url> -->
 </urlset>
