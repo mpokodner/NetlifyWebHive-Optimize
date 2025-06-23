@@ -9,12 +9,36 @@
   --default-font-family: "Poppins", sans-serif;
 }
 
-/* — Global — */
+/* Global Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--default-font-family);
   color: var(--dark);
-  background: var(--bg-cream);
+  background-color: var(--bg-cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Accessibility Helper */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Header */
 header {
   border: 2px solid #000;
@@ -43,25 +67,9 @@ nav ul {
   margin: 0;
 }
 
-nav ul li {
-  display: inline;
-}
 .nav-link {
   font-weight: bold;
   color: white;
-}
-.navbar-toggler-icon {
-  color: white;
-}
-.navbar-toggler:hover {
-  background-color: var(--white);
-  color: var(--dark);
-  border: 2px solid var(--gold);
-}
-
-/* Navigation Links */
-.nav-link {
-  color: var(--white);
   background-color: var(--dark);
   text-decoration: none;
   padding: 5px 10px;
@@ -69,20 +77,24 @@ nav ul li {
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
-.nav-link:hover {
-  background-color: var(--gold);
-  color: var(--white);
-  border: 2px solid black;
-  font-weight: bold;
-}
-
+.nav-link:hover,
 .nav-link.active {
   background-color: var(--gold);
   color: var(--white);
   border: 2px solid black;
-  font-weight: bold;
 }
-/* — Hero title — */
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-toggler:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  border: 2px solid var(--gold);
+}
+
+/* Hero Title */
 .hero-title {
   font-family: var(--heading-font-family);
   font-size: clamp(28px, 5vw, 42px);
@@ -91,7 +103,7 @@ nav ul li {
   line-height: 1.2;
 }
 
-/* — Plan / Add-on cards — */
+/* Plan Cards */
 .plan-card {
   display: flex;
   flex-direction: column;
@@ -109,23 +121,27 @@ nav ul li {
   opacity: 0;
   transform: translateY(20px);
 }
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .plan-card:nth-child(2) {
   animation-delay: 0.1s;
 }
 .plan-card:nth-child(3) {
   animation-delay: 0.2s;
 }
+
 .plan-card:hover {
   transform: translateY(-8px);
   border-color: rgba(183, 147, 71, 0.4);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
+
 .plan-card::before {
   content: "";
   position: absolute;
@@ -137,6 +153,7 @@ nav ul li {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
+
 .plan-card:hover::before {
   transform: scaleX(1);
 }
@@ -146,7 +163,7 @@ nav ul li {
   letter-spacing: -0.02em;
 }
 
-/* — Primary gradient button — */
+/* Buttons */
 .btn-primary-custom {
   background: linear-gradient(135deg, var(--gold) 0%, var(--honey-dark) 100%);
   border: none;
@@ -155,12 +172,28 @@ nav ul li {
   border-radius: 0.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .btn-primary-custom:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(183, 147, 71, 0.4);
 }
 
-/* — Badge — */
+.btn-branding {
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+  border: 2px solid var(--gold) !important;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-branding:hover {
+  background-color: var(--gold) !important;
+  color: var(--dark) !important;
+  transform: translateY(-2px);
+}
+
+/* Badges */
 .badge-popular {
   background: linear-gradient(135deg, var(--gold), var(--honey-dark));
   color: var(--white);
@@ -171,12 +204,13 @@ nav ul li {
   text-transform: uppercase;
 }
 
-/* — Feature list — */
+/* Feature List */
 .feature-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .feature-list li {
   display: flex;
   gap: 0.5rem;
@@ -184,17 +218,19 @@ nav ul li {
   font-size: 0.9rem;
   margin-bottom: 0.4rem;
 }
+
 .checkmark {
   color: var(--gold);
   font-weight: bold;
 }
 
-/* — CTA ribbon — */
+/* CTA Ribbon */
 .cta-ribbon {
   background: linear-gradient(135deg, var(--dark) 0%, #0a4f5f 100%);
   position: relative;
   overflow: hidden;
 }
+
 .cta-ribbon::before {
   content: "";
   position: absolute;
@@ -207,6 +243,7 @@ nav ul li {
   );
   animation: shimmer 3s infinite linear;
 }
+
 @keyframes shimmer {
   from {
     transform: translateX(-100%);
@@ -215,7 +252,8 @@ nav ul li {
     transform: translateX(100%);
   }
 }
-/* ─── Footer ──────────────────────────────────────── */
+
+/* Footer */
 footer {
   background-color: var(--dark) !important;
 }
@@ -244,20 +282,5 @@ footer h4 {
 
 .social-links a:hover {
   color: var(--gold);
-  transform: translateY(-2px);
-}
-
-.btn-branding {
-  background-color: var(--white) !important;
-  color: var(--dark) !important;
-  border: 2px solid var(--gold) !important;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.btn-branding:hover {
-  background-color: var(--gold) !important;
-  color: var(--dark) !important;
   transform: translateY(-2px);
 }

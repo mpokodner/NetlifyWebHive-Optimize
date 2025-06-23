@@ -1,3 +1,5 @@
+/* Variables (assumes these are defined elsewhere or via :root) */
+
 /* Header */
 header {
   border: 2px solid #000;
@@ -24,25 +26,9 @@ nav ul {
   display: flex;
   gap: 15px;
   margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  display: inline;
-}
-.nav-link {
-  font-weight: bold;
-  color: white;
-}
-.navbar-toggler-icon {
-  color: white;
-}
-.navbar-toggler:hover {
-  background-color: var(--white);
-  color: var(--dark);
-  border: 2px solid var(--gold);
-}
-
-/* Navigation Links */
 .nav-link {
   color: var(--white);
   background-color: var(--dark);
@@ -50,27 +36,32 @@ nav ul li {
   padding: 5px 10px;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-
-.nav-link:hover {
-  background-color: var(--gold);
-  color: var(--white);
-  border: 2px solid black;
   font-weight: bold;
 }
 
+.nav-link:hover,
 .nav-link.active {
   background-color: var(--gold);
   color: var(--white);
   border: 2px solid black;
-  font-weight: bold;
 }
-/*Hero compatibility with existing classes */
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-toggler:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  border: 2px solid var(--gold);
+}
+
+/* Hero */
 .about-hero {
   min-height: 90vh;
 }
 
-/* About Page Credential items styling */
+/* Credential Items */
 .credential-item {
   transition: all 0.3s ease;
   height: 100%;
@@ -81,7 +72,7 @@ nav ul li {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Adjustments for light button */
+/* Light Button Style */
 .btn-light.hero-button {
   background-color: #fff;
   color: #212529;
@@ -92,70 +83,19 @@ nav ul li {
   color: #212529;
 }
 
-/*About page Screen size adjustments specific to about page */
-@media (max-width: 991.98px) {
-  .about-hero {
-    min-height: 100vh;
-  }
-
-  .credential-item {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .credential-item {
-    text-align: left;
-  }
-}
-/*Screen size adjustments specific to about page */
-@media (max-width: 991.98px) {
-  .about-hero {
-    min-height: 100vh;
-  }
-
-  .credential-item {
-    margin-bottom: 1rem;
-  }
-}
-/*About page Credential items styling */
-.credential-item {
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.credential-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/*About Adjustments for light button */
-.btn-light.hero-button {
-  background-color: #fff;
-  color: #212529;
-}
-
-.btn-light.hero-button:hover {
-  background-color: #f8f9fa;
-  color: #212529;
-}
-
-@media (max-width: 767.98px) {
-  .credential-item {
-    text-align: left;
-  }
-}
-/*About Page Experience and Skills Section*/
+/* Skills & Experience */
 .skills-experience {
   background-color: #f2f2f2;
   padding: 60px 20px;
   color: #000;
 }
+
 .skills-experience .container {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
+
 .skills-experience .section-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -163,12 +103,14 @@ nav ul li {
   font-weight: bold;
   line-height: 1.5;
 }
+
 .skills-experience .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
+
 .skills-experience .card {
   background-color: #ffffff;
   border-left: 6px solid var(--gold);
@@ -176,18 +118,21 @@ nav ul li {
   padding: 30px 25px;
   flex: 1 1 300px;
   max-width: 350px;
-  transition: transform 0.3 ease;
+  transition: transform 0.3s ease;
   text-align: left;
 }
+
 .skills-experience .card:hover {
   transform: translateY(-5px);
   border-left-color: var(--complimentary);
 }
+
 .skills-experience .card h3 {
   color: var(--dark);
   margin-bottom: 15px;
   font-size: 1rem;
 }
+
 .skills-experience .card ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -195,10 +140,12 @@ nav ul li {
   line-height: 1.6;
   margin: 0;
 }
+
 .skills-experience .card ul li {
   margin-bottom: 10px;
 }
-/* ─── Footer ──────────────────────────────────────── */
+
+/* Footer */
 footer {
   background-color: var(--dark) !important;
 }
@@ -243,4 +190,20 @@ footer h4 {
   background-color: var(--gold) !important;
   color: var(--dark) !important;
   transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .about-hero {
+    min-height: 100vh;
+  }
+  .credential-item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .credential-item {
+    text-align: left;
+  }
 }

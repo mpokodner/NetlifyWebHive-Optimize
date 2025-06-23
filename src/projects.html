@@ -1,87 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Z8MH25QPG0"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-Z8MH25QPG0");
-    </script>
-
     <meta charset="UTF-8" />
-    <meta
-      name="keywords"
-      content="Web Development, SEO Optimization, Portfolio"
-    />
-    <meta name="author" content="Michelle Pokodner" />
-    <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Web Development and SEO Optimization Portfolio"
+      content="Showcase of web development and digital marketing projects by Michelle Pokodner."
     />
+    <meta
+      name="keywords"
+      content="web development, digital marketing, portfolio, SEO, JavaScript, Python"
+    />
+    <meta name="author" content="Michelle Pokodner" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://webhiveoptimize.com/projects" />
+    <title>Projects | WebHive Optimize</title>
+
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Fjalla One"
       rel="stylesheet"
-    />
-
-    <title>WebHive Optimize | Projects</title>
-    <link rel="canonical" href="https://webhiveoptiize.com/projects" />
-
-    <!-- Styles -->
-    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-..."
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/projects.css" />
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-KFBSMSRV"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
-    <!-- Header -->
-    <header class="container-fluid" style="background-color: #084150">
-      <nav
-        class="navbar navbar-expand-lg"
-        style="background-color: #084150; color: white"
-      >
-        <a class="navbar-brand d-flex align-items-center" href="#">
+    <header class="container-fluid bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="/src/index.html"
+        >
           <img
-            src="images/logo.png"
+            src="/images/logo.png"
             width="50"
             height="50"
             alt="WebHive Optimize Logo"
             class="me-2"
             style="border: 2px solid #b79347; border-radius: 8px"
           />
-          <span class="site-title fw-bold">WebHive Optimize | Home</span>
+          <span class="fw-bold">WebHive Optimize</span>
         </a>
         <button
           class="navbar-toggler"
@@ -91,85 +57,60 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style="color: white"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white fw-bold" href="src/index.html"
-                >Home</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="/src/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/about.html"
-                >About</a
-              >
+              <a class="nav-link" href="/src/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/services.html"
-                >Services</a
-              >
+              <a class="nav-link" href="/src/services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="#projects.html"
-                >Projects</a
-              >
+              <a class="nav-link active" href="/projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/blog.html"
-                >Blog</a
-              >
+              <a class="nav-link" href="/src/blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/faqprivace.html"
-                >FAQ & Privacy</a
-              >
+              <a class="nav-link" href="/src/faqprivace.html">FAQ & Privacy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/contact.html"
-                >Contact</a
-              >
+              <a class="nav-link" href="/src/contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
     <!-- Hero Section -->
     <section class="hero position-relative overflow-hidden">
-      <!-- Optimized image with lazy loading for better page speed -->
       <img
-        src="images/herobeforefold.png"
+        src="/images/herobeforefold.png"
         class="hero-img w-100 h-100 object-fit-cover"
-        alt="Wood background representing craftsmanship"
+        alt="Hero background image"
         loading="lazy"
       />
-
-      <!-- Overlay with proper positioning -->
       <div
         class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
       ></div>
-
-      <!-- Content container with improved responsive handling -->
       <div
-        class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3"
+        class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white px-3"
       >
         <div class="container">
-          <h1 class="mb-4 text-white fw-bold hero-title">My Work</h1>
-          <p class="lead mb-4 text-white hero-text">
-            Explore my journey through code, creativity, and innovation. Each
-            project represents a unique objective, customized and powered by
-            smart design, SEO, branding, and automation.
+          <h1 class="fw-bold hero-title">My Work</h1>
+          <p class="lead">
+            Explore custom-built projects combining smart design, automation,
+            branding, and data strategy.
           </p>
-          <a
-            class="btn btn-outline-light hero-button"
-            href="src/services.html"
-            role="button"
-            aria-label="Learn more about our services"
+          <a class="btn btn-outline-light" href="/src/services.html"
+            >Learn More</a
           >
-            Learn More
-          </a>
         </div>
       </div>
     </section>
@@ -588,11 +529,7 @@
     </div>
 
     <!-- Bootstrap JS Bundle (Required for toggle to work) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-..."
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>

@@ -1,6 +1,16 @@
+/* Root Variables */
+:root {
+  --white: #ffffff;
+  --dark: #084150;
+  --gold: #b79347;
+  --complimentary: #e5c07b;
+  --light: #f8f9fa;
+  --heading-font-family: "Fjalla One", sans-serif;
+}
+
 /* Header */
 header {
-  border: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .site-title {
@@ -10,69 +20,55 @@ header {
 }
 
 /* Navigation */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: var(--dark);
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-}
 .nav-link {
   font-weight: bold;
-  color: white;
+  color: var(--white);
+  background-color: var(--dark);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
-.navbar-toggler-icon {
-  color: white;
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: var(--gold);
+  color: var(--white);
+  border: 2px solid black;
 }
+
 .navbar-toggler:hover {
   background-color: var(--white);
   color: var(--dark);
   border: 2px solid var(--gold);
 }
 
-/* Navigation Links */
-.nav-link {
-  color: var(--white);
-  background-color: var(--dark);
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+/* Hero Section */
+.hero {
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-link:hover {
-  background-color: var(--gold);
-  color: var(--white);
-  border: 2px solid black;
-  font-weight: bold;
+.hero-title {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
-.nav-link.active {
-  background-color: var(--gold);
-  color: var(--white);
-  border: 2px solid black;
-  font-weight: bold;
+.hero-text {
+  font-size: 1.2rem;
 }
-/*Portfolio Grid CSS for Hive*/
+
+/* Hive Project Layout */
 .hive-container {
-  max-width: 1200px; /*Adjust this value to control width */
-  margin: 0 auto; /*Centers the container */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 2rem;
   border-radius: 20px;
+  background: var(--white);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  background: var(--white, #ffffff);
   transition: all 0.3s ease;
 }
 
@@ -108,6 +104,7 @@ nav ul li {
 .hive-image-column img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .view-project-btn {
@@ -115,35 +112,32 @@ nav ul li {
   color: var(--dark);
   padding: 12px 30px;
   border-radius: 50px;
-  text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s ease;
   transform: translateY(20px);
 }
 
 .hive-image-column:hover .view-project-btn {
   transform: translateY(0);
-  text-decoration: none;
 }
 
 .view-project-btn:hover {
   background: var(--gold);
   color: var(--white);
   border: 1px solid var(--dark);
-  text-decoration: none;
 }
 
 .hive-project-category {
-  display: inline-block;
   background: linear-gradient(45deg, var(--gold), var(--complimentary));
   color: var(--white);
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
 }
 
 .hive-project-title {
@@ -162,7 +156,6 @@ nav ul li {
 }
 
 .hive-project-skills {
-  flex: 1;
   background: var(--light);
   padding: 1.5rem;
   border-radius: 15px;
@@ -175,84 +168,20 @@ nav ul li {
   color: var(--dark);
   margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .hive-skills-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .hive-skill-item {
-  display: flex;
-  align-items: center;
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
   color: var(--dark);
 }
 
-.hive-skill-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 12px;
-  color: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*Responsive Design*/
-@media (max-width: 768px) {
-  .hive-container {
-    max-width: 95%;
-    padding: 1.5rem;
-    margin: 0 auto;
-  }
-
-  .hive-project-card {
-    margin: 0 15px;
-  }
-
-  .view-project-button {
-    padding: 8px 16px;
-  }
-
-  .hive-image-column img {
-    max-height: 200px;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 576px) {
-  .hive-container {
-    max-width: 100%;
-    padding: 1rem;
-    margin: 0.5rem;
-    border-radius: 15px;
-  }
-
-  .hive-card-body {
-    padding: 0.5rem;
-  }
-
-  .hive-card-title {
-    font-size: 1.25rem;
-  }
-
-  .hive-card-description {
-    font-size: 1.25rem;
-  }
-}
-
-.hive-project-details {
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.hive-project-skills {
-  order: -1;
-}
-
-/*Animation for Hive Page Portfolio Grid*/
+/* Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -266,58 +195,29 @@ nav ul li {
   }
 }
 
-.fade-in:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.fade-in:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.fade-in:nth-child(4) {
-  animation-delay: 0.3s;
-}
-/* ─── Footer ──────────────────────────────────────── */
-footer {
-  background-color: var(--dark) !important;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hive-container {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+
+  .hive-image-column img {
+    max-height: 200px;
+  }
+
+  .view-project-btn {
+    padding: 8px 16px;
+  }
 }
 
-footer h4 {
-  font-family: var(--heading-font-family);
-  color: var(--white);
-  margin-bottom: 1rem;
-}
+@media (max-width: 576px) {
+  .hive-container {
+    padding: 1rem;
+  }
 
-.email-link {
-  color: var(--white) !important;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.email-link:hover {
-  color: var(--gold) !important;
-}
-
-.social-links a {
-  color: var(--white);
-  font-size: 1.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-links a:hover {
-  color: var(--gold);
-  transform: translateY(-2px);
-}
-
-.btn-branding {
-  background-color: var(--white) !important;
-  color: var(--dark) !important;
-  border: 2px solid var(--gold) !important;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.btn-branding:hover {
-  background-color: var(--gold) !important;
-  color: var(--dark) !important;
-  transform: translateY(-2px);
+  .hive-project-title,
+  .hive-project-description {
+    font-size: 1.25rem;
+  }
 }

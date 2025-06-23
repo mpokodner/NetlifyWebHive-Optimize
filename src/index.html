@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag Manager & Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-Z8MH25QPG0"
@@ -16,38 +16,39 @@
     </script>
 
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Development and SEO Optimization Portfolio"
+    />
     <meta
       name="keywords"
       content="Web Development, SEO Optimization, Portfolio"
     />
     <meta name="author" content="Michelle Pokodner" />
     <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Web Development and SEO Optimization Portfolio"
+    <link rel="canonical" href="https://webhiveoptiize.com/" />
+
+    <title>WebHive Optimize</title>
+
+    <!-- Fonts and Icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
+      href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fjalla One"
-      rel="stylesheet"
-    />
-
-    <title>WebHive Optimize</title>
-    <link rel="canonical" href="https://webhiveoptiize.com/" />
 
     <!-- Styles -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-..."
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/index.css" />
@@ -63,142 +64,115 @@
         style="display: none; visibility: hidden"
       ></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Header -->
-    <header class="container-fluid" style="background-color: #084150">
-      <nav
-        class="navbar navbar-expand-lg"
-        style="background-color: #084150; color: white"
-      >
+    <header class="container-fluid bg-dark border border-black">
+      <nav class="navbar navbar-expand-lg text-white">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img
             src="images/logo.png"
             width="50"
             height="50"
             alt="WebHive Optimize Logo"
-            class="me-2"
-            style="border: 2px solid #b79347; border-radius: 8px"
+            class="me-2 rounded border border-2 border-warning"
           />
-          <span class="site-title fw-bold">WebHive Optimize | Home</span>
+          <span class="site-title fw-bold text-white"
+            >WebHive Optimize | Home</span
+          >
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler text-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style="color: white"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white fw-bold" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/about.html"
-                >About</a
-              >
+              <a class="nav-link" href="src/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/services.html"
-                >Services</a
-              >
+              <a class="nav-link" href="src/services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/projects.html"
-                >Projects</a
-              >
+              <a class="nav-link" href="src/projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/blog.html"
-                >Blog</a
-              >
+              <a class="nav-link" href="src/blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/faqprivace.html"
-                >FAQ & Privacy</a
-              >
+              <a class="nav-link" href="src/faqprivace.html">FAQ & Privacy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="src/contact.html"
-                >Contact</a
-              >
+              <a class="nav-link" href="src/contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <!-- Hero Section -->
+
     <!-- Hero Section -->
     <section class="hero-bg position-relative">
       <img
         src="/images/herobeforefold.png"
-        alt="Wood background representing craftsmanship"
+        alt="Wood background"
         class="img-fluid w-100 h-100"
         loading="lazy"
       />
       <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
-      <div class="container position-relative z-2 text-white">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 col-xl-8 text-center">
-            <h1 class="hero-title">Build Your Hive • Optimize • Connect</h1>
-            <h2 class="hero-text mt-3">
-              Custom Websites That Convert—Powered by Strategy, Code, and
-              Automation
-            </h2>
-            <a href="#services" class="btn btn-primary hero-button mt-4"
-              >Explore Services</a
-            >
-          </div>
-        </div>
+      <div class="container position-relative z-2 text-white text-center">
+        <h1 class="hero-title">Build Your Hive • Optimize • Connect</h1>
+        <h2 class="hero-text mt-3">
+          Custom Websites That Convert—Powered by Strategy, Code, and Automation
+        </h2>
+        <a href="#services" class="btn btn-primary hero-button mt-4"
+          >Explore Services</a
+        >
       </div>
     </section>
 
-    <!-- Core Values Section -->
-    <section class="core-values">
+    <!-- Core Values -->
+    <section class="core-values py-5 bg-light bg-gradient">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">Core Values</h2>
-          </div>
-        </div>
+        <h2 class="section-title text-center mb-5">Core Values</h2>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="value-card">
+          <div class="col-lg-4 col-md-6">
+            <div class="value-card text-center">
               <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
               <h3 class="value-title">Innovation</h3>
               <p class="value-description">
                 I leverage cutting-edge technologies and creative solutions to
                 solve complex problems, using clean code and modern development
-                practices to build websites that stand out and perform
-                exceptionally.
+                practices to build high-performance websites.
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="value-card">
+          <div class="col-lg-4 col-md-6">
+            <div class="value-card text-center">
               <div class="value-icon"><i class="fas fa-users"></i></div>
               <h3 class="value-title">Collaboration</h3>
               <p class="value-description">
-                I work closely with clients to understand their unique needs,
-                combining SEO best practices with strategic visual design to
-                create meaningful connections between businesses and their
-                customers.
+                I work closely with clients to understand their needs, combining
+                SEO best practices with strategic visual design to build strong
+                connections.
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-12">
-            <div class="value-card">
+          <div class="col-lg-4">
+            <div class="value-card text-center">
               <div class="value-icon"><i class="fas fa-chart-line"></i></div>
               <h3 class="value-title">Growth</h3>
               <p class="value-description">
-                I focus on scalable solutions that help small businesses thrive
-                online, using data-driven optimization and user-centered design
-                to drive measurable results and sustainable success.
+                I create scalable solutions to help small businesses grow online
+                through data-driven optimization and user-centered design.
               </p>
             </div>
           </div>
@@ -206,88 +180,65 @@
       </div>
     </section>
 
-    <!-- ◼︎ CTA SECTION — Wood background + honey overlay -->
+    <!-- CTA Section -->
     <section class="cta-bg position-relative d-flex align-items-center">
-      <!-- background image -->
       <img
         src="/images/cta-wood.png"
-        alt="Natural wood texture background"
+        alt="Natural wood background"
         class="img-fluid w-100 h-100"
         loading="lazy"
       />
-      <!-- translucent honey overlay -->
       <div
         class="cta-overlay position-absolute top-0 start-0 w-100 h-100"
       ></div>
-
-      <!-- CTA content -->
       <div class="container position-relative z-2 text-center text-white py-4">
         <h2 class="cta-title mb-3">Ready to Elevate Your Web Presence?</h2>
         <p class="cta-subtitle mb-4">
           Explore my work or connect with me to get started.
         </p>
-
         <div class="d-flex justify-content-center gap-3 flex-wrap">
           <a href="src/projects.html" class="cta-btn btn">View My Work</a>
-          <a href="src.contact.html" class="cta-btn btn btn-outline-light"
+          <a href="src/contact.html" class="cta-btn btn btn-outline-light"
             >Contact&nbsp;Me</a
           >
         </div>
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
+    <!-- Testimonials -->
+    <section class="testimonials py-5 bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">What Clients Say</h2>
-          </div>
-        </div>
+        <h2 class="section-title text-center mb-5">What Clients Say</h2>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 col-12">
+          <!-- Reuse testimonial structure -->
+          <div class="col-lg-4 col-md-6">
             <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
-              </div>
+              <div class="testimonial-stars">★★★★★</div>
               <p class="testimonial-quote">
-                Michelle transformed our online presence completely. Her
-                attention to SEO detail and clean code structure helped us rank
-                higher on Google and attract more customers than ever before.
+                Michelle transformed our online presence completely... helped us
+                rank higher on Google and attract more customers.
               </p>
               <div class="testimonial-author">Sarah Johnson</div>
               <div class="testimonial-role">Owner, Local Bakery</div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-12">
+          <div class="col-lg-4 col-md-6">
             <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
-              </div>
+              <div class="testimonial-stars">★★★★★</div>
               <p class="testimonial-quote">
-                Working with Michelle was a game-changer. She didn't just build
-                us a website — she created a digital strategy that connects with
-                our customers and drives real results.
+                Michelle created a digital strategy that connects with our
+                customers and drives real results.
               </p>
               <div class="testimonial-author">Mike Chen</div>
               <div class="testimonial-role">Founder, Tech Startup</div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-12">
+          <div class="col-lg-4">
             <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
-              </div>
+              <div class="testimonial-stars">★★★★★</div>
               <p class="testimonial-quote">
-                The collaboration process was seamless. Michelle understood our
-                vision and delivered a website that perfectly represents our
-                brand while being incredibly user-friendly.
+                Michelle delivered a website that perfectly represents our brand
+                while being incredibly user-friendly.
               </p>
               <div class="testimonial-author">Lisa Rodriguez</div>
               <div class="testimonial-role">Marketing Director</div>
@@ -298,61 +249,36 @@
     </section>
 
     <!-- Footer -->
-    <footer
-      class="container-fluid py-5 text-center"
-      style="background-color: #084150; width: 100%"
-    >
+    <footer class="container-fluid py-5 text-center bg-dark text-white">
       <div class="container">
-        <div class="row justify-content-center mb-4">
-          <div class="col-12">
-            <h4 class="text-white">Let's Work Together!</h4>
-          </div>
+        <h4 class="mb-3">Let's Work Together!</h4>
+        <a href="/src/contact.html" class="btn btn-branding mb-3">Contact Me</a>
+        <div class="mb-3">
+          <a href="mailto:mpokodner@gmail.com" class="email-link"
+            >mpokodner@gmail.com</a
+          >
         </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-auto">
-            <a
-              href="/src/contact.html"
-              target="_blank"
-              class="btn btn-branding border-dark fw-bold"
-              style="background-color: white; color: black"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-auto">
-            <a href="mailto:mpokodner@gmail.com" class="email-link text-white"
-              >mpokodner@gmail.com</a
-            >
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-auto social-links d-flex gap-4">
-            <a
-              href="https://github.com/mpokodner"
-              target="_blank"
-              aria-label="GitHub Profile"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
-              target="_blank"
-              aria-label="LinkedIn Profile"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
+        <div class="social-links d-flex justify-content-center gap-4">
+          <a
+            href="https://github.com/mpokodner"
+            target="_blank"
+            aria-label="GitHub Profile"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap Bundle JS -->
+    <!-- JS -->
     <script src="/js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-..."
       crossorigin="anonymous"
     ></script>
   </body>

@@ -1,16 +1,4 @@
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* ─── Core Values Section ────────────────────────── */
-.core-values {
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-/* ─── Reset & variables ───────────────────────────── */
+/* ─── Reset & Variables ───────────────────────────── */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +16,6 @@
   --heading-font-family: "Fjalla One", sans-serif;
 }
 
-/* ─── Global type & colors ────────────────────────── */
 body {
   font-family: var(--default-font-family);
   color: var(--dark);
@@ -41,128 +28,85 @@ a {
 }
 
 /* ─── Navbar ──────────────────────────────────────── */
-/* Header */
 header {
   border: 2px solid #000;
 }
 
 .site-title {
-  color: var(--white);
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: var(--dark);
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-}
 .nav-link {
   font-weight: bold;
-  color: white;
+  color: var(--white);
+  background-color: var(--dark);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
-.navbar-toggler-icon {
-  color: white;
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: var(--gold);
+  color: var(--white);
+  border: 2px solid black;
 }
+
 .navbar-toggler:hover {
   background-color: var(--white);
   color: var(--dark);
   border: 2px solid var(--gold);
 }
 
-/* Navigation Links */
-.nav-link {
-  color: var(--white);
-  background-color: var(--dark);
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-
-.nav-link:hover {
-  background-color: var(--gold);
-  color: var(--white);
-  border: 2px solid black;
-  font-weight: bold;
-}
-
-.nav-link.active {
-  background-color: var(--gold);
-  color: var(--white);
-  border: 2px solid black;
-  font-weight: bold;
-}
-
-/* ─── Hero section ───────────────────────────────── */
+/* ─── Hero Section ───────────────────────────────── */
 .hero-bg {
   position: relative;
   min-height: 80vh;
-  overflow: hidden;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
-.hero-bg > img {
+.hero-bg img {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  top: 0;
+  left: 0;
   z-index: 0;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: var(--honey-overlay);
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
-.hero-bg .container {
-  position: relative;
-  z-index: 2;
+.hero-title,
+.hero-text {
   text-align: center;
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-title {
   font-family: var(--heading-font-family);
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: bold;
-  line-height: 1.2;
-  color: var(--white);
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-text {
   font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto 0 auto;
   line-height: 1.6;
-  color: var(--white);
-  text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
@@ -173,12 +117,10 @@ nav ul li {
   border: 2px solid var(--white);
   background-color: var(--white);
   color: var(--honey-dark);
-  transition: all 0.3s ease;
   border-radius: 4px;
-  text-decoration: none;
-  display: inline-block;
   text-shadow: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .hero-button:hover {
@@ -190,12 +132,17 @@ nav ul li {
 }
 
 /* ─── Core Values Section ────────────────────────── */
-.core-values .section-title {
+.core-values {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.section-title {
   font-family: var(--heading-font-family);
   font-size: 2.5rem;
   color: var(--dark);
-  margin-bottom: 3rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .value-card {
@@ -203,10 +150,9 @@ nav ul li {
   border-radius: 12px;
   padding: 2rem 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(183, 147, 71, 0.1);
   transition: all 0.3s ease;
   height: 100%;
-  text-align: center;
-  border: 1px solid rgba(183, 147, 71, 0.1);
 }
 
 .value-card:hover {
@@ -218,7 +164,6 @@ nav ul li {
 .value-icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--gold), var(--honey-dark));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -226,6 +171,7 @@ nav ul li {
   margin: 0 auto 1.5rem auto;
   font-size: 1.8rem;
   color: var(--white);
+  background: linear-gradient(135deg, var(--gold), var(--honey-dark));
   box-shadow: 0 4px 15px rgba(183, 147, 71, 0.3);
 }
 
@@ -233,25 +179,27 @@ nav ul li {
   font-family: var(--heading-font-family);
   font-size: 1.5rem;
   color: var(--dark);
-  margin-bottom: 1rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .value-description {
   font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
-  margin-bottom: 0;
-}
-/* ─── CTA section (wood background) ───────────────────────────── */
-.cta-bg {
-  position: relative;
-  min-height: 45vh; /* shorter than hero */
-  overflow: hidden;
 }
 
-/* reuse hero pattern */
-.cta-bg > img {
+/* ─── CTA Section ───────────────────────────── */
+.cta-bg {
+  position: relative;
+  min-height: 45vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.cta-bg img,
+.cta-overlay {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -261,10 +209,15 @@ nav ul li {
 }
 
 .cta-overlay {
-  position: absolute;
-  inset: 0;
   background: var(--honey-overlay);
   z-index: 1;
+}
+
+.cta-title,
+.cta-subtitle {
+  text-align: center;
+  color: var(--white);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .cta-title {
@@ -272,30 +225,27 @@ nav ul li {
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--white);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .cta-subtitle {
   font-size: 1.125rem;
-  line-height: 1.6;
   max-width: 650px;
   margin-inline: auto;
+  line-height: 1.6;
   color: var(--light);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Buttons inherit hero-button look, but shorter spacing */
 .cta-btn {
   padding: 0.6rem 1.4rem;
   font-size: 1rem;
   font-weight: 600;
-  border: 2px solid var(--white);
   background: var(--white);
   color: var(--honey-dark);
+  border: 2px solid var(--white);
   border-radius: 4px;
-  transition: all 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
 
 .cta-btn:hover {
@@ -310,27 +260,6 @@ nav ul li {
   color: var(--honey-dark) !important;
 }
 
-/* ─── Mobile tweaks ───────────────────────── */
-@media (max-width: 767.98px) {
-  .cta-bg {
-    min-height: auto; /* shrink naturally on phones */
-    padding-block: 3rem;
-  }
-
-  .cta-title {
-    font-size: 1.75rem;
-  }
-
-  .cta-subtitle {
-    font-size: 1rem;
-  }
-
-  .cta-btn {
-    width: 100%;
-    margin-bottom: 0.75rem;
-  }
-}
-
 /* ─── Testimonials Section ────────────────────────── */
 .testimonials {
   padding: 4rem 0;
@@ -339,7 +268,7 @@ nav ul li {
 
 .testimonial-card {
   background-color: var(--white);
-  border: 1px solid rgba(183, 147, 71, 0.15); /* subtle gold border */
+  border: 1px solid rgba(183, 147, 71, 0.15);
   border-radius: 12px;
   padding: 2rem 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -379,61 +308,9 @@ nav ul li {
   color: #777;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 767.98px) {
-  .testimonials {
-    padding: 3rem 0;
-  }
-
-  .testimonial-quote {
-    font-size: 0.95rem;
-  }
-
-  .testimonial-author {
-    font-size: 1rem;
-  }
-
-  .testimonial-card {
-    padding: 1.5rem 1rem;
-  }
-}
-
-/* Mobile responsiveness */
-@media (max-width: 767.98px) {
-  .core-values {
-    padding: 3rem 0 2rem 0;
-  }
-
-  .core-values .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .value-card {
-    margin-bottom: 2rem;
-    padding: 2rem 1rem;
-  }
-
-  .value-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
-  }
-
-  .value-title {
-    font-size: 1.3rem;
-  }
-}
-
-.section-title {
-  font-family: var(--heading-font-family);
-  font-size: 2.5rem;
-  color: var(--dark);
-  margin-bottom: 2rem;
-}
 /* ─── Footer ──────────────────────────────────────── */
 footer {
-  background-color: var(--dark) !important;
+  background-color: var(--dark);
 }
 
 footer h4 {
@@ -444,7 +321,6 @@ footer h4 {
 
 .email-link {
   color: var(--white) !important;
-  text-decoration: none;
   font-weight: 500;
 }
 
@@ -478,10 +354,68 @@ footer h4 {
   transform: translateY(-2px);
 }
 
-/* ─── Responsive adjustments ─────────────────────── */
+/* ─── Mobile Tweaks ───────────────────────── */
 @media (max-width: 767.98px) {
   .hero-bg {
     min-height: 60vh;
+  }
+
+  .cta-bg {
+    min-height: auto;
+    padding-block: 3rem;
+  }
+
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .core-values {
+    padding: 3rem 0 2rem 0;
+  }
+
+  .core-values .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .value-card {
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .value-title {
+    font-size: 1.3rem;
+  }
+
+  .testimonials {
+    padding: 3rem 0;
+  }
+
+  .testimonial-quote {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-author {
+    font-size: 1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem 1rem;
   }
 
   .section-title {
@@ -496,614 +430,3 @@ footer h4 {
     justify-content: center;
   }
 }
-
-/* CSS Variables 
-:root {
-  --gold: #b79347;
-  --light: #f2f2f2;
-  --dark: #084150;
-  --white: #ffffff;
-  --default-font-family: "Poppins", sans-serif;
-  --heading-font-family: "Fjalla One";
-  --complimentary: #ad5321;
-}
-
-
-body {
-  font-family: var(--default-font-family);
-}
-
-
-Hero container 
-.hero {
-  min-height: 80vh;
-  margin-bottom: 0;
-  z-index: 1;
-}
-
-Hero image optimization 
-.hero-img {
-  position: absolute;
-  object-position: center;
-}
-
- Hero Layer management 
-.overlay {
-  z-index: 1;
-}
-
-.hero-content {
-  z-index: 2;
-  max-width: 1320px; /* Match Bootstrap container-xxl 
-}
-
- Hero Responsive typography 
-.hero-title {
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.2;
-}
-
-.hero-text {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  line-height: 1.5;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
- Hero Button styling 
-.hero-button {
-  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
-  font-size: clamp(0.9rem, 1.25vw, 1rem);
-  font-weight: 500;
-  border-width: 2px;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-}
-
- Hero Button hover effect 
-.hero-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #fff;
-}
-
- Screen size adjustments 
-@media (max-width: 991.98px) {
-  .hero {
-    min-height: 70vh;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .hero {
-    min-height: 60vh;
-  }
-
-  .hero-content {
-    width: 100%;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .hero {
-    min-height: 50vh;
-  }
-
-  .hero-content {
-    top: 45%;
-  }
-}
-
-.hero .overlay {
-  z-index: 1;
-}
-.hero-content {
-  z-index: 2;
-}
-
-
-}
-Personal Projecs index.html 
-Fixed Image Container 
-.project-image {
-  width: 100%;
-  height: 200px; Fixed height for all images 
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--light);
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; Maintains aspect ratio while filling container 
-  object-position: center;
-  border: black solid 3px;
-}
-
-.project-item {
-  height: 100%;  Fill the column height 
-  display: flex;
-  flex-direction: column;
-}
-.project-item {
-  background: var(--white);
-  border-radius: 12px;
-  padding: 1.5rem;
-  height: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-.project-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-.project-info {
-  flex-grow: 1;  Takes up remaining space 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.project-info h3 {
-  font-family: var(--heading-font-family);
-  color: var(--dark);
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  line-height: 1.3;
-  min-height: 2.6rem; Ensures consistent title height 
-}
- Homepage Projects Button Styling
-.project-btn {
-  background-color: var(--gold);
-  border: none;
-  color: var(--white);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 0.25rem;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-.hive-project-btn:hover {
-  background-color: var(--complimentary);
-  color: var(--white);
-  text-decoration: none;
-}
-
-.btn-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-Homepage Projects Responsive adjustments
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .project-image {
-    height: 150px;
-  }
-
-  .project-info h3 {
-    font-size: 1.1rem;
-  }
-}
-About page Credential items styling 
-.credential-item {
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.credential-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-About Adjustments for light button 
-.btn-light.hero-button {
-  background-color: #fff;
-  color: #212529;
-}
-
-.btn-light.hero-button:hover {
-  background-color: #f8f9fa;
-  color: #212529;
-}
-
-@media (max-width: 767.98px) {
-  .credential-item {
-    text-align: left;
-  }
-}
-
-Portfolio Grid CSS for Hive
-.hive-container {
-  max-width: 1200px;  Adjust this value to control width 
-  margin: 0 auto;  Centers the container 
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  background: var(--white, #ffffff);
-  transition: all 0.3s ease;
-}
-
-.hive-container:hover {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
-}
-
-.hive-project-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.hive-project-image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.hive-project-card:hover .hive-project-image-overlay {
-  opacity: 1;
-}
-
-.hive-image-column img {
-  width: 100%;
-  height: auto;
-}
-
-.view-project-btn {
-  background: var(--white);
-  color: var(--dark);
-  padding: 12px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  transform: translateY(20px);
-}
-
-.hive-image-column:hover .view-project-btn {
-  transform: translateY(0);
-  text-decoration: none;
-}
-
-.view-project-btn:hover {
-  background: var(--gold);
-  color: var(--white);
-  border: 1px solid var(--dark);
-  text-decoration: none;
-}
-
-.hive-project-category {
-  display: inline-block;
-  background: linear-gradient(45deg, var(--gold), var(--complimentary));
-  color: var(--white);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-}
-
-.hive-project-title {
-  font-family: var(--heading-font-family);
-  font-size: 1.8rem;
-  color: var(--dark);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.hive-project-description {
-  color: #666;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
-
-.hive-project-skills {
-  flex: 1;
-  background: var(--light);
-  padding: 1.5rem;
-  border-radius: 15px;
-  border-left: 4px solid var(--gold);
-}
-
-.hive-skills-title {
-  font-family: var(--heading-font-family);
-  font-size: 1.1rem;
-  color: var(--dark);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.hive-skills-list {
-  list-style: none;
-}
-
-.hive-skill-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.8rem;
-  font-size: 0.9rem;
-  color: var(--dark);
-}
-
-.hive-skill-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 12px;
-  color: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-Responsive Design
-@media (max-width: 768px) {
-  .hive-container {
-    max-width: 95%;
-    padding: 1.5rem;
-    margin: 0 auto;
-  }
-
-  .hive-project-card {
-    margin: 0 15px;
-  }
-
-  .view-project-button {
-    padding: 8px 16px;
-  }
-
-  .hive-image-column img {
-    max-height: 200px;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 576px) {
-  .hive-container {
-    max-width: 100%;
-    padding: 1rem;
-    margin: 0.5rem;
-    border-radius: 15px;
-  }
-
-  .hive-card-body {
-    padding: 0.5rem;
-  }
-
-  .hive-card-title {
-    font-size: 1.25rem;
-  }
-
-  .hive-card-description {
-    font-size: 1.25rem;
-  }
-}
-
-.hive-project-details {
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.hive-project-skills {
-  order: -1;
-}
-
-Animation for Hive Page Portfolio Grid
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.fade-in:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.fade-in:nth-child(4) {
-  animation-delay: 0.3s;
-}
-
-About Page Experience and Skills Section
-.skills-experience {
-  background-color: #f2f2f2;
-  padding: 60px 20px;
-  color: #000;
-}
-.skills-experience .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-.skills-experience .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: var(--gold);
-  font-weight: bold;
-  line-height: 1.5;
-}
-.skills-experience .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.skills-experience .card {
-  background-color: #ffffff;
-  border-left: 6px solid var(--gold);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px 25px;
-  flex: 1 1 300px;
-  max-width: 350px;
-  transition: transform 0.3 ease;
-  text-align: left;
-}
-.skills-experience .card:hover {
-  transform: translateY(-5px);
-  border-left-color: var(--complimentary);
-}
-.skills-experience .card h3 {
-  color: var(--dark);
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-.skills-experience .card ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-}
-.skills-experience .card ul li {
-  margin-bottom: 10px;
-}
-   Blog Section 
-.blog {
-  padding: 60px 0;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.blog-post {
-  background-color: var(--neutral);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s;
-}
-.blog-post h5 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-  color: var(--complimentary);
-  font-family: "Fjalla One";
-}
-
-.card-body .card-title {
-  font-family: "Fjalla One";
-  color: var(--complimentary);
-  font-size: 1.6rem;
-}
-.gold-btn {
-  background-color: white;
-  color: var(--dark);
-  font-weight: bold;
-  border: 2px solid black;
-}
-
-.gold-btn:hover {
-  background-color: var(--gold);
-  color: white;
-  border: 2px solid black;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-.project-btn:hover {
-  background-color: var(--white);
-  color: var(--dark);
-  font-weight: bold;
-  border: 2px solid var(--dark);
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-Footer Stuff
-.social-links a {
-  font-size: 24px;
-  background-color: white;
-  color: black;
-  width: 60px;
-  height: 60px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 2px solid black;
-  text-decoration: none;
-}
-.fa-github {
-  font-size: 30px;
-  color: black;
-}
-.fa-linkedin-in {
-  font-size: 30px;
-  color: black;
-}
-.fa-github:hover {
-  font-size: 30px;
-  color: white;
-}
-.fa-linkedin-in:hover {
-  font-size: 30px;
-  color: white;
-}
-.social-links a {
-  background-color: white;
-}
-.social-links a:hover {
-  background-color: black;
-}
-
-footer .btn.btn-branding:hover {
-  background-color: var(--gold);
-  color: var(--white);
-  font-weight: bold;
-  border: 2px solid black;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-Nav Bar and Skills Experience Card Responsive
-nav ul {
-  flex-direction: column;
-  gap: 10px;
-}
-
-@media (max-width: 768px) {
-  .skills-experience .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-Blog Section Responsive 
-@media (max-width: 768px) {
-  .blog-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-*/
