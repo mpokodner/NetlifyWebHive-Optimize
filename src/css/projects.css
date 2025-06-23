@@ -1,16 +1,25 @@
-/* Root Variables */
+/* ─── Reset & Variables ───────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --white: #ffffff;
-  --dark: #084150;
   --gold: #b79347;
-  --complimentary: #e5c07b;
-  --light: #f8f9fa;
+  --light: #f2f2f2;
+  --dark: #084150;
+  --white: #ffffff;
+  --honey-dark: #8b6914;
+  --honey-overlay: rgba(139, 105, 20, 0.6);
+  --default-font-family: "Poppins", sans-serif;
   --heading-font-family: "Fjalla One", sans-serif;
 }
 
 /* Header */
 header {
   border-bottom: 2px solid #000;
+  background-color: var(--dark);
 }
 
 .site-title {
