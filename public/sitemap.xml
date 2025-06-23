@@ -18,12 +18,27 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://webhiveoptimize.com/thehive</loc>
+  <loc>https://webhiveoptimize.com/services</loc>
+  <lastmod>2025-06-23T14:53:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webhiveoptimize.com/projects</loc>
   <lastmod>2025-06-23T14:53:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://webhiveoptimize.com/blog</loc>
+  <lastmod>2025-06-23T14:53:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webhiveoptimize.com/faqprivacy</loc>
+  <lastmod>2025-06-23T14:53:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webhiveoptimize.com/contact</loc>
   <lastmod>2025-06-23T14:53:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>

@@ -1,0 +1,113 @@
+/* Header */
+header {
+  border: 2px solid #000;
+}
+
+.site-title {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--dark);
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+.nav-link {
+  font-weight: bold;
+  color: white;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+.navbar-toggler:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  border: 2px solid var(--gold);
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--white);
+  background-color: var(--dark);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--gold);
+  color: var(--white);
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  background-color: var(--gold);
+  color: var(--white);
+  border: 2px solid black;
+  font-weight: bold;
+}
+/* ─── Footer ──────────────────────────────────────── */
+footer {
+  background-color: var(--dark) !important;
+}
+
+footer h4 {
+  font-family: var(--heading-font-family);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.email-link {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.email-link:hover {
+  color: var(--gold) !important;
+}
+
+.social-links a {
+  color: var(--white);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.btn-branding {
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+  border: 2px solid var(--gold) !important;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-branding:hover {
+  background-color: var(--gold) !important;
+  color: var(--dark) !important;
+  transform: translateY(-2px);
+}

@@ -4,22 +4,43 @@
   padding: 0;
 }
 
-/* CSS Variables */
+/* ─── Core Values Section ────────────────────────── */
+.core-values {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* ─── Reset & variables ───────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --gold: #b79347;
   --light: #f2f2f2;
   --dark: #084150;
   --white: #ffffff;
+  --honey-dark: #8b6914;
+  --honey-overlay: rgba(139, 105, 20, 0.6);
   --default-font-family: "Poppins", sans-serif;
-  --heading-font-family: "Fjalla One";
-  --complimentary: #ad5321;
+  --heading-font-family: "Fjalla One", sans-serif;
 }
 
-/* Body */
+/* ─── Global type & colors ────────────────────────── */
 body {
   font-family: var(--default-font-family);
+  color: var(--dark);
+  background-color: var(--white);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ─── Navbar ──────────────────────────────────────── */
 /* Header */
 header {
   border: 2px solid #000;
@@ -81,30 +102,442 @@ nav ul li {
   font-weight: bold;
 }
 
-/* Hero container */
+.nav-link.active {
+  background-color: var(--gold);
+  color: var(--white);
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+/* ─── Hero section ───────────────────────────────── */
+.hero-bg {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--honey-overlay);
+  z-index: 1;
+}
+
+.hero-bg .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: 2px solid var(--white);
+  background-color: var(--white);
+  color: var(--honey-dark);
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  text-shadow: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-button:hover {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ─── Core Values Section ────────────────────────── */
+.core-values .section-title {
+  font-family: var(--heading-font-family);
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.value-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+  border: 1px solid rgba(183, 147, 71, 0.1);
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: var(--gold);
+}
+
+.value-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--gold), var(--honey-dark));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.8rem;
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(183, 147, 71, 0.3);
+}
+
+.value-title {
+  font-family: var(--heading-font-family);
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.value-description {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+/* ─── CTA section (wood background) ───────────────────────────── */
+.cta-bg {
+  position: relative;
+  min-height: 45vh; /* shorter than hero */
+  overflow: hidden;
+}
+
+/* reuse hero pattern */
+.cta-bg > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--honey-overlay);
+  z-index: 1;
+}
+
+.cta-title {
+  font-family: var(--heading-font-family);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.cta-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-inline: auto;
+  color: var(--light);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons inherit hero-button look, but shorter spacing */
+.cta-btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--white);
+  background: var(--white);
+  color: var(--honey-dark);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.cta-btn:hover {
+  background: transparent;
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.btn-outline-light:hover {
+  background: var(--white);
+  color: var(--honey-dark) !important;
+}
+
+/* ─── Mobile tweaks ───────────────────────── */
+@media (max-width: 767.98px) {
+  .cta-bg {
+    min-height: auto; /* shrink naturally on phones */
+    padding-block: 3rem;
+  }
+
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* ─── Testimonials Section ────────────────────────── */
+.testimonials {
+  padding: 4rem 0;
+  background-color: var(--light);
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  border: 1px solid rgba(183, 147, 71, 0.15); /* subtle gold border */
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--gold);
+}
+
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .testimonials {
+    padding: 3rem 0;
+  }
+
+  .testimonial-quote {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-author {
+    font-size: 1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767.98px) {
+  .core-values {
+    padding: 3rem 0 2rem 0;
+  }
+
+  .core-values .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .value-card {
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .value-title {
+    font-size: 1.3rem;
+  }
+}
+
+.section-title {
+  font-family: var(--heading-font-family);
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+/* ─── Footer ──────────────────────────────────────── */
+footer {
+  background-color: var(--dark) !important;
+}
+
+footer h4 {
+  font-family: var(--heading-font-family);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.email-link {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.email-link:hover {
+  color: var(--gold) !important;
+}
+
+.social-links a {
+  color: var(--white);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.btn-branding {
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+  border: 2px solid var(--gold) !important;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-branding:hover {
+  background-color: var(--gold) !important;
+  color: var(--dark) !important;
+  transform: translateY(-2px);
+}
+
+/* ─── Responsive adjustments ─────────────────────── */
+@media (max-width: 767.98px) {
+  .hero-bg {
+    min-height: 60vh;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+}
+
+/* CSS Variables 
+:root {
+  --gold: #b79347;
+  --light: #f2f2f2;
+  --dark: #084150;
+  --white: #ffffff;
+  --default-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Fjalla One";
+  --complimentary: #ad5321;
+}
+
+
+body {
+  font-family: var(--default-font-family);
+}
+
+
+Hero container 
 .hero {
   min-height: 80vh;
   margin-bottom: 0;
   z-index: 1;
 }
 
-/* Hero image optimization */
+Hero image optimization 
 .hero-img {
   position: absolute;
   object-position: center;
 }
 
-/* Hero Layer management */
+ Hero Layer management 
 .overlay {
   z-index: 1;
 }
 
 .hero-content {
   z-index: 2;
-  max-width: 1320px; /* Match Bootstrap container-xxl */
+  max-width: 1320px; /* Match Bootstrap container-xxl 
 }
 
-/* Hero Responsive typography */
+ Hero Responsive typography 
 .hero-title {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.2;
@@ -118,7 +551,7 @@ nav ul li {
   margin-right: auto;
 }
 
-/* Hero Button styling */
+ Hero Button styling 
 .hero-button {
   padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
   font-size: clamp(0.9rem, 1.25vw, 1rem);
@@ -129,7 +562,7 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
-/* Hero Button hover effect */
+ Hero Button hover effect 
 .hero-button:hover {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -138,7 +571,7 @@ nav ul li {
   border: 2px solid #fff;
 }
 
-/* Screen size adjustments */
+ Screen size adjustments 
 @media (max-width: 991.98px) {
   .hero {
     min-height: 70vh;
@@ -172,12 +605,12 @@ nav ul li {
   z-index: 2;
 }
 
-/* Hero compatibility with existing classes */
+Hero compatibility with existing classes 
 .about-hero {
-  min-height: 90vh; /* Slightly taller than standard hero */
+  min-height: 90vh; Slightly taller than standard hero 
 }
 
-/* About Page Credential items styling */
+ About Page Credential items styling 
 .credential-item {
   transition: all 0.3s ease;
   height: 100%;
@@ -188,7 +621,7 @@ nav ul li {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Adjustments for light button */
+ Adjustments for light button 
 .btn-light.hero-button {
   background-color: #fff;
   color: #212529;
@@ -199,7 +632,7 @@ nav ul li {
   color: #212529;
 }
 
-/* About page Screen size adjustments specific to about page */
+About page Screen size adjustments specific to about page 
 @media (max-width: 991.98px) {
   .about-hero {
     min-height: 100vh;
@@ -215,7 +648,7 @@ nav ul li {
     text-align: left;
   }
 }
-/* Screen size adjustments specific to about page */
+Screen size adjustments specific to about page 
 @media (max-width: 991.98px) {
   .about-hero {
     min-height: 100vh;
@@ -225,11 +658,11 @@ nav ul li {
     margin-bottom: 1rem;
   }
 }
-/* Personal Projecs index.html */
-/* Fixed Image Container */
+Personal Projecs index.html 
+Fixed Image Container 
 .project-image {
   width: 100%;
-  height: 200px; /* Fixed height for all images */
+  height: 200px; Fixed height for all images 
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -242,13 +675,13 @@ nav ul li {
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintains aspect ratio while filling container */
+  object-fit: cover; Maintains aspect ratio while filling container 
   object-position: center;
   border: black solid 3px;
 }
 
 .project-item {
-  height: 100%; /* Fill the column height */
+  height: 100%;  Fill the column height 
   display: flex;
   flex-direction: column;
 }
@@ -267,7 +700,7 @@ nav ul li {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .project-info {
-  flex-grow: 1; /* Takes up remaining space */
+  flex-grow: 1;  Takes up remaining space 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -278,9 +711,9 @@ nav ul li {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   line-height: 1.3;
-  min-height: 2.6rem; /* Ensures consistent title height */
+  min-height: 2.6rem; Ensures consistent title height 
 }
-/* Homepage Projects Button Styling */
+ Homepage Projects Button Styling
 .project-btn {
   background-color: var(--gold);
   border: none;
@@ -306,7 +739,7 @@ nav ul li {
   justify-content: center;
 }
 
-/*Homepage Projects Responsive adjustments */
+Homepage Projects Responsive adjustments
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
@@ -320,7 +753,7 @@ nav ul li {
     font-size: 1.1rem;
   }
 }
-/*About page Credential items styling */
+About page Credential items styling 
 .credential-item {
   transition: all 0.3s ease;
   height: 100%;
@@ -331,7 +764,7 @@ nav ul li {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* About Adjustments for light button */
+About Adjustments for light button 
 .btn-light.hero-button {
   background-color: #fff;
   color: #212529;
@@ -348,10 +781,10 @@ nav ul li {
   }
 }
 
-/*Portfolio Grid CSS for Hive*/
+Portfolio Grid CSS for Hive
 .hive-container {
-  max-width: 1200px; /* Adjust this value to control width */
-  margin: 0 auto; /* Centers the container */
+  max-width: 1200px;  Adjust this value to control width 
+  margin: 0 auto;  Centers the container 
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -483,7 +916,7 @@ nav ul li {
   justify-content: center;
 }
 
-/* Responsive Design */
+Responsive Design
 @media (max-width: 768px) {
   .hive-container {
     max-width: 95%;
@@ -535,7 +968,7 @@ nav ul li {
   order: -1;
 }
 
-/* Animation for Hive Page Portfolio Grid */
+Animation for Hive Page Portfolio Grid
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -559,7 +992,7 @@ nav ul li {
   animation-delay: 0.3s;
 }
 
-/*About Page Experience and Skills Section*/
+About Page Experience and Skills Section
 .skills-experience {
   background-color: #f2f2f2;
   padding: 60px 20px;
@@ -612,7 +1045,7 @@ nav ul li {
 .skills-experience .card ul li {
   margin-bottom: 10px;
 }
-/* Blog Section */
+   Blog Section 
 .blog {
   padding: 60px 0;
 }
@@ -661,7 +1094,7 @@ nav ul li {
   border: 2px solid var(--dark);
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
-/*Footer Stuff*/
+Footer Stuff
 .social-links a {
   font-size: 24px;
   background-color: white;
@@ -705,7 +1138,7 @@ footer .btn.btn-branding:hover {
   border: 2px solid black;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
-/*Nav Bar and Skills Experience Card Responsive */
+Nav Bar and Skills Experience Card Responsive
 nav ul {
   flex-direction: column;
   gap: 10px;
@@ -718,9 +1151,10 @@ nav ul {
   }
 }
 
-/* Blog Section Responsive */
+Blog Section Responsive 
 @media (max-width: 768px) {
   .blog-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
+*/
