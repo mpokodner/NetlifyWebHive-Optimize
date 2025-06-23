@@ -65,6 +65,216 @@ nav ul li {
   border: 2px solid black;
   font-weight: bold;
 }
+/*Portfolio Grid CSS for Hive*/
+.hive-container {
+  max-width: 1200px; /*Adjust this value to control width */
+  margin: 0 auto; /*Centers the container */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: var(--white, #ffffff);
+  transition: all 0.3s ease;
+}
+
+.hive-container:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.hive-project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hive-project-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hive-project-card:hover .hive-project-image-overlay {
+  opacity: 1;
+}
+
+.hive-image-column img {
+  width: 100%;
+  height: auto;
+}
+
+.view-project-btn {
+  background: var(--white);
+  color: var(--dark);
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+}
+
+.hive-image-column:hover .view-project-btn {
+  transform: translateY(0);
+  text-decoration: none;
+}
+
+.view-project-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+  border: 1px solid var(--dark);
+  text-decoration: none;
+}
+
+.hive-project-category {
+  display: inline-block;
+  background: linear-gradient(45deg, var(--gold), var(--complimentary));
+  color: var(--white);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.hive-project-title {
+  font-family: var(--heading-font-family);
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hive-project-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.hive-project-skills {
+  flex: 1;
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 4px solid var(--gold);
+}
+
+.hive-skills-title {
+  font-family: var(--heading-font-family);
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hive-skills-list {
+  list-style: none;
+}
+
+.hive-skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+.hive-skill-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Responsive Design*/
+@media (max-width: 768px) {
+  .hive-container {
+    max-width: 95%;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .hive-project-card {
+    margin: 0 15px;
+  }
+
+  .view-project-button {
+    padding: 8px 16px;
+  }
+
+  .hive-image-column img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .hive-container {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+  }
+
+  .hive-card-body {
+    padding: 0.5rem;
+  }
+
+  .hive-card-title {
+    font-size: 1.25rem;
+  }
+
+  .hive-card-description {
+    font-size: 1.25rem;
+  }
+}
+
+.hive-project-details {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hive-project-skills {
+  order: -1;
+}
+
+/*Animation for Hive Page Portfolio Grid*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.fade-in:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.fade-in:nth-child(4) {
+  animation-delay: 0.3s;
+}
 /* ─── Footer ──────────────────────────────────────── */
 footer {
   background-color: var(--dark) !important;

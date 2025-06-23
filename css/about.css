@@ -65,6 +65,139 @@ nav ul li {
   border: 2px solid black;
   font-weight: bold;
 }
+/*Hero compatibility with existing classes */
+.about-hero {
+  min-height: 90vh;
+}
+
+/* About Page Credential items styling */
+.credential-item {
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.credential-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments for light button */
+.btn-light.hero-button {
+  background-color: #fff;
+  color: #212529;
+}
+
+.btn-light.hero-button:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/*About page Screen size adjustments specific to about page */
+@media (max-width: 991.98px) {
+  .about-hero {
+    min-height: 100vh;
+  }
+
+  .credential-item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .credential-item {
+    text-align: left;
+  }
+}
+/*Screen size adjustments specific to about page */
+@media (max-width: 991.98px) {
+  .about-hero {
+    min-height: 100vh;
+  }
+
+  .credential-item {
+    margin-bottom: 1rem;
+  }
+}
+/*About page Credential items styling */
+.credential-item {
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.credential-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*About Adjustments for light button */
+.btn-light.hero-button {
+  background-color: #fff;
+  color: #212529;
+}
+
+.btn-light.hero-button:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+@media (max-width: 767.98px) {
+  .credential-item {
+    text-align: left;
+  }
+}
+/*About Page Experience and Skills Section*/
+.skills-experience {
+  background-color: #f2f2f2;
+  padding: 60px 20px;
+  color: #000;
+}
+.skills-experience .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.skills-experience .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--gold);
+  font-weight: bold;
+  line-height: 1.5;
+}
+.skills-experience .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.skills-experience .card {
+  background-color: #ffffff;
+  border-left: 6px solid var(--gold);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px 25px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  transition: transform 0.3 ease;
+  text-align: left;
+}
+.skills-experience .card:hover {
+  transform: translateY(-5px);
+  border-left-color: var(--complimentary);
+}
+.skills-experience .card h3 {
+  color: var(--dark);
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.skills-experience .card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+.skills-experience .card ul li {
+  margin-bottom: 10px;
+}
 /* ─── Footer ──────────────────────────────────────── */
 footer {
   background-color: var(--dark) !important;

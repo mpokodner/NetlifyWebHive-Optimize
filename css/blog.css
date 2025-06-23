@@ -65,6 +65,61 @@ nav ul li {
   border: 2px solid black;
   font-weight: bold;
 }
+/*Blog Section*/
+.blog {
+  padding: 60px 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.blog-post {
+  background-color: var(--neutral);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.blog-post h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--complimentary);
+  font-family: "Fjalla One";
+}
+
+.card-body .card-title {
+  font-family: "Fjalla One";
+  color: var(--complimentary);
+  font-size: 1.6rem;
+}
+.gold-btn {
+  background-color: white;
+  color: var(--dark);
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.gold-btn:hover {
+  background-color: var(--gold);
+  color: white;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.project-btn:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  font-weight: bold;
+  border: 2px solid var(--dark);
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+/*Blog Section Responsive*/
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
 /* ─── Footer ──────────────────────────────────────── */
 footer {
   background-color: var(--dark) !important;
