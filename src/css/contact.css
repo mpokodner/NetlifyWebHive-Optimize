@@ -23,24 +23,6 @@ body {
 }
 
 /* Hero Section */
-.contact-hero {
-  min-height: 60vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, var(--honey-dark) 0%, var(--gold) 100%);
-}
-
-.contact-hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--honey-overlay);
-  z-index: 1;
-}
 
 .hero-content {
   position: relative;
@@ -383,6 +365,35 @@ textarea.form-control {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* ─── Hero Section ───────────────────────────────── */
+.hero-bg {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--honey-overlay);
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /* Badge styling */
