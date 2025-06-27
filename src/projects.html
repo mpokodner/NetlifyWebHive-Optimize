@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Showcase of web development and digital marketing projects by Michelle Pokodner."
+      content="Showcase of web development and digital marketing projects by Michelle Pokodner featuring React apps, JavaScript projects, Python data visualization, SEO audits, and responsive web design."
     />
     <meta
       name="keywords"
-      content="web development, digital marketing, portfolio, SEO, JavaScript, Python"
+      content="web development portfolio, React projects, JavaScript applications, Python data visualization, SEO audit, responsive web design, API integration, digital marketing projects, weather app, world clock, portfolio website"
     />
     <meta name="author" content="Michelle Pokodner" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://webhiveoptimize.com/projects" />
-    <title>Projects | WebHive Optimize</title>
+    <title>
+      Web Development & Digital Marketing Projects | WebHive Optimize
+    </title>
 
+    <!-- Fonts and Icons -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Fjalla+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap & Custom Styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -33,8 +42,7 @@
 
   <body>
     <!-- Header -->
-    <!-- Header -->
-    <header class="container-fluid border border-2 border-black">
+    <header class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark px-3">
         <a class="navbar-brand d-flex align-items-center" href="/">
           <img
@@ -42,7 +50,7 @@
             width="50"
             height="50"
             alt="WebHive Optimize Logo"
-            class="me-2 rounded border border-2 border-warning"
+            class="me-2 rounded"
           />
           <span class="site-title fw-bold">WebHive Optimize</span>
         </a>
@@ -67,7 +75,7 @@
               <a class="nav-link" href="/services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects">Projects</a>
+              <a class="nav-link active" href="/projects">Projects</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
             <li class="nav-item">
@@ -81,501 +89,695 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero position-relative">
-      <img
-        src="/images/cta-wood.png"
-        class="hero-img"
-        alt="Hero background image"
-        loading="lazy"
-      />
-      <div class="overlay position-absolute"></div>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <img
+          src="/images/cta-wood.png"
+          class="hero-img"
+          alt="Portfolio showcase background"
+          loading="lazy"
+        />
+        <div class="overlay"></div>
 
-      <div class="hero-content text-center text-white">
+        <div class="hero-content text-center text-white">
+          <div class="container">
+            <span class="badge bg-light text-dark mb-3 fw-bold">
+              Portfolio Showcase
+            </span>
+            <h1 class="hero-title fw-bold">My Work</h1>
+            <p class="hero-subtitle lead">
+              Explore custom-built projects combining smart design, automation,
+              branding, and data strategy to deliver exceptional digital
+              experiences.
+            </p>
+            <a class="hero-btn btn" href="/services">Explore Services</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="portfolio-section py-5">
         <div class="container">
-          <h1 class="hero-title fw-bold">My Work</h1>
-          <p class="lead">
-            Explore custom-built projects combining smart design, automation,
-            branding, and data strategy.
-          </p>
-          <a class="services-btn btn" href="/services">Explore Services</a>
-        </div>
-      </div>
-    </section>
+          <div class="text-center mb-5">
+            <h2 class="section-heading fw-bold mb-3">Featured Projects</h2>
+            <p class="lead text-muted">
+              A collection of web development and digital marketing projects
+              showcasing modern technologies and strategic thinking.
+            </p>
+          </div>
 
-    <!-- Portfolio Section -->
-    <!--Project 1-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Web Development</div>
-              <h4 class="hive-project-title">Poetry AI and API Integration</h4>
-              <p class="hive-project-description">Insert description here</p>
-            </div>
-
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">HTML</li>
-                    <li class="hive-skill-item">CSS</li>
-                    <li class="hive-skill-item">JavaScript DOM Manipulation</li>
-                    <li class="hive-skill-item">API Integration</li>
-                    <li class="hive-skill-item">AI Prompting</li>
-                    <li class="hive-skill-item">UI/UX Design</li>
-                  </ul>
-                </div>
+          <!-- Project Grid -->
+          <div class="projects-grid">
+            <!-- Project 1: React E-commerce App -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">React Development</span>
+                <h3 class="project-title">E-commerce React Application</h3>
+                <p class="project-description">
+                  Full-stack React e-commerce application with modern shopping
+                  cart functionality, responsive design, and seamless user
+                  experience. Features include product catalog, shopping cart
+                  management, checkout process, and mobile-optimized interface
+                  for enhanced customer engagement and conversion rates.
+                </p>
               </div>
 
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/PoemGenerator_Thumbnail.png"
-                  alt="Poetry AI and API Integration"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                    <a
-                      href="https://www.shecodes.io/cohorts/2521/projects/2603943?_gl=1*e2s83e*_gcl_au*NDAxODI1MDY4LjE3NDczOTExNjAuMTc1MTQwMzIxOC4xNzQ4MzYwNTY0LjE3NDgzNjA1NjQ."
-                      class="view-project-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">React.js</span>
+                      <span class="skill-tag">JavaScript ES6+</span>
+                      <span class="skill-tag">Component Architecture</span>
+                      <span class="skill-tag">State Management</span>
+                      <span class="skill-tag">Responsive Design</span>
+                      <span class="skill-tag">Modern CSS</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/react-ecommerce.png"
+                      alt="React E-commerce Application Screenshot"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="#"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                      View Project
+                        <i class="bi bi-eye me-2"></i>View Project
                       </a>
-                  </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Project 2-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Web Development</div>
-              <h4 class="hive-project-title">
-                Travel Website: Responsive Web Design
-              </h4>
-              <p class="hive-project-description">Insert description here</p>
-            </div>
 
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">HTML Table & Embeds</li>
-                    <li class="hive-skill-item">CSS Filters</li>
-                    <li class="hive-skill-item">Responsive Grids</li>
-                    <li class="hive-skill-item">Technical and On-page SEO</li>
-                    <li class="hive-skill-item">VS Code, Git, and GitHub</li>
-                  </ul>
-                </div>
+            <!-- Project 2: React Dashboard -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">React Development</span>
+                <h3 class="project-title">Interactive React Dashboard</h3>
+                <p class="project-description">
+                  Dynamic React dashboard application with real-time data
+                  visualization, interactive charts, and responsive layout.
+                  Built with modern React hooks, component-based architecture,
+                  and optimized performance for business analytics and
+                  data-driven decision making with intuitive user interface
+                  design.
+                </p>
               </div>
 
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/travelwebsitebutton.png"
-                  alt="Travel Website: Basque Country Spain"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                    <a
-                      href="https://www.shecodes.io/cohorts/2673/projects/2636657?_gl=1*1dica5w*_gcl_au*NDAxODI1MDY4LjE3NDczOTExNjAuMTc1MTQwMzIxOC4xNzQ4MzYwNTY0LjE3NDgzNjA1NjQ."
-                      target="_blank"
-                      class="view-project-btn"
-                      rel="noopener noreferrer"
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">React Hooks</span>
+                      <span class="skill-tag">Data Visualization</span>
+                      <span class="skill-tag">Chart.js Integration</span>
+                      <span class="skill-tag">Responsive Layout</span>
+                      <span class="skill-tag">Modern JavaScript</span>
+                      <span class="skill-tag">CSS Grid & Flexbox</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/react-dashboard.png"
+                      alt="React Dashboard Application Screenshot"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="#"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                      View Project
+                        <i class="bi bi-eye me-2"></i>View Project
                       </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Project 3-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Digital Marketing</div>
-              <h4 class="hive-project-title">
-                Hedgehouse Furniture SEO Audit and Analysis
-              </h4>
-              <p class="hive-project-description">Insert description here</p>
-            </div>
 
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">
-                      Meta Updates to Improve Search Listings
-                    </li>
-                    <li class="hive-skill-item">Audit Keyword Usage</li>
-                    <li class="hive-skill-item">
-                      Develop Keyword Strategies to Increase Search Traffic
-                    </li>
-                    <li class="hive-skill-item">
-                      Web Core Vitas, Canonicals, Robots.txt
-                    </li>
-                    <li class="hive-skill-item">
-                      Site Architecture and Internal Linking
-                    </li>
-                  </ul>
-                </div>
+            <!-- Project 3: Poetry AI -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">Web Development</span>
+                <h3 class="project-title">
+                  AI Poetry Generator with API Integration
+                </h3>
+                <p class="project-description">
+                  Interactive poetry generator application leveraging artificial
+                  intelligence API integration for creative content generation.
+                  Features responsive web design, JavaScript DOM manipulation,
+                  and modern UI/UX principles to create engaging user
+                  experiences with AI-powered creative writing tools and
+                  seamless API connectivity.
+                </p>
               </div>
 
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/hedgehouse_thumbnail.png"
-                  alt="Hedgehouse Furniture SEO Audit and Analysis"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                    <a
-                      href="https://docs.google.com/presentation/d/1tM7gPJXIiWnmoirFD5g51UBXDbKQ2nFIqL2eLdmW-Dk/edit?usp=sharing"
-                      class="view-project-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">HTML5 & CSS3</span>
+                      <span class="skill-tag">JavaScript DOM</span>
+                      <span class="skill-tag">API Integration</span>
+                      <span class="skill-tag">AI Implementation</span>
+                      <span class="skill-tag">UI/UX Design</span>
+                      <span class="skill-tag">Responsive Layout</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/PoemGenerator_Thumbnail.png"
+                      alt="AI Poetry Generator Application"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://www.shecodes.io/cohorts/2521/projects/2603943"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                      View Project
+                        <i class="bi bi-eye me-2"></i>View Project
                       </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--Project 4-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Web Development</div>
-              <h4 class="hive-project-title">
-                Weather App Advanced Web Development
-              </h4>
-              <p class="hive-project-description">Insert description here</p>
-            </div>
-
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">Javascript Techniques (ES6)</li>
-                    <li class="hive-skill-item">
-                      API Integration (Fetch Live Dtata)
-                    </li>
-                    <li class="hive-skill-item">HTML and CSS</li>
-                    <li class="hive-skill-item">Hosting</li>
-                    <li class="hive-skill-item">Git, VS Code, and GitHub</li>
-                  </ul>
-                </div>
+            <!-- Project 4: Travel Website -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">Web Development</span>
+                <h3 class="project-title">Responsive Travel Website Design</h3>
+                <p class="project-description">
+                  Modern travel website showcasing Basque Country Spain with
+                  responsive web design, advanced CSS techniques, and SEO
+                  optimization. Features include interactive image galleries,
+                  embedded content, mobile-first approach, and technical SEO
+                  implementation for enhanced search engine visibility and user
+                  engagement across all devices.
+                </p>
               </div>
 
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/WeatherApp_Thumbnail.png"
-                  alt="Interactive Weather App"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                  <button class="view-project-btn">
-                    <a
-                      href="https://www.shecodes.io/cohorts/2471/projects/2600866?_gl=1*1xz31j9*_gcl_au*NDAxODI1MDY4LjE3NDczOTExNjAuMTc1MTQwMzIxOC4xNzQ4MzYwNTY0LjE3NDgzNjA1NjQ."
-                      target="_blank"
-                      >View Project</a
-                    >
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">HTML Tables & Embeds</span>
+                      <span class="skill-tag">Advanced CSS Filters</span>
+                      <span class="skill-tag">Responsive Grid Systems</span>
+                      <span class="skill-tag">Technical SEO</span>
+                      <span class="skill-tag">Git Version Control</span>
+                      <span class="skill-tag">GitHub Deployment</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--Project 5-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Python Programming Basics</div>
-              <h4 class="hive-project-title">Python Weather Forecast</h4>
-              <p class="hive-project-description">Insert description here</p>
-            </div>
-
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">
-                      Fundamental Elements of Python
-                    </li>
-                    <li class="hive-skill-item">Build Logical Operators</li>
-                    <li class="hive-skill-item">JavaScript</li>
-                    <li class="hive-skill-item">
-                      API Integration (Fetch Live Data)
-                    </li>
-                    <li class="hive-skill-item">
-                      Data Structure and Formatting
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/pythonweatherforecast.png"
-                  alt="Python Programming Weather Forecast"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                    <a
-                      href="https://www.shecodes.io/cohorts/2567/projects/2617771?_gl=1*1stpc1w*_gcl_au*NDAxODI1MDY4LjE3NDczOTExNjAuMTc1MTQwMzIxOC4xNzQ4MzYwNTY0LjE3NDgzNjA1NjQ."
-                      class="view-project-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/travelwebsitebutton.png"
+                      alt="Responsive Travel Website for Basque Country"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://www.shecodes.io/cohorts/2673/projects/2636657"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                      View Project
+                        <i class="bi bi-eye me-2"></i>View Project
                       </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--Project 6-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Python Advanced</div>
-              <h4 class="hive-project-title">
-                Internet Population per Continent
-              </h4>
-              <p class="hive-project-description">Insert description here</p>
-            </div>
-
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">
-                      Object-Oriented Programming (OOP)
-                    </li>
-                    <li class="hive-skill-item">File Manipulation</li>
-                    <li class="hive-skill-item">Data Visualization</li>
-                    <li class="hive-skill-item">Data Manipulation</li>
-                    <li class="hive-skill-item">Advanced Data Structures</li>
-                  </ul>
-                </div>
+            <!-- Project 5: SEO Audit -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">Digital Marketing</span>
+                <h3 class="project-title">
+                  Comprehensive SEO Audit & Strategy
+                </h3>
+                <p class="project-description">
+                  Complete SEO audit and optimization strategy for Hedgehouse
+                  Furniture featuring technical SEO analysis, keyword research,
+                  meta tag optimization, and search ranking improvements.
+                  Includes comprehensive site architecture review, Core Web
+                  Vitals assessment, and data-driven recommendations for
+                  enhanced organic search visibility.
+                </p>
               </div>
 
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/pythonadvanced.png"
-                  alt="Internet Population per Continent Python Data Visualization"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                    <a
-                      href="https://www.shecodes.io/cohorts/2618/projects/2634791?_gl=1*utblmc*_gcl_au*NDAxODI1MDY4LjE3NDczOTExNjAuMTc1MTQwMzIxOC4xNzQ4MzYwNTY0LjE3NDgzNjA1NjQ."
-                      target="_blank"
-                     class="view-project-btn"
-                      rel="noopener noreferrer"
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">SEO Audit & Analysis</span>
+                      <span class="skill-tag">Keyword Research</span>
+                      <span class="skill-tag">Meta Tag Optimization</span>
+                      <span class="skill-tag">Core Web Vitals</span>
+                      <span class="skill-tag">Technical SEO</span>
+                      <span class="skill-tag">Site Architecture</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/hedgehouse_thumbnail.png"
+                      alt="SEO Audit Report for Hedgehouse Furniture"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://docs.google.com/presentation/d/1tM7gPJXIiWnmoirFD5g51UBXDbKQ2nFIqL2eLdmW-Dk/edit?usp=sharing"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                      View Project
+                        <i class="bi bi-eye me-2"></i>View Project
                       </a>
-
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--Project 7-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Web Development</div>
-              <h4 class="hive-project-title">Time Zones: World Clock</h4>
-              <p class="hive-project-description">Insert description here</p>
-            </div>
-
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">Advanced JavaScript</li>
-                    <li class="hive-skill-item">
-                      Build Interactive World Clock
-                    </li>
-                    <li class="hive-skill-item">HTML Input Types</li>
-                    <li class="hive-skill-item">
-                      JavaScript Functions (Date and Time Objects)
-                    </li>
-                    <li class="hive-skill-item">
-                      Time Zones for Multiple Locations
-                    </li>
-                  </ul>
-                </div>
+            <!-- Project 6: Weather App -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">Web Development</span>
+                <h3 class="project-title">
+                  Advanced JavaScript Weather Application
+                </h3>
+                <p class="project-description">
+                  Interactive weather application built with advanced JavaScript
+                  ES6+ features, real-time API integration, and responsive
+                  design. Includes live weather data fetching, geolocation
+                  services, dynamic content updates, and modern web development
+                  practices for enhanced user experience and cross-device
+                  compatibility.
+                </p>
               </div>
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/timezones_thumbnail.png"
-                  alt="World Clock with Time Zones using JavaScript"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                    <a
-                      href="https://www.shecodes.io/cohorts/2553/projects/2608118?_gl=1*eptr6v*_gcl_au*NDAxODI1MDY4LjE3NDczOTExNjAuMTc1MTQwMzIxOC4xNzQ4MzYwNTY0LjE3NDgzNjA1NjQ."
-                      class="view-project-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
+
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">JavaScript ES6+</span>
+                      <span class="skill-tag">Weather API Integration</span>
+                      <span class="skill-tag">Geolocation Services</span>
+                      <span class="skill-tag">Responsive Design</span>
+                      <span class="skill-tag">Modern HTML & CSS</span>
+                      <span class="skill-tag">Web Hosting</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/WeatherApp_Thumbnail.png"
+                      alt="JavaScript Weather Application Interface"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://www.shecodes.io/cohorts/2471/projects/2600866"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                      View Project
+                        <i class="bi bi-eye me-2"></i>View Project
                       </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--Project 8-->
-    <div class="hive-container mt-5">
-      <div class="row">
-        <div class="col-12 fade-in">
-          <div class="hive-project-card">
-            <div class="hive-card-body">
-              <div class="hive-project-category">Digital Marketing</div>
-              <h4 class="hive-project-title">
-                Loyalty Rewards Program for Alamo Drafthouse Cinema
-              </h4>
-              <p class="hive-project-description">
-                Group Project: Insert description here
-              </p>
-            </div>
-
-            <div class="row">
-              <!--skills column-->
-              <div class="col-md-6 mb-4 mb-md-0">
-                <div class="hive-project-skills">
-                  <h4 class="hive-skills-title">Skills and Technologies</h4>
-                  <ul class="hive-skills-list">
-                    <li class="hive-skill-item">
-                      Design Loyalty Rewards Landing Page
-                    </li>
-                    <li class="hive-skill-item">Data-Driven Decision-Making</li>
-                    <li class="hive-skill-item">
-                      Create Paid Search Campaign with Creative Deliverables
-                    </li>
-                    <li class="hive-skill-item">
-                      Social Media Campaigns with Channel-Specific Deliverables
-                    </li>
-                    <li class="hive-skill-item">
-                      Design an Automated Workflow with Data Sources and
-                      Multi-Channel Re-engagement
-                    </li>
-                  </ul>
-                </div>
+            <!-- Project 7: Python Weather Forecast -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">Python Development</span>
+                <h3 class="project-title">
+                  Python Weather Forecast Application
+                </h3>
+                <p class="project-description">
+                  Python-based weather forecasting application demonstrating
+                  fundamental programming concepts, data structures, and API
+                  integration. Features logical operators, data formatting, live
+                  weather data processing, and user-friendly interface design
+                  for accurate weather predictions and data visualization.
+                </p>
               </div>
 
-          <!-- Image and Button Column -->
-          <div class="col-md-6 hive-image-column">
-                <img
-                  src="/images/loyaltyprogram.png"
-                  alt="Rewards Program Creation for Alamo Drafthouse Cinema"
-                  class="img-fluid rounded"
-                />
-                <div class="hive-project-image-overlay">
-                    <a
-                      href="https://docs.google.com/presentation/d/1-sbxjyMvNSUJOIjTySRGh06m0cZA-omPoEddETgXLg8/edit?usp=sharing"
-                      class="view-project-btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">Python Programming</span>
+                      <span class="skill-tag">Data Structures</span>
+                      <span class="skill-tag">API Integration</span>
+                      <span class="skill-tag">Logical Operators</span>
+                      <span class="skill-tag">Data Formatting</span>
+                      <span class="skill-tag">User Interface Design</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/pythonweatherforecast.png"
+                      alt="Python Weather Forecast Application"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://www.shecodes.io/cohorts/2567/projects/2617771"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                      View Project
+                        <i class="bi bi-eye me-2"></i>View Project
                       </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- Project 8: Python Data Visualization -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">Python Data Science</span>
+                <h3 class="project-title">
+                  Internet Population Data Visualization
+                </h3>
+                <p class="project-description">
+                  Advanced Python data visualization project analyzing global
+                  internet population statistics by continent using
+                  object-oriented programming, data manipulation libraries, and
+                  interactive charts. Features comprehensive data analysis,
+                  statistical visualization, and modern data science techniques
+                  for insights.
+                </p>
+              </div>
+
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">Python OOP</span>
+                      <span class="skill-tag">Data Visualization</span>
+                      <span class="skill-tag">Statistical Analysis</span>
+                      <span class="skill-tag">Data Manipulation</span>
+                      <span class="skill-tag">Chart Libraries</span>
+                      <span class="skill-tag">File Processing</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/pythonadvanced.png"
+                      alt="Python Data Visualization Dashboard"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://www.shecodes.io/cohorts/2618/projects/2634791"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="bi bi-eye me-2"></i>View Project
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 9: World Clock -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">JavaScript Development</span>
+                <h3 class="project-title">
+                  Interactive World Clock Application
+                </h3>
+                <p class="project-description">
+                  Advanced JavaScript world clock application featuring multiple
+                  time zones, real-time updates, and interactive interface.
+                  Built with modern JavaScript date and time objects, responsive
+                  design principles, and dynamic content management for global
+                  time tracking and enhanced user experience.
+                </p>
+              </div>
+
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">Advanced JavaScript</span>
+                      <span class="skill-tag">Date & Time Objects</span>
+                      <span class="skill-tag">Time Zone Management</span>
+                      <span class="skill-tag">Interactive UI</span>
+                      <span class="skill-tag">Real-time Updates</span>
+                      <span class="skill-tag">Responsive Layout</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/timezones_thumbnail.png"
+                      alt="World Clock JavaScript Application"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://www.shecodes.io/cohorts/2553/projects/2608118"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="bi bi-eye me-2"></i>View Project
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 10: Loyalty Program -->
+            <div class="project-card fade-in">
+              <div class="project-header">
+                <span class="project-category">Digital Marketing</span>
+                <h3 class="project-title">Customer Loyalty Program Strategy</h3>
+                <p class="project-description">
+                  Comprehensive digital marketing strategy for Alamo Drafthouse
+                  Cinema loyalty program featuring landing page design, paid
+                  search campaigns, social media marketing, and automated
+                  workflow development. Includes data-driven decision making,
+                  multi-channel engagement, and conversion optimization
+                  strategies.
+                </p>
+              </div>
+
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <div class="project-skills">
+                    <h4 class="skills-title">
+                      <i class="bi bi-gear me-2"></i>Skills & Technologies
+                    </h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">Landing Page Design</span>
+                      <span class="skill-tag">Paid Search Campaigns</span>
+                      <span class="skill-tag">Social Media Marketing</span>
+                      <span class="skill-tag">Marketing Automation</span>
+                      <span class="skill-tag">Data-Driven Strategy</span>
+                      <span class="skill-tag">Multi-Channel Engagement</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="project-image-wrapper">
+                    <img
+                      src="/images/loyaltyprogram.png"
+                      alt="Customer Loyalty Program Marketing Strategy"
+                      class="project-image img-fluid"
+                    />
+                    <div class="project-overlay">
+                      <a
+                        href="https://docs.google.com/presentation/d/1-sbxjyMvNSUJOIjTySRGh06m0cZA-omPoEddETgXLg8/edit?usp=sharing"
+                        class="view-project-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="bi bi-eye me-2"></i>View Project
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-        <!-- Footer -->
-    <footer class="container-fluid py-5 text-center text-white">
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="cta-card text-center">
+                <div class="cta-icon mb-4">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <h2 class="cta-title fw-bold mb-3">
+                  Ready to Start Your Project?
+                </h2>
+                <p class="cta-text lead mb-4">
+                  Let's collaborate to create a website that not only looks
+                  professional but also drives real business results with modern
+                  technology.
+                </p>
+                <div
+                  class="cta-buttons d-flex justify-content-center gap-3 flex-wrap"
+                >
+                  <a
+                    href="/services"
+                    class="btn btn-primary btn-lg px-4"
+                    role="button"
+                  >
+                    View Services
+                  </a>
+                  <a
+                    href="/contact"
+                    class="btn btn-outline-primary btn-lg px-4"
+                    role="button"
+                  >
+                    Get In Touch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section text-center py-5 text-white">
       <div class="container">
-        <h4 class="mb-3">Let's Work Together!</h4>
-        <a href="/contact" class="btn btn-branding mb-3">Contact</a>
-        <div class="mb-3">
-          <a href="mailto:mpokodner@gmail.com" class="email-link"
-            >mpokodner@gmail.com</a
-          >
-        </div>
-        <div class="social-links d-flex justify-content-center gap-4">
+        <h4 class="footer-title mb-3">Let's Work Together!</h4>
+        <a href="/contact" class="btn btn-branding mt-3 mb-4">Contact Me</a>
+        <p class="footer-email mb-4">
+          <a href="mailto:mpokodner@gmail.com" class="email-link">
+            <i class="bi bi-envelope me-2"></i>mpokodner@gmail.com
+          </a>
+        </p>
+        <div class="social-links d-flex justify-content-center gap-3">
           <a
             href="https://github.com/mpokodner"
             target="_blank"
             aria-label="GitHub Profile"
-            ><i class="fab fa-github" style="color: black"></i
-          ></a>
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
             target="_blank"
             aria-label="LinkedIn Profile"
-            ><i class="fab fa-linkedin-in" style="color: black"></i
-          ></a>
+            class="social-link"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle (Required for toggle to work) -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/index.js"></script>
+
+    <script>
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, observerOptions);
+
+      // Observe project cards for animations
+      document.querySelectorAll(".project-card").forEach((card) => {
+        observer.observe(card);
+      });
+    </script>
   </body>
 </html>
