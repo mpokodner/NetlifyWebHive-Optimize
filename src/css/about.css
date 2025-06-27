@@ -125,11 +125,13 @@ body {
 }
 
 /* Hero Section */
-.about-hero {
+.about-section {
   min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .hero-img {
@@ -402,6 +404,24 @@ h2 {
 
 .skills-experience .card ul li {
   margin-bottom: 10px;
+}
+
+/* Adjust margin for hero section */
+.about-hero {
+  margin-bottom: 3rem;
+}
+
+/* Fix certificate image alignment */
+.ratio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratio img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer */
