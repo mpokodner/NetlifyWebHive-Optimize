@@ -134,7 +134,8 @@ header {
   background: linear-gradient(
     135deg,
     var(--honey-overlay) 0%,
-    rgba(8, 65, 80, 0.7) 100%
+    rgba(139, 105, 20, 0.8) 50%,
+    rgba(183, 147, 71, 0.6) 100%
   );
   top: 0;
   left: 0;
@@ -423,7 +424,12 @@ header {
   left: -10px;
   right: 10px;
   bottom: 10px;
-  background: linear-gradient(135deg, var(--gold), var(--honey-dark));
+  background: linear-gradient(
+    135deg,
+    var(--gold) 0%,
+    var(--honey-dark) 50%,
+    rgba(183, 147, 71, 0.8) 100%
+  );
   border-radius: var(--border-radius);
   z-index: -1;
 }
@@ -443,7 +449,12 @@ header {
 }
 
 .cta-card {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--honey-dark) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--honey-dark) 0%,
+    var(--gold) 50%,
+    rgba(139, 105, 20, 0.9) 100%
+  );
   color: var(--white);
   padding: 4rem 2rem;
   border-radius: var(--border-radius);
@@ -537,7 +548,7 @@ header {
 
 /* Footer */
 .footer-section {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--honey-dark) 100%);
+  background: var(--dark);
   position: relative;
   overflow: hidden;
 }
@@ -551,9 +562,9 @@ header {
   height: 4px;
   background: linear-gradient(
     90deg,
-    var(--gold),
-    var(--honey-dark),
-    var(--gold)
+    var(--gold) 0%,
+    var(--honey-dark) 50%,
+    var(--gold) 100%
   );
 }
 
