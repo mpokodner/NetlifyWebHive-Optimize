@@ -12,51 +12,50 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-Z8MH25QPG0");
     </script>
 
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Michelle Pokodner" />
     <meta
       name="keywords"
-      content="Web Development, SEO Optimization, Portfolio"
+      content="web development FAQ, website development questions, custom website pricing, web developer privacy policy, freelance web development, responsive web design FAQ, SEO services questions"
     />
-    <meta name="author" content="Michelle Pokodner" />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Web Development and SEO Optimization Portfolio"
+      content="Frequently asked questions about WebHive Optimize's web development services, pricing, process, and privacy policy. Get answers about custom website development, SEO optimization, and digital marketing services."
+    />
+
+    <title>
+      FAQ & Privacy Policy | Web Development Questions | WebHive Optimize
+    </title>
+    <link rel="canonical" href="https://webhiveoptimize.com/faqprivacy" />
+
+    <!-- Fonts and Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Fjalla+One&display=swap"
+      rel="stylesheet"
     />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fjalla One"
       rel="stylesheet"
     />
 
-    <title>WebHive Optimize | FAQ & Privacy Policy</title>
-    <link rel="canonical" href="https://webhiveoptiize.com/faqprivacy" />
-
-    <!-- Styles -->
+    <!-- Bootstrap & Custom Styles -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-..."
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/faqprivacy.css" />
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -67,10 +66,9 @@
         style="display: none; visibility: hidden"
       ></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Header -->
-    <!-- Header -->
-    <header class="container-fluid border border-2 border-black">
+    <header class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark px-3">
         <a class="navbar-brand d-flex align-items-center" href="/">
           <img
@@ -78,7 +76,7 @@
             width="50"
             height="50"
             alt="WebHive Optimize Logo"
-            class="me-2 rounded border border-2 border-warning"
+            class="me-2 rounded"
           />
           <span class="site-title fw-bold">WebHive Optimize</span>
         </a>
@@ -107,7 +105,7 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="/faqprivacy">FAQ & Privacy</a>
+              <a class="nav-link active" href="/faqprivacy">FAQ & Privacy</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact">Contact</a>
@@ -116,527 +114,911 @@
         </div>
       </nav>
     </header>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center hero-content">
-            <h1 class="hero-title">💬 Frequently Asked Questions</h1>
-            <p class="hero-subtitle">
-              Everything you need to know about our
-              <span class="highlight">Custom Website Development</span> services
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <img
+          src="/images/cta-wood.png"
+          class="hero-img"
+          alt="FAQ and Privacy Policy background"
+          loading="lazy"
+        />
+        <div class="overlay"></div>
+
+        <div class="hero-content text-center text-white">
+          <div class="container">
+            <span class="badge bg-light text-dark mb-3 fw-bold">
+              Questions & Information
+            </span>
+            <h1 class="hero-title fw-bold">FAQ & Privacy Policy</h1>
+            <p class="hero-subtitle lead">
+              Everything you need to know about our custom website development
+              services, process, pricing, and how we protect your privacy.
             </p>
-            <a
-              href="https://www.fiverr.com/your-username"
-              class="btn-custom me-3"
-              >View My Fiverr Gig</a
+            <div
+              class="hero-buttons d-flex justify-content-center gap-3 flex-wrap"
             >
-            <a href="#faq-section" class="btn btn-outline-light">Browse FAQs</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq-section">
-      <div class="container">
-        <h2 class="section-title">Get Your Questions Answered</h2>
-        <p class="section-subtitle">
-          Clear explanations about our tiers, process, and what's included in
-          each package
-        </p>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <!-- FAQ Item 1 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq1"
-                aria-expanded="false"
-                aria-controls="faq1"
+              <a class="hero-btn btn" href="#faq-section">Browse FAQs</a>
+              <a class="hero-btn-outline btn" href="#privacy-section"
+                >Privacy Policy</a
               >
-                What's included in each tier (Starter, Growth, Royal)?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq1">
-                <div class="faq-answer">
-                  <p>
-                    Each tier includes <strong>custom-coded design</strong>,
-                    responsive layout, SEO setup, and deployment to Netlify:
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>Starter Hive:</strong> 2-page site (Home +
-                      Contact), lead form, GA4, SSL.
-                    </li>
-                    <li>
-                      <strong>Growth Hive:</strong> Up to 5 pages, SEO schema
-                      markup, speed optimization, ActiveCampaign/Mailchimp
-                      automation, Netlify Pro.
-                    </li>
-                    <li>
-                      <strong>Royal Hive:</strong> Up to 10 pages + blog,
-                      headless Shopify, CRM integration, full analytics tracking
-                      (GA4 + GTM), 4-week support.
-                    </li>
-                  </ul>
-                  <p>
-                    You'll receive a
-                    <strong>clean codebase</strong> (HTML/CSS/JS) optimized for
-                    speed and user engagement.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 2 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq2"
-                aria-expanded="false"
-                aria-controls="faq2"
-              >
-                Do I need to purchase anything separately?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq2">
-                <div class="faq-answer">
-                  <p>
-                    <strong>Yes</strong> — to keep your monthly costs
-                    transparent and your site ownership in your hands, you'll be
-                    responsible for:
-                  </p>
-                  <ul>
-                    <li>
-                      Domain registration (e.g., GoDaddy or Namecheap –
-                      ~$12–$20/year)
-                    </li>
-                    <li>
-                      Email marketing platforms (Mailchimp, ActiveCampaign,
-                      Klaviyo)
-                    </li>
-                    <li>CRM subscription (HubSpot, Salesforce, etc.)</li>
-                    <li>
-                      Netlify Pro or Shopify plans (if your package requires
-                      them)
-                    </li>
-                    <li>Stock images (unless provided by you)</li>
-                  </ul>
-                  <div class="pricing-highlight">
-                    <strong
-                      >I'll help you connect and configure these
-                      platforms</strong
-                    >
-                    — you just cover the subscriptions.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 3 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq3"
-                aria-expanded="false"
-                aria-controls="faq3"
-              >
-                Do you use templates or builders like WordPress or Wix?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq3">
-                <div class="faq-answer">
-                  <p>
-                    <strong>No.</strong> I build custom-coded websites from
-                    scratch using HTML, CSS, JavaScript, and Netlify for
-                    hosting. This gives you:
-                  </p>
-                  <ul>
-                    <li>Faster load times</li>
-                    <li>Cleaner code</li>
-                    <li>SEO advantages</li>
-                    <li>Complete ownership</li>
-                    <li>No bloated templates or plugin headaches</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 4 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq4"
-                aria-expanded="false"
-                aria-controls="faq4"
-              >
-                Why is your pricing higher than some template-based gigs on
-                Fiverr?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq4">
-                <div class="faq-answer">
-                  <p>
-                    Because I don't use cookie-cutter templates. You're getting
-                    a <strong>bespoke, performance-driven site</strong> tailored
-                    to your brand and optimized for speed, SEO, and conversions.
-                  </p>
-                  <p>
-                    Unlike drag-and-drop sites, custom-coded sites scale with
-                    your business, integrate deeply with your tools, and deliver
-                    measurable results.
-                  </p>
-                  <div class="pricing-highlight">
-                    <strong>For context:</strong> Agencies charge
-                    $2,000–$10,000+ for similar work. I price fairly for
-                    freelancers while delivering premium quality and automation
-                    features.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 5 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq5"
-                aria-expanded="false"
-                aria-controls="faq5"
-              >
-                What is the process after I place an order?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq5">
-                <div class="faq-answer">
-                  <p><strong>My 5-step streamlined process:</strong></p>
-                  <ol>
-                    <li>
-                      <strong>Discovery & Strategy</strong> – We discuss your
-                      goals, brand, and audience.
-                    </li>
-                    <li>
-                      <strong>Wireframes</strong> – I design your page layout
-                      and structure (Figma or Notion).
-                    </li>
-                    <li>
-                      <strong>Development</strong> – I build and test your
-                      mobile-friendly, SEO-optimized site.
-                    </li>
-                    <li>
-                      <strong>Integrations</strong> – I connect forms,
-                      analytics, CRMs, and email tools.
-                    </li>
-                    <li>
-                      <strong>Launch & Handoff</strong> – Your site goes live
-                      with documentation and support.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 6 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq6"
-                aria-expanded="false"
-                aria-controls="faq6"
-              >
-                Can I request custom features or extra pages?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq6">
-                <div class="faq-answer">
-                  <p><strong>Yes!</strong> You can add:</p>
-                  <ul>
-                    <li><strong>Additional Pages:</strong> +$75/page</li>
-                    <li><strong>Blog Setup:</strong> +$100</li>
-                    <li><strong>Copywriting:</strong> +$147</li>
-                    <li><strong>E-commerce Integration:</strong> +$197</li>
-                    <li><strong>Priority Delivery:</strong> +$200</li>
-                  </ul>
-                  <p>Let me know your needs and I'll create a custom offer.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 7 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq7"
-                aria-expanded="false"
-                aria-controls="faq7"
-              >
-                What tools do you use to build and host the website?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq7">
-                <div class="faq-answer">
-                  <div class="tools-list">
-                    <p>
-                      <strong>Frontend:</strong> HTML, CSS (Flexbox/Grid),
-                      JavaScript
-                    </p>
-                    <p><strong>Hosting:</strong> Netlify (with SSL & CDN)</p>
-                    <p>
-                      <strong>Analytics:</strong> Google Analytics 4 + Tag
-                      Manager (if selected)
-                    </p>
-                    <p><strong>Forms:</strong> Netlify Forms or Formspree</p>
-                    <p>
-                      <strong>Email/CRM:</strong> Zapier + ActiveCampaign,
-                      Mailchimp, or HubSpot
-                    </p>
-                    <p>
-                      <strong>E-commerce:</strong> Shopify Buy Button, Snipcart,
-                      or Storefront API (Royal Hive)
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 8 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq8"
-                aria-expanded="false"
-                aria-controls="faq8"
-              >
-                Do you offer revisions?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq8">
-                <div class="faq-answer">
-                  <p>
-                    <strong>Yes!</strong> Revisions are included based on your
-                    tier:
-                  </p>
-                  <ul>
-                    <li><strong>Starter Hive:</strong> 2 revisions</li>
-                    <li><strong>Growth Hive:</strong> 3 revisions</li>
-                    <li>
-                      <strong>Royal Hive:</strong> 4 revisions + post-launch SEO
-                      audit
-                    </li>
-                  </ul>
-                  <p>
-                    Additional revisions can be added for
-                    <strong>$40 each</strong>.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Item 9 -->
-            <div class="faq-item">
-              <button
-                class="faq-question"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq9"
-                aria-expanded="false"
-                aria-controls="faq9"
-              >
-                What happens if I need help after the website is live?
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="collapse" id="faq9">
-                <div class="faq-answer">
-                  <p><strong>I include post-launch support:</strong></p>
-                  <ul>
-                    <li><strong>Starter Hive:</strong> 1 week</li>
-                    <li>
-                      <strong>Growth Hive:</strong> 2 weeks + 1 sprint of fixes
-                    </li>
-                    <li>
-                      <strong>Royal Hive:</strong> 4 weeks + quarterly SEO audit
-                    </li>
-                  </ul>
-                  <div class="pricing-highlight">
-                    Ongoing maintenance is available as a monthly retainer
-                    <strong>($150–$350/mo)</strong> depending on your site's
-                    complexity.
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="mb-4">Ready to Get Started?</h2>
-            <p class="mb-4">
-              Have more questions or ready to discuss your project? Let's create
-              something amazing together.
-            </p>
-            <a
-              href="https://www.fiverr.com/your-username"
-              class="btn-custom me-3"
-              >Order Now on Fiverr</a
-            >
-            <a
-              href="mailto:your-email@example.com"
-              class="btn btn-outline-light"
-              >Send Message</a
-            >
+      <!-- Navigation Pills -->
+      <section class="nav-pills-section py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-pill active" href="#faq-section" id="faq-tab">
+                    <i class="bi bi-question-circle me-2"></i>FAQ
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-pill" href="#privacy-section" id="privacy-tab">
+                    <i class="bi bi-shield-lock me-2"></i>Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Add smooth scrolling and enhanced accordion functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        // Close other accordions when one is opened
-        const faqButtons = document.querySelectorAll(".faq-question");
+      <!-- FAQ Section -->
+      <section class="faq-section py-5" id="faq-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center mb-5">
+                <h2 class="section-heading fw-bold mb-3">
+                  Frequently Asked Questions
+                </h2>
+                <p class="lead text-muted">
+                  Clear explanations about our tiers, process, and what's
+                  included in each package
+                </p>
+              </div>
 
-        faqButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const targetId = this.getAttribute("data-bs-target");
-            const targetCollapse = document.querySelector(targetId);
+              <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                  <div
+                    class="faq-question"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    <h4>
+                      What's included in each tier (Starter, Growth, Royal)?
+                    </h4>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="faq-answer collapse" id="faq1">
+                    <div class="faq-content">
+                      <p>
+                        Each tier includes <strong>custom-coded design</strong>,
+                        responsive layout, SEO setup, and deployment:
+                      </p>
+                      <div class="tier-breakdown">
+                        <div class="tier-item">
+                          <h5>
+                            <i class="bi bi-star me-2"></i>Starter Hive ($350)
+                          </h5>
+                          <ul>
+                            <li>2-page site (Home + Contact)</li>
+                            <li>Netlify Forms + GA4 integration</li>
+                            <li>Fully responsive design</li>
+                            <li>Basic SEO optimization</li>
+                            <li>1 week post-launch support</li>
+                          </ul>
+                        </div>
+                        <div class="tier-item">
+                          <h5>
+                            <i class="bi bi-star-fill me-2"></i>Growth Hive
+                            ($750)
+                          </h5>
+                          <ul>
+                            <li>Up to 5 pages</li>
+                            <li>ActiveCampaign/Mailchimp integration</li>
+                            <li>Advanced SEO + Schema markup</li>
+                            <li>Speed optimization</li>
+                            <li>Basic automation via Zapier</li>
+                            <li>2 weeks support + sprint fixes</li>
+                          </ul>
+                        </div>
+                        <div class="tier-item">
+                          <h5>
+                            <i class="bi bi-crown me-2"></i>Royal Hive ($1500+)
+                          </h5>
+                          <ul>
+                            <li>10+ pages + blog setup</li>
+                            <li>Headless Shopify + CRM integration</li>
+                            <li>Full Shopify API implementation</li>
+                            <li>GA4 + GTM + Custom dashboard</li>
+                            <li>Advanced SEO + Performance optimization</li>
+                            <li>4 weeks support + quarterly audits</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="highlight-box">
+                        <p>
+                          <strong>You'll receive a clean codebase</strong>
+                          (HTML/CSS/JS) optimized for speed and user engagement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            // Close all other collapses
-            faqButtons.forEach((otherButton) => {
-              if (otherButton !== this) {
-                const otherTargetId =
-                  otherButton.getAttribute("data-bs-target");
-                const otherCollapse = document.querySelector(otherTargetId);
-                if (otherCollapse.classList.contains("show")) {
-                  otherButton.setAttribute("aria-expanded", "false");
-                  otherCollapse.classList.remove("show");
-                }
-              }
-            });
-          });
-        });
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                  <div
+                    class="faq-question"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    <h4>Do I need to purchase anything separately?</h4>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="faq-answer collapse" id="faq2">
+                    <div class="faq-content">
+                      <p>
+                        <strong>Yes</strong> — to keep your monthly costs
+                        transparent and your site ownership in your hands,
+                        you'll be responsible for:
+                      </p>
+                      <div class="cost-breakdown">
+                        <div class="cost-item">
+                          <i class="bi bi-globe me-2"></i>
+                          <span
+                            ><strong>Domain registration:</strong> ~$12–$20/year
+                            (GoDaddy, Namecheap)</span
+                          >
+                        </div>
+                        <div class="cost-item">
+                          <i class="bi bi-envelope me-2"></i>
+                          <span
+                            ><strong>Email platforms:</strong> Mailchimp,
+                            ActiveCampaign, Klaviyo</span
+                          >
+                        </div>
+                        <div class="cost-item">
+                          <i class="bi bi-people me-2"></i>
+                          <span
+                            ><strong>CRM subscriptions:</strong> HubSpot,
+                            Salesforce, etc.</span
+                          >
+                        </div>
+                        <div class="cost-item">
+                          <i class="bi bi-cloud me-2"></i>
+                          <span
+                            ><strong>Hosting plans:</strong> Netlify Pro or
+                            Shopify (if required)</span
+                          >
+                        </div>
+                        <div class="cost-item">
+                          <i class="bi bi-images me-2"></i>
+                          <span
+                            ><strong>Stock images:</strong> Unless provided by
+                            you</span
+                          >
+                        </div>
+                      </div>
+                      <div class="highlight-box">
+                        <p>
+                          <strong
+                            >I'll help you connect and configure these
+                            platforms</strong
+                          >
+                          — you just cover the subscriptions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute("href"));
-            if (target) {
-              target.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          });
-        });
-        const observerOptions = {
-          threshold: 0.1,
-          rootMargin: "0px 0px -50px 0px",
-        };
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                  <div
+                    class="faq-question"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    <h4>
+                      Do you use templates or builders like WordPress or Wix?
+                    </h4>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="faq-answer collapse" id="faq3">
+                    <div class="faq-content">
+                      <p>
+                        <strong>No.</strong> I build custom-coded websites from
+                        scratch using HTML, CSS, JavaScript, and modern hosting
+                        solutions. This gives you:
+                      </p>
+                      <div class="benefits-grid">
+                        <div class="benefit-item">
+                          <i class="bi bi-speedometer2"></i>
+                          <span>Faster load times</span>
+                        </div>
+                        <div class="benefit-item">
+                          <i class="bi bi-code-slash"></i>
+                          <span>Cleaner code</span>
+                        </div>
+                        <div class="benefit-item">
+                          <i class="bi bi-search"></i>
+                          <span>SEO advantages</span>
+                        </div>
+                        <div class="benefit-item">
+                          <i class="bi bi-person-check"></i>
+                          <span>Complete ownership</span>
+                        </div>
+                        <div class="benefit-item">
+                          <i class="bi bi-shield-check"></i>
+                          <span>No plugin vulnerabilities</span>
+                        </div>
+                        <div class="benefit-item">
+                          <i class="bi bi-graph-up"></i>
+                          <span>Better performance</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        const observer = new IntersectionObserver(function (entries) {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = "1";
-              entry.target.style.transform = "translateY(0)";
-            }
-          });
-        }, observerOptions);
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                  <div
+                    class="faq-question"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    <h4>
+                      What is the development process after I place an order?
+                    </h4>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="faq-answer collapse" id="faq4">
+                    <div class="faq-content">
+                      <p><strong>My 5-step streamlined process:</strong></p>
+                      <div class="process-steps">
+                        <div class="process-step">
+                          <div class="step-number">1</div>
+                          <div class="step-content">
+                            <h5>Discovery & Strategy</h5>
+                            <p>
+                              We discuss your goals, brand, target audience, and
+                              technical requirements
+                            </p>
+                          </div>
+                        </div>
+                        <div class="process-step">
+                          <div class="step-number">2</div>
+                          <div class="step-content">
+                            <h5>Wireframes & Planning</h5>
+                            <p>
+                              I design your page layout and structure using
+                              modern design tools
+                            </p>
+                          </div>
+                        </div>
+                        <div class="process-step">
+                          <div class="step-number">3</div>
+                          <div class="step-content">
+                            <h5>Development</h5>
+                            <p>
+                              I build and test your mobile-friendly,
+                              SEO-optimized site
+                            </p>
+                          </div>
+                        </div>
+                        <div class="process-step">
+                          <div class="step-number">4</div>
+                          <div class="step-content">
+                            <h5>Integrations</h5>
+                            <p>
+                              I connect forms, analytics, CRMs, and email
+                              marketing tools
+                            </p>
+                          </div>
+                        </div>
+                        <div class="process-step">
+                          <div class="step-number">5</div>
+                          <div class="step-content">
+                            <h5>Launch & Handoff</h5>
+                            <p>
+                              Your site goes live with full documentation and
+                              ongoing support
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        // Observe FAQ items
-        document.querySelectorAll(".faq-item").forEach((item, index) => {
-          item.style.opacity = "0";
-          item.style.transform = "translateY(30px)";
-          item.style.transition = `opacity 0.6s ease ${
-            index * 0.1
-          }s, transform 0.6s ease ${index * 0.1}s`;
-          observer.observe(item);
-        });
-      });
-    </script>
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                  <div
+                    class="faq-question"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    <h4>Can I request custom features or additional pages?</h4>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="faq-answer collapse" id="faq5">
+                    <div class="faq-content">
+                      <p>
+                        <strong>Absolutely!</strong> I offer flexible add-ons to
+                        customize your project:
+                      </p>
+                      <div class="addon-pricing">
+                        <div class="addon-item">
+                          <span class="addon-service">Additional Pages</span>
+                          <span class="addon-price">+$75/page</span>
+                        </div>
+                        <div class="addon-item">
+                          <span class="addon-service"
+                            >Blog Setup & Integration</span
+                          >
+                          <span class="addon-price">+$100</span>
+                        </div>
+                        <div class="addon-item">
+                          <span class="addon-service"
+                            >Professional Copywriting</span
+                          >
+                          <span class="addon-price">+$147</span>
+                        </div>
+                        <div class="addon-item">
+                          <span class="addon-service"
+                            >E-commerce Integration</span
+                          >
+                          <span class="addon-price">+$197</span>
+                        </div>
+                        <div class="addon-item">
+                          <span class="addon-service">Priority Delivery</span>
+                          <span class="addon-price">+$200</span>
+                        </div>
+                      </div>
+                      <p>
+                        Let me know your specific needs and I'll create a custom
+                        proposal tailored to your requirements.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                  <div
+                    class="faq-question"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                  >
+                    <h4>Do you offer revisions and post-launch support?</h4>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="faq-answer collapse" id="faq6">
+                    <div class="faq-content">
+                      <p>
+                        <strong>Yes!</strong> Revisions and support are included
+                        based on your tier:
+                      </p>
+                      <div class="support-tiers">
+                        <div class="support-tier">
+                          <h5>Starter Hive</h5>
+                          <ul>
+                            <li>2 revisions included</li>
+                            <li>1 week post-launch support</li>
+                          </ul>
+                        </div>
+                        <div class="support-tier">
+                          <h5>Growth Hive</h5>
+                          <ul>
+                            <li>3 revisions included</li>
+                            <li>2 weeks support + 1 sprint of fixes</li>
+                          </ul>
+                        </div>
+                        <div class="support-tier">
+                          <h5>Royal Hive</h5>
+                          <ul>
+                            <li>4 revisions included</li>
+                            <li>4 weeks support + quarterly SEO audit</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="highlight-box">
+                        <p>
+                          Additional revisions available for
+                          <strong>$40 each</strong>. Ongoing maintenance
+                          packages available from
+                          <strong>$150–$350/month</strong>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                  <div
+                    class="faq-question"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq7"
+                  >
+                    <h4>What technologies and tools do you use?</h4>
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="faq-answer collapse" id="faq7">
+                    <div class="faq-content">
+                      <div class="tech-stack">
+                        <div class="tech-category">
+                          <h5>
+                            <i class="bi bi-code-slash me-2"></i>Frontend
+                            Development
+                          </h5>
+                          <p>
+                            HTML5, CSS3 (Flexbox/Grid), JavaScript ES6+, React
+                            (when needed)
+                          </p>
+                        </div>
+                        <div class="tech-category">
+                          <h5>
+                            <i class="bi bi-cloud me-2"></i>Hosting & Deployment
+                          </h5>
+                          <p>
+                            Netlify, Git version control, SSL certificates, CDN
+                          </p>
+                        </div>
+                        <div class="tech-category">
+                          <h5>
+                            <i class="bi bi-graph-up me-2"></i>Analytics &
+                            Tracking
+                          </h5>
+                          <p>
+                            Google Analytics 4, Google Tag Manager, Search
+                            Console
+                          </p>
+                        </div>
+                        <div class="tech-category">
+                          <h5>
+                            <i class="bi bi-envelope me-2"></i>Forms & Email
+                          </h5>
+                          <p>
+                            Netlify Forms, Formspree, ActiveCampaign, Mailchimp
+                            integration
+                          </p>
+                        </div>
+                        <div class="tech-category">
+                          <h5>
+                            <i class="bi bi-shop me-2"></i>E-commerce Solutions
+                          </h5>
+                          <p>
+                            Shopify Buy Button, Snipcart, Storefront API
+                            integration
+                          </p>
+                        </div>
+                        <div class="tech-category">
+                          <h5><i class="bi bi-robot me-2"></i>Automation</h5>
+                          <p>
+                            Zapier workflows, CRM integrations, automated lead
+                            scoring
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privacy Policy Section -->
+      <section class="privacy-section py-5 d-none" id="privacy-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center mb-5">
+                <h2 class="section-heading fw-bold mb-3">Privacy Policy</h2>
+                <p class="lead text-muted">
+                  How we collect, use, and protect your information
+                </p>
+                <p class="text-muted">
+                  <small>Last updated: December 2024</small>
+                </p>
+              </div>
+
+              <div class="privacy-content">
+                <div class="privacy-section-item">
+                  <h3>Information We Collect</h3>
+                  <p>
+                    We collect information you provide directly to us, such as
+                    when you:
+                  </p>
+                  <ul>
+                    <li>Contact us via email or contact forms</li>
+                    <li>Subscribe to our newsletter or blog updates</li>
+                    <li>Engage with our website or services</li>
+                    <li>Communicate with us through social media</li>
+                  </ul>
+                  <p>
+                    This may include your name, email address, company
+                    information, project details, and any other information you
+                    choose to provide.
+                  </p>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>How We Use Your Information</h3>
+                  <p>We use the information we collect to:</p>
+                  <ul>
+                    <li>
+                      Respond to your inquiries and provide customer support
+                    </li>
+                    <li>
+                      Deliver our web development and digital marketing services
+                    </li>
+                    <li>
+                      Send you updates about our services (with your consent)
+                    </li>
+                    <li>Improve our website and services</li>
+                    <li>Comply with legal obligations</li>
+                  </ul>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Information Sharing</h3>
+                  <p>
+                    We do not sell, trade, or rent your personal information to
+                    third parties. We may share your information only in the
+                    following circumstances:
+                  </p>
+                  <ul>
+                    <li>With your explicit consent</li>
+                    <li>
+                      To comply with legal requirements or respond to legal
+                      process
+                    </li>
+                    <li>
+                      With trusted service providers who assist us in operating
+                      our website and delivering services (under strict
+                      confidentiality agreements)
+                    </li>
+                    <li>
+                      To protect our rights, property, or safety, or that of
+                      others
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Data Security</h3>
+                  <p>
+                    We implement appropriate technical and organizational
+                    measures to protect your personal information against
+                    unauthorized access, alteration, disclosure, or destruction.
+                    This includes:
+                  </p>
+                  <ul>
+                    <li>SSL encryption for data transmission</li>
+                    <li>Secure hosting and storage solutions</li>
+                    <li>Regular security updates and monitoring</li>
+                    <li>
+                      Limited access to personal information on a need-to-know
+                      basis
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Cookies and Tracking</h3>
+                  <p>
+                    Our website uses cookies and similar tracking technologies
+                    to improve your browsing experience and analyze website
+                    traffic. We use:
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Essential cookies:</strong> Required for the
+                      website to function properly
+                    </li>
+                    <li>
+                      <strong>Analytics cookies:</strong> Google Analytics to
+                      understand how visitors use our site
+                    </li>
+                    <li>
+                      <strong>Marketing cookies:</strong> To measure the
+                      effectiveness of our marketing campaigns (with your
+                      consent)
+                    </li>
+                  </ul>
+                  <p>
+                    You can control cookie settings through your browser
+                    preferences.
+                  </p>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Your Rights</h3>
+                  <p>
+                    Depending on your location, you may have certain rights
+                    regarding your personal information, including:
+                  </p>
+                  <ul>
+                    <li>The right to access your personal information</li>
+                    <li>The right to correct or update your information</li>
+                    <li>The right to delete your personal information</li>
+                    <li>The right to restrict or object to processing</li>
+                    <li>The right to data portability</li>
+                    <li>The right to withdraw consent at any time</li>
+                  </ul>
+                  <p>
+                    To exercise these rights, please contact us at
+                    <a href="mailto:mpokodner@gmail.com">mpokodner@gmail.com</a
+                    >.
+                  </p>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Third-Party Services</h3>
+                  <p>
+                    Our website may contain links to third-party services or
+                    integrations. This privacy policy does not apply to
+                    third-party websites or services. We recommend reviewing the
+                    privacy policies of any third-party sites you visit.
+                  </p>
+                  <p>Third-party services we may use include:</p>
+                  <ul>
+                    <li>Google Analytics for website analytics</li>
+                    <li>
+                      Email marketing platforms (Mailchimp, ActiveCampaign)
+                    </li>
+                    <li>
+                      Social media platforms for marketing and communication
+                    </li>
+                    <li>Payment processing services for transactions</li>
+                  </ul>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Children's Privacy</h3>
+                  <p>
+                    Our services are not directed to children under the age of
+                    13. We do not knowingly collect personal information from
+                    children under 13. If we become aware that we have collected
+                    personal information from a child under 13, we will take
+                    steps to delete such information.
+                  </p>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Changes to This Policy</h3>
+                  <p>
+                    We may update this privacy policy from time to time to
+                    reflect changes in our practices or legal requirements. We
+                    will notify you of any material changes by posting the
+                    updated policy on our website and updating the "Last
+                    updated" date.
+                  </p>
+                </div>
+
+                <div class="privacy-section-item">
+                  <h3>Contact Us</h3>
+                  <p>
+                    If you have any questions about this privacy policy or our
+                    privacy practices, please contact us:
+                  </p>
+                  <div class="contact-info">
+                    <p>
+                      <strong>Email:</strong>
+                      <a href="mailto:mpokodner@gmail.com"
+                        >mpokodner@gmail.com</a
+                      >
+                    </p>
+                    <p>
+                      <strong>Website:</strong>
+                      <a href="https://webhiveoptimize.com"
+                        >webhiveoptimize.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="cta-card text-center">
+                <div class="cta-icon mb-4">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <h2 class="cta-title fw-bold mb-3">Still Have Questions?</h2>
+                <p class="cta-text lead mb-4">
+                  Can't find the answer you're looking for? I'm here to help!
+                  Reach out and I'll get back to you within 24 hours.
+                </p>
+                <div
+                  class="cta-buttons d-flex justify-content-center gap-3 flex-wrap"
+                >
+                  <a
+                    href="mailto:mpokodner@gmail.com"
+                    class="btn btn-primary btn-lg px-4"
+                    role="button"
+                  >
+                    <i class="bi bi-envelope me-2"></i>Ask a Question
+                  </a>
+                  <a
+                    href="/contact"
+                    class="btn btn-outline-primary btn-lg px-4"
+                    role="button"
+                  >
+                    <i class="bi bi-chat me-2"></i>Get In Touch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer -->
-    <footer
-      class="container-fluid py-5 text-center"
-      style="background-color: #084150; width: 100%"
-    >
+    <footer class="footer-section text-center py-5 text-white">
       <div class="container">
-        <div class="row justify-content-center mb-4">
-          <div class="col-12">
-            <h4 class="text-white">Let's Work Together!</h4>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-auto">
-            <a
-              href="/src/contact.html"
-              target="_blank"
-              class="btn btn-branding border-dark fw-bold"
-              style="background-color: white; color: black"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-auto">
-            <a href="mailto:mpokodner@gmail.com" class="email-link text-white"
-              >mpokodner@gmail.com</a
-            >
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-auto social-links d-flex gap-4">
-            <a
-              href="https://github.com/mpokodner"
-              target="_blank"
-              aria-label="GitHub Profile"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
-              target="_blank"
-              aria-label="LinkedIn Profile"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
+        <h4 class="footer-title mb-3">Let's Work Together!</h4>
+        <a href="/contact" class="btn btn-branding mt-3 mb-4">Contact Me</a>
+        <p class="footer-email mb-4">
+          <a href="mailto:mpokodner@gmail.com" class="email-link">
+            <i class="bi bi-envelope me-2"></i>mpokodner@gmail.com
+          </a>
+        </p>
+        <div class="social-links d-flex justify-content-center gap-3">
+          <a
+            href="https://github.com/mpokodner"
+            target="_blank"
+            aria-label="GitHub Profile"
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </footer>
-
-    <!--central jsdoc -->
-    <script src="/js/index.js"></script>
-    <!-- Bootstrap Bundle JS -->
+    <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-..."
       crossorigin="anonymous"
     ></script>
+    <script src="/js/index.js"></script>
+
+    <script>
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animations (adjust selectors based on page)
+      document
+        .querySelectorAll(
+          ".animate-on-scroll, .fade-in, .project-card, .blog-card, .pricing-card, .contact-method, .testimonial-card, .cta-card"
+        )
+        .forEach((element) => {
+          observer.observe(element);
+        });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Enhanced loading animation
+      window.addEventListener("load", function () {
+        // Add loading animation delay for hero content
+        const heroContent = document.querySelector(".hero-content");
+        if (heroContent) {
+          heroContent.style.opacity = "1";
+        }
+
+        // Stagger animation for multiple elements
+        const animatedElements = document.querySelectorAll(
+          ".fade-in-up, .slide-in-left"
+        );
+        animatedElements.forEach((el, index) => {
+          setTimeout(() => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0) translateX(0)";
+          }, index * 200);
+        });
+      });
+
+      // Mobile menu enhancements
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      if (navbarToggler && navbarCollapse) {
+        navbarToggler.addEventListener("click", function () {
+          // Add animation class when opening mobile menu
+          setTimeout(() => {
+            if (navbarCollapse.classList.contains("show")) {
+              navbarCollapse.classList.add("animate-in");
+            }
+          }, 10);
+        });
+      }
+
+      // Add hover effects to interactive elements
+      document
+        .querySelectorAll(".btn, .card, .social-link")
+        .forEach((element) => {
+          element.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-2px)";
+          });
+
+          element.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+          });
+        });
+
+      // Performance optimization: Lazy load images
+      if ("IntersectionObserver" in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              if (img.dataset.src) {
+                img.src = img.dataset.src;
+                img.classList.remove("lazy");
+                imageObserver.unobserve(img);
+              }
+            }
+          });
+        });
+
+        document.querySelectorAll("img[data-src]").forEach((img) => {
+          imageObserver.observe(img);
+        });
+      }
+    </script>
   </body>
 </html>
