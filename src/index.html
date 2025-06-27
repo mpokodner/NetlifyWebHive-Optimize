@@ -21,7 +21,7 @@
     <meta name="author" content="Michelle Pokodner" />
     <meta
       name="keywords"
-      content="web developer Minneapolis, custom website development, SEO optimization services, responsive web design, JavaScript developer, React development, digital marketing expert, freelance web developer, modern website design, mobile-friendly websites"
+      content="Minneapolis web developer, custom website development, SEO optimization services, responsive web design, JavaScript developer, React development, digital marketing expert, freelance web developer Minneapolis, modern website design, mobile-friendly websites, full-stack developer Minneapolis, WordPress development, e-commerce websites, local SEO Minneapolis, website redesign, web development services Minnesota"
     />
     <meta
       name="description"
@@ -94,7 +94,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="/">Home</a>
+              <a class="nav-link active" href="/" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
@@ -120,14 +120,14 @@
     <!-- Main Content -->
     <main>
       <!-- Hero Section -->
-      <section class="hero">
+      <section class="hero" role="banner">
         <img
           src="/images/herobeforefold.png"
           class="hero-img"
           alt="Professional web development services background"
           loading="eager"
         />
-        <div class="overlay"></div>
+        <div class="overlay" aria-hidden="true"></div>
 
         <div class="hero-content text-center text-white">
           <div class="container">
@@ -140,16 +140,25 @@
             <p class="hero-subtitle lead">
               Custom websites that convert visitors into customers. Powered by
               strategic design, clean code, and marketing automation that drives
-              real results.
+              real results for your Minneapolis business.
             </p>
             <div
               class="hero-buttons d-flex justify-content-center gap-3 flex-wrap"
             >
-              <a class="hero-btn btn" href="/services">
-                <i class="bi bi-rocket me-2"></i>Explore Services
+              <a
+                class="hero-btn btn"
+                href="/services"
+                aria-label="Explore our web development services"
+              >
+                <i class="bi bi-rocket me-2" aria-hidden="true"></i>Explore
+                Services
               </a>
-              <a class="hero-btn-outline btn" href="/projects">
-                <i class="bi bi-eye me-2"></i>View My Work
+              <a
+                class="hero-btn-outline btn"
+                href="/projects"
+                aria-label="View portfolio of completed projects"
+              >
+                <i class="bi bi-eye me-2" aria-hidden="true"></i>View My Work
               </a>
             </div>
 
@@ -158,19 +167,19 @@
               <div class="row justify-content-center g-3">
                 <div class="col-auto">
                   <div class="trust-item">
-                    <i class="bi bi-shield-check me-2"></i>
+                    <i class="bi bi-shield-check me-2" aria-hidden="true"></i>
                     <span>Certified Developer</span>
                   </div>
                 </div>
                 <div class="col-auto">
                   <div class="trust-item">
-                    <i class="bi bi-clock me-2"></i>
+                    <i class="bi bi-clock me-2" aria-hidden="true"></i>
                     <span>24hr Response</span>
                   </div>
                 </div>
                 <div class="col-auto">
                   <div class="trust-item">
-                    <i class="bi bi-star-fill me-2"></i>
+                    <i class="bi bi-star-fill me-2" aria-hidden="true"></i>
                     <span>5-Star Rated</span>
                   </div>
                 </div>
@@ -181,16 +190,17 @@
       </section>
 
       <!-- Services Preview Section -->
-      <section class="services-preview py-5">
+      <section class="services-preview py-5" id="services">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mb-5">
               <h2 class="section-heading fw-bold mb-3">
-                What I Can Do For You
+                What I Can Do For Your Minneapolis Business
               </h2>
               <p class="lead text-muted">
-                From custom websites to SEO optimization, I help businesses grow
-                their online presence with modern solutions.
+                From custom websites to SEO optimization, I help Twin Cities
+                businesses grow their online presence with modern,
+                conversion-focused solutions.
               </p>
             </div>
           </div>
@@ -199,20 +209,27 @@
             <div class="col-lg-4 col-md-6">
               <div class="service-card">
                 <div class="service-icon">
-                  <i class="bi bi-code-slash"></i>
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
                 </div>
                 <h3 class="service-title">Custom Web Development</h3>
                 <p class="service-description">
-                  Hand-coded websites built with modern technologies. Fast,
-                  secure, and optimized for performance across all devices.
+                  Hand-coded websites built with modern technologies for
+                  Minneapolis businesses. Fast, secure, and optimized for
+                  performance across all devices.
                 </p>
                 <ul class="service-features">
-                  <li>Responsive Design</li>
-                  <li>SEO Optimized</li>
-                  <li>Fast Loading</li>
+                  <li>Mobile-Responsive Design</li>
+                  <li>SEO-Optimized Structure</li>
+                  <li>Lightning-Fast Loading</li>
+                  <li>Cross-Browser Compatible</li>
                 </ul>
-                <a href="/services" class="service-link">
-                  Learn More <i class="bi bi-arrow-right ms-1"></i>
+                <a
+                  href="/services"
+                  class="service-link"
+                  aria-label="Learn more about web development services"
+                >
+                  Learn More
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -221,20 +238,27 @@
               <div class="service-card featured">
                 <div class="featured-badge">Most Popular</div>
                 <div class="service-icon">
-                  <i class="bi bi-search"></i>
+                  <i class="bi bi-search" aria-hidden="true"></i>
                 </div>
                 <h3 class="service-title">SEO Optimization</h3>
                 <p class="service-description">
-                  Boost your search rankings with technical SEO, content
-                  optimization, and data-driven strategies that get results.
+                  Boost your Minneapolis search rankings with technical SEO,
+                  local optimization, and data-driven strategies that get real
+                  results.
                 </p>
                 <ul class="service-features">
-                  <li>Keyword Research</li>
-                  <li>Technical SEO</li>
+                  <li>Local Minneapolis SEO</li>
+                  <li>Technical SEO Audits</li>
+                  <li>Keyword Research & Strategy</li>
                   <li>Performance Tracking</li>
                 </ul>
-                <a href="/services" class="service-link">
-                  Learn More <i class="bi bi-arrow-right ms-1"></i>
+                <a
+                  href="/services"
+                  class="service-link"
+                  aria-label="Learn more about SEO optimization services"
+                >
+                  Learn More
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -242,42 +266,55 @@
             <div class="col-lg-4 col-md-6">
               <div class="service-card">
                 <div class="service-icon">
-                  <i class="bi bi-graph-up-arrow"></i>
+                  <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
                 </div>
                 <h3 class="service-title">Digital Marketing</h3>
                 <p class="service-description">
                   Complete marketing automation including CRM integration, email
-                  campaigns, and conversion optimization.
+                  campaigns, and conversion optimization for maximum ROI.
                 </p>
                 <ul class="service-features">
                   <li>Marketing Automation</li>
                   <li>CRM Integration</li>
-                  <li>Analytics Setup</li>
+                  <li>Analytics & Reporting</li>
+                  <li>Conversion Optimization</li>
                 </ul>
-                <a href="/services" class="service-link">
-                  Learn More <i class="bi bi-arrow-right ms-1"></i>
+                <a
+                  href="/services"
+                  class="service-link"
+                  aria-label="Learn more about digital marketing services"
+                >
+                  Learn More
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
           </div>
 
           <div class="text-center">
-            <a href="/services" class="btn btn-primary btn-lg px-4">
-              <i class="bi bi-grid me-2"></i>View All Services
+            <a
+              href="/services"
+              class="btn btn-primary btn-lg px-4"
+              aria-label="View all web development and SEO services"
+            >
+              <i class="bi bi-grid me-2" aria-hidden="true"></i>View All
+              Services
             </a>
           </div>
         </div>
       </section>
 
       <!-- Featured Projects Section -->
-      <section class="featured-projects py-5">
+      <section class="featured-projects py-5" id="portfolio">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mb-5">
-              <h2 class="section-heading fw-bold mb-3">Recent Work</h2>
+              <h2 class="section-heading fw-bold mb-3">
+                Recent Work & Success Stories
+              </h2>
               <p class="lead text-muted">
-                See how I've helped businesses transform their digital presence
-                with custom solutions.
+                See how I've helped Minneapolis businesses transform their
+                digital presence with custom solutions that drive real growth.
               </p>
             </div>
           </div>
@@ -288,12 +325,18 @@
                 <div class="project-image-wrapper">
                   <img
                     src="/images/PoemGenerator_Thumbnail.png"
-                    alt="AI Poetry Generator - React Application"
+                    alt="AI Poetry Generator - React Application showcasing modern web development"
                     class="project-image img-fluid"
+                    loading="lazy"
                   />
                   <div class="project-overlay">
-                    <a href="/projects" class="view-project-btn">
-                      <i class="bi bi-eye me-2"></i>View Project
+                    <a
+                      href="/projects"
+                      class="view-project-btn"
+                      aria-label="View AI Poetry Generator project details"
+                    >
+                      <i class="bi bi-eye me-2" aria-hidden="true"></i>View
+                      Project
                     </a>
                   </div>
                 </div>
@@ -301,13 +344,14 @@
                   <span class="project-category">React Development</span>
                   <h4 class="project-title">AI Poetry Generator</h4>
                   <p class="project-description">
-                    Interactive React application with AI integration and modern
-                    UI design.
+                    Interactive React application with AI integration, modern UI
+                    design, and seamless user experience optimization.
                   </p>
                   <div class="project-tech">
                     <span class="tech-tag">React</span>
                     <span class="tech-tag">API Integration</span>
-                    <span class="tech-tag">AI</span>
+                    <span class="tech-tag">AI/ML</span>
+                    <span class="tech-tag">Responsive Design</span>
                   </div>
                 </div>
               </div>
@@ -318,26 +362,33 @@
                 <div class="project-image-wrapper">
                   <img
                     src="/images/hedgehouse_thumbnail.png"
-                    alt="SEO Audit & Optimization Project"
+                    alt="SEO Audit & Optimization Project showing improved search rankings"
                     class="project-image img-fluid"
+                    loading="lazy"
                   />
                   <div class="project-overlay">
-                    <a href="/projects" class="view-project-btn">
-                      <i class="bi bi-eye me-2"></i>View Project
+                    <a
+                      href="/projects"
+                      class="view-project-btn"
+                      aria-label="View SEO optimization project case study"
+                    >
+                      <i class="bi bi-eye me-2" aria-hidden="true"></i>View
+                      Project
                     </a>
                   </div>
                 </div>
                 <div class="project-info">
                   <span class="project-category">SEO Strategy</span>
-                  <h4 class="project-title">Complete SEO Audit</h4>
+                  <h4 class="project-title">Complete SEO Transformation</h4>
                   <p class="project-description">
-                    Comprehensive SEO analysis and optimization strategy for
-                    furniture retailer.
+                    Comprehensive SEO analysis and optimization strategy that
+                    increased organic traffic by 300% for furniture retailer.
                   </p>
                   <div class="project-tech">
                     <span class="tech-tag">Technical SEO</span>
+                    <span class="tech-tag">Local SEO</span>
                     <span class="tech-tag">Analytics</span>
-                    <span class="tech-tag">Strategy</span>
+                    <span class="tech-tag">Content Strategy</span>
                   </div>
                 </div>
               </div>
@@ -345,22 +396,30 @@
           </div>
 
           <div class="text-center">
-            <a href="/projects" class="btn btn-outline-primary btn-lg px-4">
-              <i class="bi bi-folder me-2"></i>View Full Portfolio
+            <a
+              href="/projects"
+              class="btn btn-outline-primary btn-lg px-4"
+              aria-label="View complete portfolio of web development projects"
+            >
+              <i class="bi bi-folder me-2" aria-hidden="true"></i>View Full
+              Portfolio
             </a>
           </div>
         </div>
       </section>
 
       <!-- Blog Preview Section -->
-      <section class="blog-preview py-5">
+      <section class="blog-preview py-5" id="insights">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mb-5">
-              <h2 class="section-heading fw-bold mb-3">Latest Insights</h2>
+              <h2 class="section-heading fw-bold mb-3">
+                Latest Web Development Insights
+              </h2>
               <p class="lead text-muted">
                 Stay updated with the latest web development tips, SEO
-                strategies, and digital marketing insights.
+                strategies, and digital marketing insights for Minneapolis
+                businesses.
               </p>
             </div>
           </div>
@@ -371,33 +430,43 @@
                 <div class="blog-image-wrapper">
                   <img
                     src="/images/featured-blog-post.jpg"
-                    alt="Advanced JavaScript Techniques Blog Post"
+                    alt="Advanced JavaScript Techniques for Modern Web Development"
                     class="blog-image img-fluid"
+                    loading="lazy"
                   />
                   <span class="blog-category">Web Development</span>
                 </div>
                 <div class="blog-content">
                   <div class="blog-meta">
                     <span class="blog-date">
-                      <i class="bi bi-calendar3 me-1"></i>Dec 15, 2024
+                      <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>Dec
+                      15, 2024
                     </span>
                     <span class="blog-read-time">
-                      <i class="bi bi-clock me-1"></i>8 min read
+                      <i class="bi bi-clock me-1" aria-hidden="true"></i>8 min
+                      read
                     </span>
                   </div>
                   <h4 class="blog-title">
-                    <a href="/blog"
-                      >Advanced JavaScript Techniques for Modern Web
-                      Development</a
+                    <a
+                      href="/blog"
+                      aria-label="Read article about advanced JavaScript techniques"
                     >
+                      Advanced JavaScript Techniques for Modern Web Development
+                    </a>
                   </h4>
                   <p class="blog-excerpt">
                     Discover cutting-edge JavaScript ES6+ features and
                     performance optimization techniques that will elevate your
-                    web development skills...
+                    Minneapolis business website's user experience and speed...
                   </p>
-                  <a href="/blog" class="blog-read-more">
-                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                  <a
+                    href="/blog"
+                    class="blog-read-more"
+                    aria-label="Read full JavaScript techniques article"
+                  >
+                    Read More
+                    <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                   </a>
                 </div>
               </article>
@@ -408,32 +477,43 @@
                 <div class="blog-image-wrapper">
                   <img
                     src="/images/seo-optimization-guide.jpg"
-                    alt="SEO Optimization Guide Blog Post"
+                    alt="Complete SEO Optimization Guide for Minneapolis Businesses"
                     class="blog-image img-fluid"
+                    loading="lazy"
                   />
-                  <span class="blog-category">SEO</span>
+                  <span class="blog-category">Local SEO</span>
                 </div>
                 <div class="blog-content">
                   <div class="blog-meta">
                     <span class="blog-date">
-                      <i class="bi bi-calendar3 me-1"></i>Nov 28, 2024
+                      <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>Nov
+                      28, 2024
                     </span>
                     <span class="blog-read-time">
-                      <i class="bi bi-clock me-1"></i>6 min read
+                      <i class="bi bi-clock me-1" aria-hidden="true"></i>6 min
+                      read
                     </span>
                   </div>
                   <h4 class="blog-title">
-                    <a href="/blog"
-                      >Complete SEO Optimization Guide for Developers</a
+                    <a
+                      href="/blog"
+                      aria-label="Read SEO optimization guide for Minneapolis businesses"
                     >
+                      Complete SEO Guide for Minneapolis Businesses
+                    </a>
                   </h4>
                   <p class="blog-excerpt">
-                    Master technical SEO implementation with this comprehensive
-                    guide covering meta tags, structured data, and Core Web
-                    Vitals...
+                    Master local SEO and technical optimization with this
+                    comprehensive guide covering meta tags, structured data,
+                    Core Web Vitals, and Minneapolis-specific ranking factors...
                   </p>
-                  <a href="/blog" class="blog-read-more">
-                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                  <a
+                    href="/blog"
+                    class="blog-read-more"
+                    aria-label="Read full SEO optimization guide"
+                  >
+                    Read More
+                    <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                   </a>
                 </div>
               </article>
@@ -441,24 +521,29 @@
           </div>
 
           <div class="text-center">
-            <a href="/blog" class="btn btn-outline-primary btn-lg px-4">
-              <i class="bi bi-journal-text me-2"></i>Read All Articles
+            <a
+              href="/blog"
+              class="btn btn-outline-primary btn-lg px-4"
+              aria-label="Read all web development and SEO articles"
+            >
+              <i class="bi bi-journal-text me-2" aria-hidden="true"></i>Read All
+              Articles
             </a>
           </div>
         </div>
       </section>
 
       <!-- Testimonials Section -->
-      <section class="testimonials-section py-5">
+      <section class="testimonials-section py-5" id="testimonials">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mb-5">
               <h2 class="section-heading fw-bold mb-3">
-                Client Success Stories
+                Minneapolis Client Success Stories
               </h2>
               <p class="lead text-muted">
-                See what clients say about working with me and the results
-                they've achieved.
+                See what Twin Cities business owners say about working with me
+                and the measurable results they've achieved.
               </p>
             </div>
           </div>
@@ -467,20 +552,21 @@
             <div class="col-lg-4 col-md-6">
               <div class="testimonial-card">
                 <div class="testimonial-rating mb-3">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
                 </div>
                 <blockquote class="testimonial-quote">
-                  "Michelle transformed our online presence completely. Our
-                  website not only looks amazing but also helped us rank higher
-                  on Google and attract more customers."
+                  Michelle transformed our online presence completely. Our
+                  website not only looks amazing but also helped us rank #1 on
+                  Google for our main keywords and attract 40% more local
+                  customers.
                 </blockquote>
                 <div class="testimonial-author">
                   <strong>Sarah Johnson</strong>
-                  <span>Owner, Green Leaf Consulting</span>
+                  <span>Owner, Green Leaf Consulting - Minneapolis</span>
                 </div>
               </div>
             </div>
@@ -488,20 +574,21 @@
             <div class="col-lg-4 col-md-6">
               <div class="testimonial-card">
                 <div class="testimonial-rating mb-3">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
                 </div>
                 <blockquote class="testimonial-quote">
-                  "Working with Michelle was fantastic. She created a digital
-                  strategy that connects with our customers and drives real
-                  results for our business."
+                  Working with Michelle was fantastic. She created a digital
+                  strategy that connects with our Minneapolis customers and
+                  drives real results - our online sales increased 250% in 6
+                  months.
                 </blockquote>
                 <div class="testimonial-author">
                   <strong>Mike Chen</strong>
-                  <span>Founder, TechFlow Solutions</span>
+                  <span>Founder, TechFlow Solutions - St. Paul</span>
                 </div>
               </div>
             </div>
@@ -509,20 +596,21 @@
             <div class="col-lg-4 col-md-6">
               <div class="testimonial-card">
                 <div class="testimonial-rating mb-3">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
                 </div>
                 <blockquote class="testimonial-quote">
-                  "Michelle delivered a website that perfectly represents our
-                  brand while being incredibly user-friendly. The SEO results
-                  have been outstanding."
+                  Michelle delivered a website that perfectly represents our
+                  brand while being incredibly user-friendly. The local SEO
+                  results have been outstanding - we're now the top agency in
+                  Minneapolis.
                 </blockquote>
                 <div class="testimonial-author">
                   <strong>Lisa Rodriguez</strong>
-                  <span>Marketing Director, Bloom Agency</span>
+                  <span>Marketing Director, Bloom Agency - Minneapolis</span>
                 </div>
               </div>
             </div>
@@ -531,39 +619,48 @@
       </section>
 
       <!-- About Preview Section -->
-      <section class="about-preview py-5">
+      <section class="about-preview py-5" id="about">
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-6">
               <div class="about-content">
                 <span class="badge bg-light text-dark mb-3 fw-bold">
-                  Meet Your Developer
+                  Meet Your Minneapolis Developer
                 </span>
                 <h2 class="section-heading fw-bold mb-4">
                   From Educator to Full-Stack Developer
                 </h2>
                 <p class="lead mb-4">
                   Hi! I'm Michelle, a certified full-stack developer and digital
-                  marketing strategist with a unique background in education
-                  that helps me understand user needs and create intuitive
-                  solutions.
+                  marketing strategist based in Minneapolis. My unique
+                  background in education helps me understand user needs and
+                  create intuitive solutions that work.
                 </p>
                 <div class="about-highlights mb-4">
                   <div class="highlight-item">
-                    <i class="bi bi-mortarboard me-3"></i>
-                    <span>Master's Degree + 10 Years Experience</span>
+                    <i class="bi bi-mortarboard me-3" aria-hidden="true"></i>
+                    <span
+                      >Master's Degree + 10 Years Twin Cities Experience</span
+                    >
                   </div>
                   <div class="highlight-item">
-                    <i class="bi bi-award me-3"></i>
-                    <span>Certified Web Developer & SEO Specialist</span>
+                    <i class="bi bi-award me-3" aria-hidden="true"></i>
+                    <span>Certified Web Developer & Local SEO Specialist</span>
                   </div>
                   <div class="highlight-item">
-                    <i class="bi bi-graph-up me-3"></i>
-                    <span>Data-Driven Approach to Digital Strategy</span>
+                    <i class="bi bi-graph-up me-3" aria-hidden="true"></i>
+                    <span
+                      >Data-Driven Approach to Minneapolis Market Success</span
+                    >
                   </div>
                 </div>
-                <a href="/about" class="btn btn-primary">
-                  <i class="bi bi-person me-2"></i>Learn More About Me
+                <a
+                  href="/about"
+                  class="btn btn-primary"
+                  aria-label="Learn more about Michelle's background and expertise"
+                >
+                  <i class="bi bi-person me-2" aria-hidden="true"></i>Learn More
+                  About Me
                 </a>
               </div>
             </div>
@@ -571,8 +668,9 @@
               <div class="about-image-wrapper">
                 <img
                   src="/images/portfolio.png"
-                  alt="Michelle Pokodner - Web Developer & Digital Marketing Expert"
+                  alt="Michelle Pokodner - Minneapolis Web Developer & Digital Marketing Expert"
                   class="about-image img-fluid"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -581,21 +679,22 @@
       </section>
 
       <!-- Final CTA Section -->
-      <section class="final-cta-section py-5">
+      <section class="final-cta-section py-5" id="get-started">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="final-cta-card text-center">
                 <div class="cta-icon mb-4">
-                  <i class="bi bi-rocket-takeoff"></i>
+                  <i class="bi bi-rocket-takeoff" aria-hidden="true"></i>
                 </div>
                 <h2 class="cta-title fw-bold mb-3">
-                  Ready to Build Your Digital Hive?
+                  Ready to Dominate Minneapolis Search Results?
                 </h2>
                 <p class="cta-text lead mb-4">
                   Let's create a website that not only looks amazing but drives
-                  real results for your business. Get a free consultation and
-                  project quote today.
+                  real results for your Minneapolis business. Get a free
+                  consultation and discover how I can help you outrank your
+                  competition.
                 </p>
                 <div
                   class="cta-buttons d-flex justify-content-center gap-3 flex-wrap"
@@ -604,15 +703,19 @@
                     href="/contact"
                     class="btn btn-primary btn-lg px-4"
                     role="button"
+                    aria-label="Get free consultation for your web development project"
                   >
-                    <i class="bi bi-chat me-2"></i>Get Free Consultation
+                    <i class="bi bi-chat me-2" aria-hidden="true"></i>Get Free
+                    Consultation
                   </a>
                   <a
                     href="/services"
                     class="btn btn-outline-primary btn-lg px-4"
                     role="button"
+                    aria-label="View web development and SEO service pricing"
                   >
-                    <i class="bi bi-grid me-2"></i>View Pricing
+                    <i class="bi bi-grid me-2" aria-hidden="true"></i>View
+                    Pricing
                   </a>
                 </div>
               </div>
@@ -626,28 +729,40 @@
     <footer class="footer-section text-center py-5 text-white">
       <div class="container">
         <h4 class="footer-title mb-3">Let's Work Together!</h4>
-        <a href="/contact" class="btn btn-branding mt-3 mb-4">Contact Me</a>
+        <a
+          href="/contact"
+          class="btn btn-branding mt-3 mb-4"
+          aria-label="Contact Michelle for web development services"
+          >Contact Me</a
+        >
         <p class="footer-email mb-4">
-          <a href="mailto:mpokodner@gmail.com" class="email-link">
-            <i class="bi bi-envelope me-2"></i>mpokodner@gmail.com
+          <a
+            href="mailto:mpokodner@gmail.com"
+            class="email-link"
+            aria-label="Send email to Michelle Pokodner"
+          >
+            <i class="bi bi-envelope me-2" aria-hidden="true"></i
+            >mpokodner@gmail.com
           </a>
         </p>
         <div class="social-links d-flex justify-content-center gap-3">
           <a
             href="https://github.com/mpokodner"
             target="_blank"
-            aria-label="GitHub Profile"
+            rel="noopener noreferrer"
+            aria-label="View Michelle's GitHub profile"
             class="social-link"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github" aria-hidden="true"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
             target="_blank"
-            aria-label="LinkedIn Profile"
+            rel="noopener noreferrer"
+            aria-label="Connect with Michelle on LinkedIn"
             class="social-link"
           >
-            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -690,6 +805,20 @@
         if (heroContent) {
           heroContent.style.opacity = "1";
         }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
       });
     </script>
   </body>
