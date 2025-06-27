@@ -317,3 +317,34 @@ footer h4 {
   color: var(--dark); /* Or any color you want the icon to turn on hover */
   transform: translateY(-2px);
 }
+
+.btn-branding {
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+  border: 2px solid var(--gold) !important;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-branding:hover {
+  background-color: var(--gold) !important;
+  color: var(--dark) !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .about-hero {
+    min-height: 100vh;
+  }
+  .credential-item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .credential-item {
+    text-align: left;
+  }
+}
