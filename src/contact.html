@@ -167,148 +167,69 @@
                   </div>
                 </div>
 
-                <!-- Contact Form -->
+                <!-- Thank you message section -->
                 <div class="col-lg-7">
                   <div class="form-section">
-                    <h2 class="form-title">Send Me a Message</h2>
-                    <p class="form-subtitle">
-                      Fill out the form below and I'll get back to you as soon
-                      as possible.
-                    </p>
-
-                    <!-- Success/Error Alerts -->
-                    <div class="alert alert-success" id="success-alert">
-                      <i class="fas fa-check-circle me-2"></i>
-                      <strong>Message sent successfully!</strong> I'll get back
-                      to you within 24 hours.
-                    </div>
-
-                    <div class="alert alert-danger" id="error-alert">
-                      <i class="fas fa-exclamation-triangle me-2"></i>
-                      <strong>Oops!</strong> There was an error sending your
-                      message. Please try again or email me directly.
-                    </div>
-
-                    <form id="contact-form" novalidate>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName" class="form-label"
-                              >First Name *</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="firstName"
-                              name="firstName"
-                              required
-                            />
-                            <div class="invalid-feedback">
-                              Please provide your first name.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="lastName" class="form-label"
-                              >Last Name *</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              name="lastName"
-                              required
-                            />
-                            <div class="invalid-feedback">
-                              Please provide your last name.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label for="email" class="form-label"
-                          >Email Address *</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                          required
+                    <div class="thank-you-content fade-in-up">
+                    <!--Profile picture-->
+                      <div class="profile-picture-container">
+                        <img
+                          src="/images/portfolio.png"
+                          alt="Michelle Pokodner-Web Developer"
+                          class="profile-picture"
                         />
-                        <div class="invalid-feedback">
-                          Please provide a valid email address.
-                        </div>
                       </div>
-
-                      <div class="form-group">
-                        <label for="subject" class="form-label"
-                          >Subject *</label
-                        >
-                        <select
-                          class="form-control"
-                          id="subject"
-                          name="subject"
-                          required
-                        >
-                          <option value="">Select a subject...</option>
-                          <option value="web-development">
-                            Web Development Project
-                          </option>
-                          <option value="digital-marketing">
-                            Digital Marketing Services
-                          </option>
-                          <option value="consultation">
-                            Free Consultation
-                          </option>
-                          <option value="existing-project">
-                            Existing Project Support
-                          </option>
-                          <option value="other">Other</option>
-                        </select>
-                        <div class="invalid-feedback">
-                          Please select a subject.
-                        </div>
+                      <!--Thank you message-->
+                    <h2 class="form-title text-center">Thank You for Visiting!</h2>
+                    <div class="thank-you-message">
+                      <p class="lead text-center mb-4">
+                        Hi there! I'm excited that you are interested in working together 🐝!
+                      </p>
+                    <p class="text-center mb-4">
+                      I specialize in creating high-performance website and digital marketing solutions to help your business grow online. Whether you need a brand new website, want to optimize your existing website, or need help with digital marketing strategies, I'm here to help bring your vision to life.
+                    </p>
+                    <p class="text-center mb-4">
+                      <strong>Ready to get started?</strong>Use one of the contact methods on the left 
+                      to reach out, and I'll get back to you within 24 hours. I'd love to hear about 
+                      your project and discuss how we can work together!
+                    </p>
+                    <p class="text-center mb-4">
+                      <a href="mailto:mpokodner@gmail.com" class="btn btn-primary">
+                    <div class="features-list">
+                      <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free initial consultation</span>
                       </div>
-
-                      <div class="form-group">
-                        <label for="budget" class="form-label"
-                          >Project Budget (Optional)</label
-                        >
-                        <select class="form-control" id="budget" name="budget">
-                          <option value="">Select budget range...</option>
-                          <option value="under-1k">Under $1,000</option>
-                          <option value="1k-5k">$1,000 - $5,000</option>
-                          <option value="5k-10k">$5,000 - $10,000</option>
-                          <option value="10k-plus">$10,000+</option>
-                          <option value="discuss">Let's Discuss</option>
-                        </select>
+                      <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24-hour response time</span>
                       </div>
-
-                      <div class="form-group">
-                        <label for="message" class="form-label"
-                          >Message *</label
-                        >
-                        <textarea
-                          class="form-control"
-                          id="message"
-                          name="message"
-                          rows="5"
-                          placeholder="Tell me about your project, goals, timeline, and any specific requirements..."
-                          required
-                        ></textarea>
-                        <div class="invalid-feedback">
-                          Please provide a message.
-                        </div>
+                      <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Custom solutions for your needs</span>
                       </div>
-
-                      <button type="submit" class="submit-btn">
-                        <span class="spinner" id="loading-spinner"></span>
-                        <span id="button-text">Send Message</span>
-                      </button>
-                    </form>
+                      <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Ongoing support & maintenance</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Call to Action Buttons -->
+                  <div class="cta-buttons">
+                    <a href="mailto:mpokodner@gmail.com" class="submit-btn primary-cta">
+                      <i class="fas fa-envelope"></i>
+                      <span>Email Me Now</span>
+                    </a>
+                    
+                    <a 
+                      href="https://www.fiverr.com/your-profile" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="submit-btn secondary-cta"
+                    >
+                      <i class="fab fa-fiverr"></i>
+                      <span>View My Services</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -316,111 +237,9 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Form validation and submission
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const form = this;
-          const submitBtn = document
-            .getElementById("contact-form")
-            .querySelector(".submit-btn");
-          const spinner = document.getElementById("loading-spinner");
-          const buttonText = document.getElementById("button-text");
-          const successAlert = document.getElementById("success-alert");
-          const errorAlert = document.getElementById("error-alert");
-
-          // Hide alerts
-          successAlert.style.display = "none";
-          errorAlert.style.display = "none";
-
-          // Validate form
-          if (!form.checkValidity()) {
-            e.stopPropagation();
-            form.classList.add("was-validated");
-            return;
-          }
-
-          // Show loading state
-          submitBtn.classList.add("loading");
-          spinner.style.display = "inline-block";
-          buttonText.textContent = "Sending...";
-
-          // Simulate form submission (replace with actual form handler)
-          setTimeout(function () {
-            // Reset loading state
-            submitBtn.classList.remove("loading");
-            spinner.style.display = "none";
-            buttonText.textContent = "Send Message";
-
-            // Show success message
-            successAlert.style.display = "block";
-            form.reset();
-            form.classList.remove("was-validated");
-
-            // Scroll to success message
-            successAlert.scrollIntoView({
-              behavior: "smooth",
-              block: "center",
-            });
-
-            // You would replace this with actual form submission logic
-            // Example: send data to your backend, email service, etc.
-          }, 2000);
-        });
-
-      // Real-time validation feedback
-      const inputs = document.querySelectorAll(".form-control");
-      inputs.forEach((input) => {
-        input.addEventListener("blur", function () {
-          if (this.checkValidity()) {
-            this.classList.remove("is-invalid");
-            this.classList.add("is-valid");
-          } else {
-            this.classList.remove("is-valid");
-            this.classList.add("is-invalid");
-          }
-        });
-
-        input.addEventListener("input", function () {
-          if (this.classList.contains("is-invalid") && this.checkValidity()) {
-            this.classList.remove("is-invalid");
-            this.classList.add("is-valid");
-          }
-        });
-      });
-
-      // Smooth animations on load
-      window.addEventListener("load", function () {
-        const elements = document.querySelectorAll(".fade-in-up");
-        elements.forEach((el) => {
-          el.style.opacity = "1";
-        });
-      });
-
-      // Intersection Observer for contact methods animation
-      const observerOptions = {
-        threshold: 0.2,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver(function (entries) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".contact-method").forEach((method) => {
-        observer.observe(method);
-      });
-    </script>
+    </div>
+  </div>
+</section>
     <!-- Footer -->
     <footer
       class="container-fluid py-5 text-center"
@@ -478,6 +297,49 @@
       integrity="sha384-..."
       crossorigin="anonymous"
     ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Form validation and submission
+  window.addEventListener("load", function () {
+    const elements = document.querySelectorAll(".fade-in-up");
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
+      }, index * 200);
+    });
+  });
+
+  // Intersection Observer for contact methods animation
+  const observerOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px",
+  };
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-in");
+      }
+    });
+  }, observerOptions);
+
+  // Observe contact methods and thank you content
+  document.querySelectorAll(".contact-method, .thank-you-content").forEach((element) => {
+    observer.observe(element);
+  });
+
+  // Add hover effects to CTA buttons
+  document.querySelectorAll(".submit-btn").forEach((btn) => {
+    btn.addEventListener("mouseenter", function() {
+      this.style.transform = "translateY(-2px)";
+    });
+    
+    btn.addEventListener("mouseleave", function() {
+      this.style.transform = "translateY(0)";
+    });
+  });
+    </script>
     <script src="/js/index.js"></script>
   </body>
 </html>
