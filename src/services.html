@@ -33,11 +33,11 @@
 
     <!-- Fonts and Icons -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Fjalla+One"
+      href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,7 +45,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
 
@@ -70,318 +70,494 @@
     </noscript>
 
     <!-- Header -->
-<!-- Header -->
-<header class="container-fluid border border-2 border-black">
-  <nav class="navbar navbar-expand-lg navbar-dark px-3">
-    <a class="navbar-brand d-flex align-items-center" href="/">
-      <img
-        src="/images/logo.png"
-        width="50"
-        height="50"
-        alt="WebHive Optimize Logo"
-        class="me-2 rounded border border-2 border-warning"
-      />
-      <span class="site-title fw-bold">WebHive Optimize</span>
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="/faqprivacy">FAQ & Privacy</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img
+            src="/images/logo.png"
+            width="50"
+            height="50"
+            alt="WebHive Optimize Logo"
+            class="me-2 rounded"
+          />
+          <span class="site-title fw-bold">WebHive Optimize</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faqprivacy">FAQ & Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <!-- Page Wrapper -->
-    <div class="d-flex flex-column min-vh-100">
+    <!-- Main Content -->
+    <main>
       <!-- Hero Section -->
-      <!-- CTA Section -->
-      <section class="cta-ribbon text-center text-white py-5 mt-auto">
-        <div class="container position-relative">
-          <h2 class="fw-bold display-6 mb-3">Ready to get started?</h2>
-          <p class="lead mx-auto mb-4" style="max-width: 36rem">
-            All orders are fulfilled securely through Fiverr. Click below to
-            choose your package and we’ll begin crafting your high-performance
-            site.
-          </p>
-          <a href="#" class="btn btn-primary-custom px-5 py-3 fs-5 fw-semibold"
-            >Order on Fiverr</a
-          >
+      <section class="hero-section py-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <span class="badge bg-light text-dark mb-3 fw-bold">
+                Professional Web Development Services
+              </span>
+              <h1 class="hero-title mb-4">Transform Your Digital Presence</h1>
+              <p class="hero-subtitle lead">
+                Choose from three comprehensive packages designed to meet your
+                business needs, from simple landing pages to enterprise-level
+                automation solutions.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-       <!-- Pricing Tiers -->
-        <div class="row g-4 mb-5">
-          <!-- Starter Hive -->
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card">
-              <h2 class="price-title">Starter Hive</h2>
-              <p class="price-subtitle">
-                Perfect for small businesses & startups
-              </p>
-              <div class="mb-3">
-                <span class="price-amount">$350</span>
-                <span class="price-label">Fixed Price</span>
-              </div>
-              <p class="delivery-time">⏱️ 1 week delivery + 1 week support</p>
-
-              <ul class="feature-list">
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  2 pages (Home + Contact)
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Netlify Forms + GA4 integration
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Fully responsive design
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Basic SEO optimization
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  1 week post-launch support
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Growth Hive -->
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-card popular">
-              <div class="popular-badge">MOST POPULAR</div>
-              <h2 class="price-title">Growth Hive</h2>
-              <p class="price-subtitle">
-                For growing businesses with automation needs
-              </p>
-              <div class="mb-3">
-                <span class="price-amount">$750</span>
-                <span class="price-label">Fixed Price</span>
-              </div>
-              <p class="delivery-time">⏱️ 2 weeks delivery + sprint support</p>
-
-              <ul class="feature-list">
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Up to 5 pages
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  ActiveCampaign/Mailchimp integration
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Snipcart/Shopify Buy Button
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Advanced SEO + Schema markup
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  GA4 + basic GTM setup
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Basic automation via Zapier
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Royal Hive -->
-          <div class="col-lg-4 col-md-6 mx-auto">
-            <div class="pricing-card">
-              <h2 class="price-title">Royal Hive</h2>
-              <p class="price-subtitle">
-                Enterprise solution with full automation
-              </p>
-              <div class="mb-3">
-                <span class="price-amount">$1500+</span>
-                <span class="price-label">Custom Quote</span>
-              </div>
-              <p class="delivery-time">⏱️ 4 weeks + quarterly audit</p>
-
-              <ul class="feature-list">
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  10+ pages + blog
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Headless Shopify + CRM integration
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Full Shopify API implementation
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Predictive lead scoring
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  GA4 + GTM + Custom dashboard
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Advanced SEO + Performance optimization
-                </li>
-                <li class="feature-item">
-                  <span class="check-icon">✓</span>
-                  Quarterly maintenance & audits
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Process Section -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <h2 class="section-title">Streamlined Process</h2>
-            <div class="row">
-              <div class="col-md-3 text-center mb-4">
-                <div class="mb-3">
-                  <span style="font-size: 3rem">📋</span>
-                </div>
-                <h5>1. Intake Form</h5>
-                <p class="text-muted">Complete detailed project requirements</p>
-              </div>
-              <div class="col-md-3 text-center mb-4">
-                <div class="mb-3">
-                  <span style="font-size: 3rem">⚡</span>
-                </div>
-                <h5>2. Development</h5>
-                <p class="text-muted">
-                  Expert coding with modern tools & frameworks
+      <!-- Pricing Section -->
+      <section class="pricing-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center mb-5">
+                <h2 class="section-heading fw-bold mb-3">Service Packages</h2>
+                <p class="lead text-muted">
+                  All orders are fulfilled securely through Fiverr with
+                  transparent pricing and guaranteed delivery.
                 </p>
               </div>
-              <div class="col-md-3 text-center mb-4">
-                <div class="mb-3">
-                  <span style="font-size: 3rem">🔧</span>
+
+              <!-- Pricing Tiers -->
+              <div class="row g-4 mb-5">
+                <!-- Starter Hive -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="pricing-card h-100">
+                    <div class="card-header">
+                      <h3 class="price-title">Starter Hive</h3>
+                      <p class="price-subtitle">
+                        Perfect for small businesses & startups
+                      </p>
+                      <div class="price-wrapper mb-3">
+                        <span class="price-amount">$350</span>
+                        <span class="price-label">Fixed Price</span>
+                      </div>
+                      <p class="delivery-time">
+                        <i class="bi bi-clock me-2"></i>1 week delivery + 1 week
+                        support
+                      </p>
+                    </div>
+
+                    <div class="card-body">
+                      <ul class="feature-list">
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          2 pages (Home + Contact)
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Netlify Forms + GA4 integration
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Fully responsive design
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Basic SEO optimization
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          1 week post-launch support
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <h5>3. Integration</h5>
-                <p class="text-muted">
-                  Connect all your business tools seamlessly
+
+                <!-- Growth Hive -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="pricing-card popular h-100">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="card-header">
+                      <h3 class="price-title">Growth Hive</h3>
+                      <p class="price-subtitle">
+                        For growing businesses with automation needs
+                      </p>
+                      <div class="price-wrapper mb-3">
+                        <span class="price-amount">$750</span>
+                        <span class="price-label">Fixed Price</span>
+                      </div>
+                      <p class="delivery-time">
+                        <i class="bi bi-clock me-2"></i>2 weeks delivery +
+                        sprint support
+                      </p>
+                    </div>
+
+                    <div class="card-body">
+                      <ul class="feature-list">
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Up to 5 pages
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          ActiveCampaign/Mailchimp integration
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Snipcart/Shopify Buy Button
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Advanced SEO + Schema markup
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          GA4 + basic GTM setup
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Basic automation via Zapier
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Royal Hive -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                  <div class="pricing-card h-100">
+                    <div class="card-header">
+                      <h3 class="price-title">Royal Hive</h3>
+                      <p class="price-subtitle">
+                        Enterprise solution with full automation
+                      </p>
+                      <div class="price-wrapper mb-3">
+                        <span class="price-amount">$1500+</span>
+                        <span class="price-label">Custom Quote</span>
+                      </div>
+                      <p class="delivery-time">
+                        <i class="bi bi-clock me-2"></i>4 weeks + quarterly
+                        audit
+                      </p>
+                    </div>
+
+                    <div class="card-body">
+                      <ul class="feature-list">
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          10+ pages + blog
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Headless Shopify + CRM integration
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Full Shopify API implementation
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Predictive lead scoring
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          GA4 + GTM + Custom dashboard
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Advanced SEO + Performance optimization
+                        </li>
+                        <li class="feature-item">
+                          <i class="bi bi-check-circle text-success me-2"></i>
+                          Quarterly maintenance & audits
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="process-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center mb-5">
+                <h2 class="section-heading fw-bold mb-3">
+                  Streamlined Process
+                </h2>
+                <p class="lead text-muted">
+                  From concept to launch, our proven process ensures your
+                  project runs smoothly
                 </p>
               </div>
-              <div class="col-md-3 text-center mb-4">
-                <div class="mb-3">
-                  <span style="font-size: 3rem">🚀</span>
+
+              <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                  <div class="process-step text-center">
+                    <div class="step-icon mb-3">
+                      <i class="bi bi-clipboard-data"></i>
+                    </div>
+                    <div class="step-number">1</div>
+                    <h5 class="step-title">Intake Form</h5>
+                    <p class="step-description text-muted">
+                      Complete detailed project requirements and goals
+                      assessment
+                    </p>
+                  </div>
                 </div>
-                <h5>4. Launch</h5>
-                <p class="text-muted">Go live with ongoing support included</p>
+
+                <div class="col-md-3 col-sm-6">
+                  <div class="process-step text-center">
+                    <div class="step-icon mb-3">
+                      <i class="bi bi-code-slash"></i>
+                    </div>
+                    <div class="step-number">2</div>
+                    <h5 class="step-title">Development</h5>
+                    <p class="step-description text-muted">
+                      Expert coding with modern tools & frameworks for optimal
+                      performance
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <div class="process-step text-center">
+                    <div class="step-icon mb-3">
+                      <i class="bi bi-puzzle"></i>
+                    </div>
+                    <div class="step-number">3</div>
+                    <h5 class="step-title">Integration</h5>
+                    <p class="step-description text-muted">
+                      Connect all your business tools and systems seamlessly
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <div class="process-step text-center">
+                    <div class="step-icon mb-3">
+                      <i class="bi bi-rocket-takeoff"></i>
+                    </div>
+                    <div class="step-number">4</div>
+                    <h5 class="step-title">Launch</h5>
+                    <p class="step-description text-muted">
+                      Go live with comprehensive testing and ongoing support
+                      included
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Technologies Section -->
-        <div class="row mt-5 mb-5">
-          <div class="col-12">
-            <h2 class="section-title">Technologies & Tools</h2>
-            <div class="row text-center">
-              <div class="col-md-2 col-4 mb-3">
-                <strong>Frontend</strong><br />
-                <small class="text-muted">HTML, CSS, JavaScript</small>
+      <!-- Technologies Section -->
+      <section class="technologies-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center mb-5">
+                <h2 class="section-heading fw-bold mb-3">
+                  Technologies & Tools
+                </h2>
+                <p class="lead text-muted">
+                  Modern technology stack for scalable, high-performance
+                  websites
+                </p>
               </div>
-              <div class="col-md-2 col-4 mb-3">
-                <strong>Hosting</strong><br />
-                <small class="text-muted">Netlify, Git</small>
-              </div>
-              <div class="col-md-2 col-4 mb-3">
-                <strong>Analytics</strong><br />
-                <small class="text-muted">GA4, GTM</small>
-              </div>
-              <div class="col-md-2 col-4 mb-3">
-                <strong>E-commerce</strong><br />
-                <small class="text-muted">Shopify, Snipcart</small>
-              </div>
-              <div class="col-md-2 col-4 mb-3">
-                <strong>Automation</strong><br />
-                <small class="text-muted">Zapier, APIs</small>
-              </div>
-              <div class="col-md-2 col-4 mb-3">
-                <strong>CRM</strong><br />
-                <small class="text-muted">HubSpot, Klaviyo</small>
+
+              <div class="row g-4 text-center">
+                <div class="col-lg-2 col-md-4 col-6">
+                  <div class="tech-item">
+                    <div class="tech-icon mb-2">
+                      <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h6 class="tech-title">Frontend</h6>
+                    <small class="text-muted">HTML, CSS, JavaScript</small>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                  <div class="tech-item">
+                    <div class="tech-icon mb-2">
+                      <i class="bi bi-cloud"></i>
+                    </div>
+                    <h6 class="tech-title">Hosting</h6>
+                    <small class="text-muted">Netlify, Git</small>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                  <div class="tech-item">
+                    <div class="tech-icon mb-2">
+                      <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h6 class="tech-title">Analytics</h6>
+                    <small class="text-muted">GA4, GTM</small>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                  <div class="tech-item">
+                    <div class="tech-icon mb-2">
+                      <i class="bi bi-shop"></i>
+                    </div>
+                    <h6 class="tech-title">E-commerce</h6>
+                    <small class="text-muted">Shopify, Snipcart</small>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                  <div class="tech-item">
+                    <div class="tech-icon mb-2">
+                      <i class="bi bi-lightning"></i>
+                    </div>
+                    <h6 class="tech-title">Automation</h6>
+                    <small class="text-muted">Zapier, APIs</small>
+                  </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                  <div class="tech-item">
+                    <div class="tech-icon mb-2">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <h6 class="tech-title">CRM</h6>
+                    <small class="text-muted">HubSpot, Klaviyo</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Final CTA -->
-        <div class="text-center mb-5 pb-5">
-          <h3 class="mb-3">Ready to Transform Your Online Presence?</h3>
-          <a
-            href="https://fiverr.com/your-profile"
-            target="_blank"
-            class="fiverr-btn"
-          >
-            🎯 Get Started Today
-          </a>
+      <!-- CTA Section -->
+      <section class="cta-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="cta-card text-center">
+                <div class="cta-icon mb-4">
+                  <i class="bi bi-rocket-takeoff"></i>
+                </div>
+                <h2 class="cta-title fw-bold mb-3">Ready to Get Started?</h2>
+                <p class="cta-text lead mb-4">
+                  All orders are fulfilled securely through Fiverr. Click below
+                  to choose your package and we'll begin crafting your
+                  high-performance site.
+                </p>
+                <div
+                  class="cta-buttons d-flex justify-content-center gap-3 flex-wrap"
+                >
+                  <a href="#" class="btn btn-primary btn-lg px-4" role="button">
+                    Order on Fiverr
+                  </a>
+                  <a
+                    href="/contact"
+                    class="btn btn-outline-primary btn-lg px-4"
+                    role="button"
+                  >
+                    Get Custom Quote
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="container-fluid text-center py-5 text-white">
+    <footer class="footer-section text-center py-5 text-white">
       <div class="container">
-        <h4>Let's Work Together!</h4>
-        <a
-          href="webhiveoptimize.com/contact"
-          target="_blank"
-          class="btn btn-branding mt-3"
-          >Contact Me</a
-        >
-        <p class="mt-4">
-          <a href="mailto:mpokodner@gmail.com" class="email-link"
-            >mpokodner@gmail.com</a
-          >
+        <h4 class="footer-title mb-3">Let's Work Together!</h4>
+        <a href="/contact" class="btn btn-branding mt-3 mb-4">Contact Me</a>
+        <p class="footer-email mb-4">
+          <a href="mailto:mpokodner@gmail.com" class="email-link">
+            <i class="bi bi-envelope me-2"></i>mpokodner@gmail.com
+          </a>
         </p>
-        <div class="social-links d-flex justify-content-center gap-4 mt-3">
+        <div class="social-links d-flex justify-content-center gap-3">
           <a
             href="https://github.com/mpokodner"
             target="_blank"
             aria-label="GitHub Profile"
-            ><i class="fab fa-github"></i
-          ></a>
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
             target="_blank"
             aria-label="LinkedIn Profile"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
+            class="social-link"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </footer>
-    <script src="/js/index.js"></script>
 
-    <!-- Bootstrap JS -->
+    <!-- Scripts -->
+    <script src="/js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animations
+      document
+        .querySelectorAll(".pricing-card, .process-step, .tech-item, .cta-card")
+        .forEach((item) => {
+          observer.observe(item);
+        });
+    </script>
   </body>
 </html>
