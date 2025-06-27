@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Highlight current page in nav more precisely
-  const currentPath = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash
+  // Highlight current nav link
+  const currentPath = window.location.pathname.replace(/\/$/, "");
   document.querySelectorAll(".nav-link").forEach((link) => {
     const linkPath = new URL(link.href).pathname.replace(/\/$/, "");
     if (linkPath === currentPath) {
