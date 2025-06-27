@@ -258,8 +258,7 @@ header {
   align-items: center;
 }
 
-.cta-bg img,
-.cta-overlay {
+.cta-bg img {
   position: absolute;
   inset: 0;
   width: 100%;
