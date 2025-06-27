@@ -15,7 +15,10 @@
   --default-font-family: "Poppins", sans-serif;
   --heading-font-family: "Fjalla One", sans-serif;
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 /* Header Styles */
 header {
   border: 2px solid var(--black);
