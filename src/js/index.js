@@ -1,21 +1,21 @@
-// nav bar
+//navbar
 document.addEventListener("DOMContentLoaded", function () {
-  // Toggle mobile nav
+  // Mobile nav toggle
   const navButton = document.querySelector(".navbar-toggler");
   const navbarNav = document.querySelector("#navbarNav");
 
   if (navButton && navbarNav) {
     navButton.style.color = "black";
-
     navButton.addEventListener("click", function () {
       navbarNav.classList.toggle("open");
     });
   }
 
-  // Highlight current page in nav
-  const currentPath = window.location.pathname;
+  // Highlight current page in nav more precisely
+  const currentPath = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash
   document.querySelectorAll(".nav-link").forEach((link) => {
-    if (link.href.includes(currentPath)) {
+    const linkPath = new URL(link.href).pathname.replace(/\/$/, "");
+    if (linkPath === currentPath) {
       link.classList.add("active");
     }
   });

@@ -54,12 +54,6 @@ header {
   border: 2px solid black;
 }
 
-.navbar-toggler:hover {
-  background-color: var(--white);
-  color: var(--dark);
-  border: 2px solid var(--gold);
-}
-
 /* ─── Hero Section ───────────────────────────────── */
 .hero-bg {
   position: relative;

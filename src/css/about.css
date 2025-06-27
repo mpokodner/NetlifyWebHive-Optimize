@@ -37,28 +37,23 @@ header {
   font-size: 1.2rem;
   font-weight: bold;
 }
-/* nav links*/
+
+/* Navigation Links */
 .nav-link {
   font-weight: bold;
   color: var(--white);
-  background-color: var(--dark);
+  background-color: var(--dark); /* should NOT be gold by default */
   padding: 5px 10px;
   border-radius: 4px;
+  border: 2px solid transparent;
   transition: all 0.3s ease;
 }
 
 .nav-link:hover,
-.nav-link.active {
+.nav-link:active {
   background-color: var(--gold);
   color: var(--white);
-  border: 2px solid black;
-}
-
-/*navbar toggler if using bootstrap*/
-.navbar-toggler:hover {
-  background-color: var(--white);
-  color: var(--dark);
-  border: 2px solid var(--gold);
+  border: 2px solid #000;
 }
 
 body {

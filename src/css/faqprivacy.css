@@ -61,27 +61,23 @@ nav ul li {
 }
 
 /* Navigation Links */
+
+/* Navigation Links */
 .nav-link {
+  font-weight: bold;
   color: var(--white);
-  background-color: var(--dark);
-  text-decoration: none;
+  background-color: var(--dark); /* should NOT be gold by default */
   padding: 5px 10px;
   border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:active {
   background-color: var(--gold);
   color: var(--white);
-  border: 2px solid black;
-  font-weight: bold;
-}
-
-.nav-link.active {
-  background-color: var(--gold);
-  color: var(--white);
-  border: 2px solid black;
-  font-weight: bold;
+  border: 2px solid #000;
 }
 /* ─── Footer ──────────────────────────────────────── */
 /* ─── Footer ──────────────────────────────────────── */
