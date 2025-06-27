@@ -138,8 +138,9 @@ nav ul li {
   }
 }
 /* ─── Footer ──────────────────────────────────────── */
+/* ─── Footer ──────────────────────────────────────── */
 footer {
-  background-color: var(--dark) !important;
+  background-color: var(--dark);
 }
 
 footer h4 {
@@ -150,7 +151,6 @@ footer h4 {
 
 .email-link {
   color: var(--white) !important;
-  text-decoration: none;
   font-weight: 500;
 }
 
@@ -159,13 +159,21 @@ footer h4 {
 }
 
 .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--white);
   font-size: 1.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: var(--gold);
+  background-color: white;
+  color: var(--dark); /* Or any color you want the icon to turn on hover */
   transform: translateY(-2px);
 }
 
