@@ -112,7 +112,7 @@ header {
 /* ─── Hero Section ───────────────────────────── */
 .hero {
   position: relative;
-  min-height: 55vh;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,11 +152,10 @@ header {
   font-size: clamp(2rem, 5vw, 3rem);
   color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  margin-bottom: 1rem;
 }
 
 .lead {
-  font-size: 1.125rem;
+  font-size: 2rem;
   line-height: 1.6;
   color: white;
   margin-bottom: 2rem;
@@ -248,7 +247,7 @@ header {
   padding: 10px 24px;
   border: 2px solid var(--white);
   background-color: var(--white);
-  color: var(--primary, #0056b3);
+  color: var(--dark);
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 600;
@@ -258,12 +257,12 @@ header {
 }
 
 .view-project-btn a {
-  color: var(--primary, #0056b3);
+  color: var(--dark);
   text-decoration: none;
 }
 
 .view-project-btn:hover {
-  background-color: var(--primary, #0056b3);
+  background-color: var(--dark);
   color: var(--white);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
