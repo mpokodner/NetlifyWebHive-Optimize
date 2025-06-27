@@ -37,7 +37,7 @@ header {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
+/* nav links*/
 .nav-link {
   font-weight: bold;
   color: var(--white);
@@ -54,6 +54,7 @@ header {
   border: 2px solid black;
 }
 
+/*navbar toggler if using bootstrap*/
 .navbar-toggler:hover {
   background-color: var(--white);
   color: var(--dark);

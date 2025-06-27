@@ -1,4 +1,6 @@
+// nav bar
 document.addEventListener("DOMContentLoaded", function () {
+  // Toggle mobile nav
   const navButton = document.querySelector(".navbar-toggler");
   const navbarNav = document.querySelector("#navbarNav");
 
@@ -9,7 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
       navbarNav.classList.toggle("open");
     });
   }
+
+  // Highlight current page in nav
+  const currentPath = window.location.pathname;
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.href.includes(currentPath)) {
+      link.classList.add("active");
+    }
+  });
 });
+
 //added for hive page and may need to fix
 document.addEventListener("DOMContentLoaded", function () {
   // Intersection Observer for animations
