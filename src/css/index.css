@@ -251,14 +251,10 @@ header {
 
 .cta-btn:hover {
   background: transparent;
-  color: var(--white);
+  border-color: var(--white);
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
-}
-
-.btn-outline-light:hover {
-  border-color: white;
-  color: var(--honey-dark) !important;
 }
 
 /* ─── Testimonials Section ────────────────────────── */
