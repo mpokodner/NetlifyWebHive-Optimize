@@ -257,7 +257,7 @@ header {
 }
 
 .btn-outline-light:hover {
-  background: var(--white);
+  border-color: white;
   color: var(--honey-dark) !important;
 }
 
@@ -336,7 +336,8 @@ footer h4 {
 }
 
 .social-links a:hover {
-  color: var(--gold);
+  color: var(--black);
+  background-color: white;
   transform: translateY(-2px);
 }
 
