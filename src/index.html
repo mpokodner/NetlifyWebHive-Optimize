@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager & Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-Z8MH25QPG0"
@@ -17,35 +17,37 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Web Development and SEO Optimization Portfolio"
-    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Michelle Pokodner" />
     <meta
       name="keywords"
-      content="Web Development, SEO Optimization, Portfolio"
+      content="web developer Minneapolis, custom website development, SEO optimization services, responsive web design, JavaScript developer, React development, digital marketing expert, freelance web developer, modern website design, mobile-friendly websites"
     />
-    <meta name="author" content="Michelle Pokodner" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://webhiveoptiize.com/" />
+    <meta
+      name="description"
+      content="Professional web developer in Minneapolis specializing in custom website development, SEO optimization, and digital marketing. Build modern, responsive websites that drive results for your business. Get a free consultation today."
+    />
 
-    <title>WebHive Optimize</title>
+    <title>
+      Minneapolis Web Developer | Custom Websites & SEO | WebHive Optimize
+    </title>
+    <link rel="canonical" href="https://webhiveoptimize.com/" />
 
     <!-- Fonts and Icons -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
 
-    <!-- Styles -->
+    <!-- Bootstrap & Custom Styles -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -66,7 +68,7 @@
     </noscript>
 
     <!-- Header -->
-    <header class="container-fluid border border-2 border-black">
+    <header class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark px-3">
         <a class="navbar-brand d-flex align-items-center" href="/">
           <img
@@ -74,7 +76,7 @@
             width="50"
             height="50"
             alt="WebHive Optimize Logo"
-            class="me-2 rounded border border-2 border-warning"
+            class="me-2 rounded"
           />
           <span class="site-title fw-bold">WebHive Optimize</span>
         </a>
@@ -91,7 +93,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
             </li>
@@ -113,165 +117,580 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-bg position-relative">
-      <img
-        src="/images/herobeforefold.png"
-        alt="Wood background"
-        class="img-fluid w-100 h-100"
-        loading="lazy"
-      />
-      <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
-      <div class="container position-relative z-2 text-white text-center">
-        <h1 class="hero-title">Build Your Hive • Optimize • Connect</h1>
-        <h2 class="hero-text mt-3">
-          Custom Websites That Convert—Powered by Strategy, Code, and Automation
-        </h2>
-        <a href="/services" class="btn btn-primary hero-button mt-4"
-          >Explore Services</a
-        >
-      </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <img
+          src="/images/herobeforefold.png"
+          class="hero-img"
+          alt="Professional web development services background"
+          loading="eager"
+        />
+        <div class="overlay"></div>
 
-    <!-- Core Values -->
-    <section class="core-values py-5 bg-light bg-gradient">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">Core Values</h2>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="value-card text-center">
-              <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
-              <h3 class="value-title">Innovation</h3>
-              <p class="value-description">
-                I leverage cutting-edge technologies and creative solutions to
-                solve complex problems, using clean code and modern development
-                practices to build high-performance websites.
-              </p>
+        <div class="hero-content text-center text-white">
+          <div class="container">
+            <span class="badge bg-light text-dark mb-3 fw-bold">
+              Minneapolis Web Developer
+            </span>
+            <h1 class="hero-title fw-bold">
+              Build Your Digital Hive • Optimize • Connect
+            </h1>
+            <p class="hero-subtitle lead">
+              Custom websites that convert visitors into customers. Powered by
+              strategic design, clean code, and marketing automation that drives
+              real results.
+            </p>
+            <div
+              class="hero-buttons d-flex justify-content-center gap-3 flex-wrap"
+            >
+              <a class="hero-btn btn" href="/services">
+                <i class="bi bi-rocket me-2"></i>Explore Services
+              </a>
+              <a class="hero-btn-outline btn" href="/projects">
+                <i class="bi bi-eye me-2"></i>View My Work
+              </a>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="value-card text-center">
-              <div class="value-icon"><i class="fas fa-users"></i></div>
-              <h3 class="value-title">Collaboration</h3>
-              <p class="value-description">
-                I work closely with clients to understand their needs, combining
-                SEO best practices with strategic visual design to build strong
-                connections.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="value-card text-center">
-              <div class="value-icon"><i class="fas fa-chart-line"></i></div>
-              <h3 class="value-title">Growth</h3>
-              <p class="value-description">
-                I create scalable solutions to help small businesses grow online
-                through data-driven optimization and user-centered design.
-              </p>
+
+            <!-- Trust Indicators -->
+            <div class="trust-indicators mt-4">
+              <div class="row justify-content-center g-3">
+                <div class="col-auto">
+                  <div class="trust-item">
+                    <i class="bi bi-shield-check me-2"></i>
+                    <span>Certified Developer</span>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="trust-item">
+                    <i class="bi bi-clock me-2"></i>
+                    <span>24hr Response</span>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="trust-item">
+                    <i class="bi bi-star-fill me-2"></i>
+                    <span>5-Star Rated</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA Section -->
-    <section class="cta-bg position-relative d-flex align-items-center">
-      <img
-        src="/images/cta-wood.png"
-        alt="Natural wood background"
-        class="img-fluid w-100 h-100"
-        loading="lazy"
-      />
-      <div
-        class="cta-overlay position-absolute top-0 start-0 w-100 h-100"
-      ></div>
-      <div class="container position-relative z-2 text-center text-white py-4">
-        <h2 class="cta-title mb-3">Ready to Elevate Your Web Presence?</h2>
-        <p class="cta-subtitle mb-4">
-          Explore my work or connect with me to get started.
-        </p>
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <a href="/projects" class="cta-btn btn">View My Work</a>
-          <a href="/contact" class="cta-btn btn">Contact</a>
-        </div>
-      </div>
-    </section>
+      <!-- Services Preview Section -->
+      <section class="services-preview py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5">
+              <h2 class="section-heading fw-bold mb-3">
+                What I Can Do For You
+              </h2>
+              <p class="lead text-muted">
+                From custom websites to SEO optimization, I help businesses grow
+                their online presence with modern solutions.
+              </p>
+            </div>
+          </div>
 
-    <!-- Testimonials -->
-    <section class="testimonials py-5 bg-light">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">What Clients Say</h2>
-        <div class="row g-4">
-          <!-- Reuse testimonial structure -->
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-quote">
-                Michelle transformed our online presence completely... helped us
-                rank higher on Google and attract more customers.
-              </p>
-              <div class="testimonial-author">Sarah Johnson</div>
-              <div class="testimonial-role">Owner, Local Bakery</div>
+          <div class="row g-4 mb-5">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <h3 class="service-title">Custom Web Development</h3>
+                <p class="service-description">
+                  Hand-coded websites built with modern technologies. Fast,
+                  secure, and optimized for performance across all devices.
+                </p>
+                <ul class="service-features">
+                  <li>Responsive Design</li>
+                  <li>SEO Optimized</li>
+                  <li>Fast Loading</li>
+                </ul>
+                <a href="/services" class="service-link">
+                  Learn More <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="service-icon">
+                  <i class="bi bi-search"></i>
+                </div>
+                <h3 class="service-title">SEO Optimization</h3>
+                <p class="service-description">
+                  Boost your search rankings with technical SEO, content
+                  optimization, and data-driven strategies that get results.
+                </p>
+                <ul class="service-features">
+                  <li>Keyword Research</li>
+                  <li>Technical SEO</li>
+                  <li>Performance Tracking</li>
+                </ul>
+                <a href="/services" class="service-link">
+                  Learn More <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h3 class="service-title">Digital Marketing</h3>
+                <p class="service-description">
+                  Complete marketing automation including CRM integration, email
+                  campaigns, and conversion optimization.
+                </p>
+                <ul class="service-features">
+                  <li>Marketing Automation</li>
+                  <li>CRM Integration</li>
+                  <li>Analytics Setup</li>
+                </ul>
+                <a href="/services" class="service-link">
+                  Learn More <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-quote">
-                Michelle created a digital strategy that connects with our
-                customers and drives real results.
+
+          <div class="text-center">
+            <a href="/services" class="btn btn-primary btn-lg px-4">
+              <i class="bi bi-grid me-2"></i>View All Services
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section class="featured-projects py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5">
+              <h2 class="section-heading fw-bold mb-3">Recent Work</h2>
+              <p class="lead text-muted">
+                See how I've helped businesses transform their digital presence
+                with custom solutions.
               </p>
-              <div class="testimonial-author">Mike Chen</div>
-              <div class="testimonial-role">Founder, Tech Startup</div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">★★★★★</div>
-              <p class="testimonial-quote">
-                Michelle delivered a website that perfectly represents our brand
-                while being incredibly user-friendly.
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+              <div class="project-showcase">
+                <div class="project-image-wrapper">
+                  <img
+                    src="/images/PoemGenerator_Thumbnail.png"
+                    alt="AI Poetry Generator - React Application"
+                    class="project-image img-fluid"
+                  />
+                  <div class="project-overlay">
+                    <a href="/projects" class="view-project-btn">
+                      <i class="bi bi-eye me-2"></i>View Project
+                    </a>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <span class="project-category">React Development</span>
+                  <h4 class="project-title">AI Poetry Generator</h4>
+                  <p class="project-description">
+                    Interactive React application with AI integration and modern
+                    UI design.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">API Integration</span>
+                    <span class="tech-tag">AI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="project-showcase">
+                <div class="project-image-wrapper">
+                  <img
+                    src="/images/hedgehouse_thumbnail.png"
+                    alt="SEO Audit & Optimization Project"
+                    class="project-image img-fluid"
+                  />
+                  <div class="project-overlay">
+                    <a href="/projects" class="view-project-btn">
+                      <i class="bi bi-eye me-2"></i>View Project
+                    </a>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <span class="project-category">SEO Strategy</span>
+                  <h4 class="project-title">Complete SEO Audit</h4>
+                  <p class="project-description">
+                    Comprehensive SEO analysis and optimization strategy for
+                    furniture retailer.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Technical SEO</span>
+                    <span class="tech-tag">Analytics</span>
+                    <span class="tech-tag">Strategy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="/projects" class="btn btn-outline-primary btn-lg px-4">
+              <i class="bi bi-folder me-2"></i>View Full Portfolio
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Preview Section -->
+      <section class="blog-preview py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5">
+              <h2 class="section-heading fw-bold mb-3">Latest Insights</h2>
+              <p class="lead text-muted">
+                Stay updated with the latest web development tips, SEO
+                strategies, and digital marketing insights.
               </p>
-              <div class="testimonial-author">Lisa Rodriguez</div>
-              <div class="testimonial-role">Marketing Director</div>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+              <article class="blog-preview-card">
+                <div class="blog-image-wrapper">
+                  <img
+                    src="/images/featured-blog-post.jpg"
+                    alt="Advanced JavaScript Techniques Blog Post"
+                    class="blog-image img-fluid"
+                  />
+                  <span class="blog-category">Web Development</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="blog-date">
+                      <i class="bi bi-calendar3 me-1"></i>Dec 15, 2024
+                    </span>
+                    <span class="blog-read-time">
+                      <i class="bi bi-clock me-1"></i>8 min read
+                    </span>
+                  </div>
+                  <h4 class="blog-title">
+                    <a href="/blog"
+                      >Advanced JavaScript Techniques for Modern Web
+                      Development</a
+                    >
+                  </h4>
+                  <p class="blog-excerpt">
+                    Discover cutting-edge JavaScript ES6+ features and
+                    performance optimization techniques that will elevate your
+                    web development skills...
+                  </p>
+                  <a href="/blog" class="blog-read-more">
+                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="blog-preview-card">
+                <div class="blog-image-wrapper">
+                  <img
+                    src="/images/seo-optimization-guide.jpg"
+                    alt="SEO Optimization Guide Blog Post"
+                    class="blog-image img-fluid"
+                  />
+                  <span class="blog-category">SEO</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="blog-date">
+                      <i class="bi bi-calendar3 me-1"></i>Nov 28, 2024
+                    </span>
+                    <span class="blog-read-time">
+                      <i class="bi bi-clock me-1"></i>6 min read
+                    </span>
+                  </div>
+                  <h4 class="blog-title">
+                    <a href="/blog"
+                      >Complete SEO Optimization Guide for Developers</a
+                    >
+                  </h4>
+                  <p class="blog-excerpt">
+                    Master technical SEO implementation with this comprehensive
+                    guide covering meta tags, structured data, and Core Web
+                    Vitals...
+                  </p>
+                  <a href="/blog" class="blog-read-more">
+                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="/blog" class="btn btn-outline-primary btn-lg px-4">
+              <i class="bi bi-journal-text me-2"></i>Read All Articles
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5">
+              <h2 class="section-heading fw-bold mb-3">
+                Client Success Stories
+              </h2>
+              <p class="lead text-muted">
+                See what clients say about working with me and the results
+                they've achieved.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-card">
+                <div class="testimonial-rating mb-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Michelle transformed our online presence completely. Our
+                  website not only looks amazing but also helped us rank higher
+                  on Google and attract more customers."
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>Sarah Johnson</strong>
+                  <span>Owner, Green Leaf Consulting</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-card">
+                <div class="testimonial-rating mb-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Working with Michelle was fantastic. She created a digital
+                  strategy that connects with our customers and drives real
+                  results for our business."
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>Mike Chen</strong>
+                  <span>Founder, TechFlow Solutions</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-card">
+                <div class="testimonial-rating mb-3">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Michelle delivered a website that perfectly represents our
+                  brand while being incredibly user-friendly. The SEO results
+                  have been outstanding."
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>Lisa Rodriguez</strong>
+                  <span>Marketing Director, Bloom Agency</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- About Preview Section -->
+      <section class="about-preview py-5">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="about-content">
+                <span class="badge bg-light text-dark mb-3 fw-bold">
+                  Meet Your Developer
+                </span>
+                <h2 class="section-heading fw-bold mb-4">
+                  From Educator to Full-Stack Developer
+                </h2>
+                <p class="lead mb-4">
+                  Hi! I'm Michelle, a certified full-stack developer and digital
+                  marketing strategist with a unique background in education
+                  that helps me understand user needs and create intuitive
+                  solutions.
+                </p>
+                <div class="about-highlights mb-4">
+                  <div class="highlight-item">
+                    <i class="bi bi-mortarboard me-3"></i>
+                    <span>Master's Degree + 10 Years Experience</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-award me-3"></i>
+                    <span>Certified Web Developer & SEO Specialist</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-graph-up me-3"></i>
+                    <span>Data-Driven Approach to Digital Strategy</span>
+                  </div>
+                </div>
+                <a href="/about" class="btn btn-primary">
+                  <i class="bi bi-person me-2"></i>Learn More About Me
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-image-wrapper">
+                <img
+                  src="/images/portfolio.png"
+                  alt="Michelle Pokodner - Web Developer & Digital Marketing Expert"
+                  class="about-image img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA Section -->
+      <section class="final-cta-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="final-cta-card text-center">
+                <div class="cta-icon mb-4">
+                  <i class="bi bi-rocket-takeoff"></i>
+                </div>
+                <h2 class="cta-title fw-bold mb-3">
+                  Ready to Build Your Digital Hive?
+                </h2>
+                <p class="cta-text lead mb-4">
+                  Let's create a website that not only looks amazing but drives
+                  real results for your business. Get a free consultation and
+                  project quote today.
+                </p>
+                <div
+                  class="cta-buttons d-flex justify-content-center gap-3 flex-wrap"
+                >
+                  <a
+                    href="/contact"
+                    class="btn btn-primary btn-lg px-4"
+                    role="button"
+                  >
+                    <i class="bi bi-chat me-2"></i>Get Free Consultation
+                  </a>
+                  <a
+                    href="/services"
+                    class="btn btn-outline-primary btn-lg px-4"
+                    role="button"
+                  >
+                    <i class="bi bi-grid me-2"></i>View Pricing
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="container-fluid py-5 text-center text-white">
+    <footer class="footer-section text-center py-5 text-white">
       <div class="container">
-        <h4 class="mb-3">Let's Work Together!</h4>
-        <a href="/contact" class="btn btn-branding mb-3">Contact</a>
-        <div class="mb-3">
-          <a href="mailto:mpokodner@gmail.com" class="email-link"
-            >mpokodner@gmail.com</a
-          >
-        </div>
-        <div class="social-links d-flex justify-content-center gap-4">
+        <h4 class="footer-title mb-3">Let's Work Together!</h4>
+        <a href="/contact" class="btn btn-branding mt-3 mb-4">Contact Me</a>
+        <p class="footer-email mb-4">
+          <a href="mailto:mpokodner@gmail.com" class="email-link">
+            <i class="bi bi-envelope me-2"></i>mpokodner@gmail.com
+          </a>
+        </p>
+        <div class="social-links d-flex justify-content-center gap-3">
           <a
             href="https://github.com/mpokodner"
             target="_blank"
             aria-label="GitHub Profile"
-            ><i class="fab fa-github" style="color: black"></i
-          ></a>
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/michelle-pokodner-b0729a271/"
             target="_blank"
             aria-label="LinkedIn Profile"
-            ><i class="fab fa-linkedin-in" style="color: black"></i
-          ></a>
+            class="social-link"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- JS -->
-    <script src="/js/index.js"></script>
+    <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/index.js"></script>
+
+    <script>
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animations
+      document
+        .querySelectorAll(
+          ".service-card, .project-showcase, .blog-preview-card, .testimonial-card, .about-content, .final-cta-card"
+        )
+        .forEach((element) => {
+          observer.observe(element);
+        });
+
+      // Enhanced loading animation
+      window.addEventListener("load", function () {
+        const heroContent = document.querySelector(".hero-content");
+        if (heroContent) {
+          heroContent.style.opacity = "1";
+        }
+      });
+    </script>
   </body>
 </html>
