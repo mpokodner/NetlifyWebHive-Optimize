@@ -103,14 +103,11 @@ header {
 
 /* ===== HERO SECTION ===== */
 .hero {
+  min-height: 100vh;
   position: relative;
-  height: 70vh;
-  min-height: 500px;
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
-  background: var(--gradient-primary);
 }
 
 .hero-img {
@@ -121,7 +118,6 @@ header {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  opacity: 0.2;
 }
 
 .overlay {
