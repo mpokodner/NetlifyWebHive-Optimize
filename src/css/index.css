@@ -276,7 +276,12 @@ header {
 .service-icon {
   width: 80px;
   height: 80px;
-  background: var(--gradient-primary);
+  background: linear-gradient(
+    135deg,
+    rgba(184, 134, 11, 0.8) 0%,
+    rgba(146, 124, 48, 0.85) 50%,
+    rgba(120, 87, 20, 0.9) 100%
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -707,20 +712,24 @@ header {
 
 /* ===== FINAL CTA SECTION ===== */
 .final-cta-section {
-  background: var(--gradient-primary);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 105, 20, 0.85) 0%,
+    rgba(183, 147, 71, 0.75) 50%,
+    rgba(101, 77, 15, 0.9) 100%
+  );
   color: var(--white);
   padding: 5rem 0;
 }
 
 .final-cta-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 4rem 3rem;
+  /* Remove the glassmorphism effect for simplicity */
+  background: transparent;
+  padding: 4rem 2rem;
   border-radius: var(--border-radius);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Remove backdrop-filter and border for cleaner look */
   opacity: 0;
   transform: translateY(30px);
-  box-shadow: var(--shadow-dark);
 }
 
 .final-cta-card.animate-in {
@@ -738,13 +747,52 @@ header {
   color: var(--white);
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .cta-text {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 2.5rem;
   font-size: 1.2rem;
   line-height: 1.7;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-cta-section .btn-primary {
+  background: var(--gold);
+  border: none;
+  color: var(--dark);
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.final-cta-section .btn-primary:hover {
+  background: var(--honey-dark);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.final-cta-section .btn-outline-primary {
+  color: var(--white);
+  border: 2px solid var(--gold);
+  background: transparent;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.final-cta-section .btn-outline-primary:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--dark);
+  transform: translateY(-3px);
 }
 
 /* ===== FOOTER ===== */
